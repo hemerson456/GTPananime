@@ -1,0 +1,807 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+
+body{
+overflow-y: scroll;
+overflow-x: hidden;
+background-color: #000;/*remove*/
+background-image: url('https://i.pinimg.com/originals/97/8d/99/978d99e2a00899b57d036da43ed72193.gif'); /*remove*/
+width: 100vw;
+background-size: cover;/*remove*/
+transition: all 1.5s;
+background-attachment: fixed; /*remove*/
+
+}
+
+body::-webkit-scrollbar {
+width: 0; /* Ancho de la barra de desplazamiento */
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: transparent; /* Fondo transparente para la barra de desplazamiento */
+border: none; /* Sin borde */
+}
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Kanit:ital,wght@0,100;0,200;1,300&family=Lobster&family=Martian+Mono:wght@800&family=Skranji:wght@400;700&display=swap');
+
+
+
+.headers {
+    background: transparent;
+    display: flex;
+    height: 5em;
+    width: 100vw;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    width: 100%;
+    background: transparent;
+    align-items: center;
+}
+.header__nav-ul {
+    display: inline-block;
+    background: transparent;
+    
+}
+
+.header__nav-li {
+    display:  inline-block;
+    margin: 0 1em;
+    color: transparent;
+    background: transparent;
+
+}
+
+.header__nav-li a {
+    background: transparent;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.2em;
+    color: #fff;
+    background: transparent;
+    outline: 2px solid #000;
+    outline-offset: 5px;
+    border-radius: 2px;
+    animation: giraBorde 5s linear infinite;
+
+}
+
+@keyframes giraBorde {
+    0% {
+        outline-color: #000;
+    }
+    20% {
+        outline-color: #aaa;
+    }
+    40%{
+        outline-color: #000;
+    }
+    60%{
+        outline-color: #aaa;
+    }
+    80%{
+        outline-color: #000;
+    }
+    100%{
+        outline-color: #aaa;
+    }
+}
+
+
+.header__nav-li a:hover {
+    color: #aaa;
+}
+
+.header__nav-li i {
+    background: transparent;
+    margin: 0 0.5em;
+    font-size: 0.8em;
+}
+
+.logo-anime {
+    width: 10em;
+    height: auto;
+    display: inline-block;
+    background: transparent;
+    margin-right: auto;
+}
+
+.header2 {
+    display: none;
+}
+
+.container {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 0.8fr 2.5fr 1fr;
+}
+
+.container1 {
+    padding: 10px;
+    background: #666;
+}
+.anime {
+    display: grid;
+}
+
+.container2 {
+    padding: 10px;
+}
+
+.Titulo {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    height: 56px;
+    align-items: center;
+    margin-top: -10px;
+}
+#tendencia {
+    color: #fff;
+    font-family: 'Martian Mono', monospace;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    height: 56px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 2s;
+    
+
+}
+
+.titulo:hover >  #tendencia{
+    font-size: 2em;
+    font-family: monospace;
+    color: #666;
+    transform: rotateY(360deg);/*modificado*/
+    
+}
+
+.anime-ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-auto-rows: 12rem;
+    grid-gap: 10px;
+    overflow: hidden;
+}
+.anime-li {
+    display: grid;
+    color:none;
+    background: transparent;
+    border-radius: 5px;   
+    transition: all 1.5s; 
+    overflow: hidden;
+
+}
+
+.anime-li a {
+    text-decoration: none;
+    color: #fff;
+    background: #fff;
+    transition: all 1.5s;
+}
+
+
+/******************************copiar**************************************/
+
+
+.anime-li a img.anime-li-image {
+    
+   /* background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg'); */
+    width: 100%;
+    height: 12em;
+    background-size: cover;
+    transition: all 1.5s;
+    
+}
+
+
+
+
+.anime-li a img.anime-li-image:hover {
+    transform: scale(1.25);
+    opacity: 0.7;
+   
+}
+
+.anime-li-h21 {
+    width: 100%;
+    font-family: 'Martian Mono', monospace;
+    background: transparent;
+    position: relative;
+    z-index: 100;
+    margin: -2.5em 0 0 0;
+    color: #f0df;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 1.5s;  
+    background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 1) 25%);
+
+}
+
+
+
+
+
+.anime-li:hover > .anime-li-h21{
+    font-size: 1.3em;
+    background: linear-gradient(to bottom, transparent, #aaa);
+   
+}
+
+.anime-li:hover > .correcion {
+    margin: -3.5em 0 0 0;
+}
+
+.anime-li-day{
+    font-family: 'Martian Mono', monospace;
+    background: transparent;
+    position: absolute;
+    margin: 0;
+    transition: all 1.5s;  
+    color: #111;
+}
+
+.anime-li:hover > .anime-li-day{
+    margin-left: 0.5em;
+    font-weight: 800;
+    color: #000;
+
+}
+
+
+.anime-li-day span {
+    background: transparent;
+    font-family: 'Martian Mono', monospace;
+}
+
+.anime-li-day span i {
+    background: transparent;
+}
+
+.anime-li a img.first {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg');
+}
+
+.anime-li a img.second {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_takagi-18.jpg');
+}
+
+.anime-li a img.second3 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_evangelion-156-1536x864.jpg');
+}
+
+.anime-li a img.second4 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_tomb-raider-2-1536x864.jpg');
+}
+
+.anime-li a img.second5 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/Duolingo-1536x864.jpg');
+}
+
+.anime-li a img.second6 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/Nobara-1536x864.jpg');
+}
+
+.anime-li a img.second7 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/43-1536x864.webp');
+}
+
+.anime-li a img.second8 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_a-1536x864.jpg');
+}
+
+.anime-li a img.second9 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/TenSura_coleus_PV_01_Portada-1536x864.jpg');
+}
+
+.anime-li a img.second10 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_nier-reincarnation-30-1536x864.jpg');
+}
+
+.anime-li a img.second11 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_boku-no-kokoro-no-yabai-19-1536x864.jpg');
+}
+/*********************************copiar***********************************************************/
+
+/* etiquetas filt*/
+.blocketiquetas{
+    padding: 0;
+    background-color: transparent;
+    
+    
+}
+
+.etiquetas {
+    display: flex;
+    background-color: transparent;
+    background: transparent;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    
+    
+}
+
+.etiquetas_list{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: transparent;
+    
+    
+}
+.category_item{
+    width: 9.5em;
+    background-color: #111;
+    text-decoration: none;
+    text-align: center;
+    color: #ddd;
+    margin: 0.5em 0;
+    outline: 1px solid #666;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Martian Mono', monospace;
+}
+
+.etiquetas_list .ct_item-active{
+   background-color: #d0f;
+   color: #fff;
+   outline: 1px solid #d0f;
+}
+/* etiquetas filt*/
+
+/*aside*/
+
+.aside {
+    background-color: transparent;
+
+}
+
+
+/*adblock*/
+.news {
+    width: 98%;
+    background: transparent;
+    outline: 2px solid #aaa;
+    margin-top: 3em;
+    border-radius: 5px;
+    background-color: #111;
+    padding: 3px 0;
+    
+}
+
+.news-container {
+    display: flex;
+    flex:1;
+    background-color: transparent;
+    align-items: center;
+    padding: 3px;
+    width: 99%;
+}
+
+.fa-shield-halved {
+    color: #f0f;
+    font-size: 2.5em;
+    background: transparent;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+}
+
+.news-container-block {
+   background-color: transparent;
+}
+
+.news-container_security {
+    background-color: transparent;
+    color: #ccc;
+    font-family: 'Martian Mono', monospace;
+    font-size: 1.2em;
+}
+
+.news-container_text {
+    background-color: transparent;
+    color: #ccc;
+    font-family: 'Martian Mono', monospace;
+    font-size: 0.8em;
+
+}
+
+.news-container_buttons {
+    display: grid;
+    justify-items: center;
+    margin: 0.5em 0;
+    background-color: transparent;
+} 
+
+.news-container_button {
+    display: flex;
+    justify-content: center;
+    width: 88%;
+    color: #aaa;
+    padding: 0.2em 0;
+    font-size: 1.1em;
+    border: none;
+    outline: 2px solid #aaa;
+    border-radius: 10px;
+    background: #a0a;
+
+}
+.news-container_buttons:hover > .news-container_button {
+    background-color: #d0d;
+    color: #fff;
+}
+/*adblock ♠*/
+
+/*crear comunity*/
+.crearcomunity{
+    width: 98%;
+    background: transparent;
+    outline: 2px solid #aaa;
+    margin-top: 1.5em;
+    border-radius: 5px;
+    background-color: #111;
+    padding: 0 0 3px 0;
+
+}
+
+.crearcomunity-img {
+    background-image: url('https://i.pinimg.com/originals/f9/f8/48/f9f848b6a9e164a865849b18e3dae29f.jpg');
+    width: 100%;
+    height: 4em;
+    bottom: 7em;
+    background-size: cover;
+
+}
+
+.crearcomunity-titulo {
+    display: flex;
+    background: transparent;
+    width: 100%;
+    align-items: center;
+}
+
+.crearcomunity-titulo_img {
+    background-color: transparent;
+    background-image: url('assets/asideanime.png');
+    background-size: cover;
+    position: relative;
+    width: 5em;
+    height: 6.3em;
+    margin-top: -3em;
+    display: inline-block;
+}
+
+.crearcomunity-titulo_text{
+    display: inline-block;
+    color: #ccc;
+    background-color: transparent;
+    font-family: 'Martian Mono', monospace;
+    font-size: 1.2em;
+}
+
+.crearcomunity-parrafo {
+    display: flex;
+    color: #aaa;
+    background-color: transparent;
+    font-family: 'Martian Mono', monospace;
+    padding: 3px;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    line-height: 1.3;
+
+}
+
+.crearcomunity-barra {
+    background-color: #666;
+    border: none;
+    height: 1px;
+    margin: 14px 5px;
+    overflow: hidden;
+}
+
+.crearcomunity-buttons{
+    display: grid;
+    justify-items: center;
+    margin: 1.1em 0;
+    background-color: transparent;
+    transition: all 1.5s;
+}
+.box2{
+    margin: 0 0 0.5em 0;
+}
+
+.crearcomunity-button{
+    display: flex;
+    justify-content: center;
+    width: 88%;
+    color: #aaa;
+    padding: 0.2em 0;
+    font-size: 1.1em;
+    border: none;
+    outline: 2px solid #aaa;
+    border-radius: 10px;
+    background: #a0a;
+}
+
+.crearcomunity-buttons:hover > .crearcomunity-button {
+    background-color: #d0d;
+    color: #fff;
+}
+/*comunity terminado*/
+
+/*póliticas*/
+.users{
+    width: 98%;
+    outline: 2px solid #aaa;
+    margin-top: 1.5em;
+    border-radius: 5px;
+    background-color: #111;
+    padding:3px ;
+
+}
+.users-container{
+    display: flex;
+    margin-top: 0.5em;
+    width: 100%;
+    background-color: #111;
+
+}
+
+.users_containers1{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-right: 0.2em;
+    font-size: 0.9em;
+    background-color: transparent;
+    /*justify-content: space-evenly;*/
+
+
+}
+
+.users_containers2{
+    display: flex;
+    width: 48%;
+    flex-wrap: wrap;
+    background-color: transparent;
+    font-size: 0.9em;
+    /*justify-content: space-evenly;*/
+  
+   
+
+}
+
+.text2s {
+    margin-top: 0.5em;/*quitar para el responsive*/
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.usuario {
+    width: 100%; 
+}
+
+
+.users_containers1-text {
+    display: flex;
+   text-decoration: none;
+   color: #ccc;
+   cursor: pointer;
+   background-color: transparent;
+ /*  justify-content: space-evenly;*/
+}
+
+.users_containers1-text:hover {
+    color:#d0f
+}
+
+.users-barra {
+    display: block;
+    background-color: #666;
+    border: none;
+    height: 1px;
+    margin: 10px 5px;
+    overflow: hidden;
+}
+
+.users_derechos{
+    display: flex;
+    padding: 5px;
+    background-color: #111;
+    justify-content: space-evenly;
+}
+.users_derechos-text{
+    background-color: #111;
+    color: #ccc;
+    font-family: 'Martian Mono', monospace;
+    font-size: 0.8em;
+}
+/*terminado politicas*/
+
+
+/*aside*/
+
+@media only screen and (max-width:900px) {
+    .headers {
+        display: none;
+    }
+    .header2{
+        background: transparent;
+        height: 5em;
+        width: 100vw;
+        display: inline-block;
+        }
+    .header__nav2{
+        background: transparent;
+        height: 5em;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+
+    }    
+    .button {
+        background: transparent;
+        display: flex;
+        order: 3;
+        margin-right: 1em;
+        background: transparent;
+
+    }
+    .button i{
+        font-size: 2em;
+        background: transparent;
+        color: #666;
+    }
+    .header__nav-ul2 {
+        background: transparent;
+        
+        color: transparent;
+        margin-top: -20em;
+        position: relative;
+        z-index: 1000;
+        transition: all 2s;
+
+    }
+    .header__nav-li2 {
+        background: transparent;
+        color: transparent;
+       
+    }
+    .header__nav-li2 a {
+        background: transparent;
+        color: #222;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-family: monospace;
+        margin-right: 1em;
+      
+    }
+
+    .header__nav-li2 a:hover{
+        color: #666;
+    } 
+    .header__nav-li2 a i {
+        background: transparent;
+        margin: 0 0.5em;
+    }
+    .header__nav2:hover > ul.header__nav-ul2{
+        margin-top: 14em;
+        margin-right: 0;
+        
+    }
+    
+    .container {
+        grid-template-columns:  none
+    }
+    
+    .container1{
+        display: grid;
+        width: 1fr;
+        background-color: transparent;
+    }
+
+    .anime-ul {     
+        grid-auto-rows: 14rem;
+    }
+    
+    .anime-li a img.anime-li-image {
+    
+        /* background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg'); */
+         width: 100%;
+         height: 14em;
+         background-size: cover;
+         transition: all 1.5s;
+     }
+
+     .aside{
+        background: transparent;
+     }
+
+     .users_containers1{
+        justify-content: space-evenly;
+     }
+     .users_containers2{
+        justify-content: space-evenly;
+     }
+
+     .users_containers1-text{
+        justify-content: space-evenly;
+     }
+
+     .news-container {
+        display: flex;
+        flex:1;
+        background-color: transparent;
+        align-items: center;
+        padding: 3px;
+        width: 100%;
+        justify-content: start;
+        margin-left: 5%;
+    }
+    /*reponsibe etiqueta*/
+    .etiquetas_list{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0;
+        background-color: transparent;    
+        outline: 1px solid #ccc; 
+
+    }
+
+    .category_item{
+        width: 9.5em;
+        background-color: #111;
+        text-decoration: none;
+        text-align: center;
+        color: #ddd;
+        margin: 0.5em 0.5em;
+        outline: 1px solid #666;
+        border-radius: 10px;
+        padding: 5px;
+        font-family: 'Martian Mono', monospace;
+
+    }
+    /*responsibe etiqueta*/
+
+    
+
+    
+}
+
+@media only screen and (max-width:628px){
+    .anime-li-h21 {
+        margin: -1.5em 0 0 0;
+     }
+
+     .anime-li:hover > .anime-li-h21 {
+        margin: -2.5em 0 0 0;
+     }
+    
+    
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1135px){
+    .anime-li-h21 {
+        margin: -1.5em 0 0 0;
+     }
+
+    .anime-li:hover > .anime-li-h21{
+        margin: -2.5em 0 0 0;
+     }
+    
+}
