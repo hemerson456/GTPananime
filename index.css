@@ -10,7 +10,7 @@ body{
 overflow-y: scroll;
 overflow-x: hidden;
 background-color: #000;/*remove*/
-background-image: url('assets/fondoprincipal.gif'); /*remove*/
+background-image: url('assets/fondoprincipal-min.gif'); /*remove*/
 width: 100vw;
 background-size: cover;/*remove*/
 transition: all 1.5s;
