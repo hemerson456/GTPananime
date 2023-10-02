@@ -104,7 +104,7 @@ border: none; /* Sin borde */
     font-size: 0.8em;
 }
 
-.logo-anime {
+img.logo-anime {
     width: 10em;
     height: auto;
     display: inline-block;
