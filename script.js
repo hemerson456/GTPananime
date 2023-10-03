@@ -49,12 +49,20 @@ $(document).ready(function(){
 function funtion(){
     let element = document.getElementById("list1");
     element.classList.toggle("act_style");
+    
 }
+
+function flecha(){
+    let element = document.getElementById("flecha");
+    element.classList.toggle("arrow");
+}
+function flechas(){
+    let element = document.getElementById("flechas");
+    element.classList.toggle("arrow");
+}
+
 
 function funcion(){
     let element = document.getElementById("list2");
     element.classList.toggle("act_style");
 }
-
-
-

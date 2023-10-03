@@ -158,11 +158,11 @@ img.logo-anime {
 
 }
 
-.titulo:hover >  #tendencia{
+.Titulo:hover >  #tendencia{
     font-size: 2em;
     font-family: monospace;
     color: #666;
-    transform: rotateY(360deg);/*modificado*/
+    transform: rotateY(360deg);
     
 }
 
@@ -240,8 +240,14 @@ img.logo-anime {
 }
 
 .anime-li:hover > .correcion {
-    margin: -3.5em 0 0 0;
+    margin: -3.6em 0 0 0;
 }
+
+.anime-li:hover > .Evangelion{
+    font-size: 1.2em;
+
+}
+
 
 .anime-li-day{
     font-family: 'Martian Mono', monospace;
@@ -343,7 +349,7 @@ img.logo-anime {
     margin-right: auto;
     margin-left: auto;
     border-radius: 10px;
-    justify-content: center;
+    justify-content: space-between;
     background: #b0b;
     cursor: pointer;
 }
@@ -352,7 +358,6 @@ img.logo-anime {
     width: auto;
     height: 2.5em;
     margin-left: 0.2em;
-    
 }
 
 .etiquetas__button-flecha {
@@ -361,9 +366,9 @@ img.logo-anime {
     transform: rotate(-90deg);
 }
 
-/*.arrow .etiquetas__button-flecha{
+.arrow{
     transform: rotate(0deg);
-}*/
+}
 .etiquetas__button-reproductor{
     width: auto;
     height: 2.5em;
@@ -448,6 +453,19 @@ img.logo-anime {
     -o-transition: 1.2s;
 }
 .category_item{
+    width: 9.5em;
+    background-color: #111;
+    text-decoration: none;
+    text-align: center;
+    color: #ddd;
+    margin: 0.5em 0;
+    outline: 1px solid #666;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Martian Mono', monospace;
+}
+
+.category_items{
     width: 9.5em;
     background-color: #111;
     text-decoration: none;
@@ -770,39 +788,42 @@ img.logo-anime {
         color: #666;
     }
     .header__nav-ul2 {
-        background: transparent;
-        
+        background: #111;       
         color: transparent;
         margin-top: -20em;
         position: relative;
         z-index: 1000;
-        transition: all 2s;
+        transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+        padding: 10px;
+        border-radius: 10px 0 10px 10px;
 
     }
     .header__nav-li2 {
         background: transparent;
         color: transparent;
+        line-height: 2;
        
     }
     .header__nav-li2 a {
         background: transparent;
-        color: #222;
+        color: #ccc;
         text-decoration: none;
-        font-size: 1.2em;
+        font-size: 1.3em;
         font-family: monospace;
-        margin-right: 1em;
+        margin-right: 1.3em;
+        line-height: 1.5;
       
     }
 
     .header__nav-li2 a:hover{
-        color: #666;
+        color: #c0c;
     } 
     .header__nav-li2 a i {
         background: transparent;
         margin: 0 0.5em;
     }
     .header__nav2:hover > ul.header__nav-ul2{
-        margin-top: 14em;
+        margin-top: 11em;
         margin-right: 0;
         
     }
@@ -832,6 +853,10 @@ img.logo-anime {
 
      .aside{
         background: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
      }
 
      .users_containers1{
@@ -856,8 +881,9 @@ img.logo-anime {
         margin-left: 5%;
     }
 
-
+    
     /*reponsibe etiqueta*/
+
     .etiquetas {
         display: flex;
         background-color: transparent;
@@ -917,6 +943,9 @@ img.logo-anime {
 
     }
     /*responsibe etiqueta*/
+    .My-Heart{
+        margin: -2.5em 0 0 0;
+    }
 
     
 
@@ -931,6 +960,9 @@ img.logo-anime {
      .anime-li:hover > .anime-li-h21 {
         margin: -2.5em 0 0 0;
      }
+     .My-Heart{
+        margin: -2.5em 0 0 0;
+    }
     
     
 }
@@ -945,3 +977,122 @@ img.logo-anime {
      }
     
 }
+
+
+/*listas de animes modificacion de letras responsive  solo agregar para el texto*/
+
+@media only screen and (max-width:628px){
+    .My-Heart{
+        margin: -1.7em 0 0 0;
+    }
+    
+}
+
+@media only screen and (max-width:558px){
+    .My-Heart{
+        margin: -2.7em 0 0 0;
+    }
+    
+}
+@media only screen and (max-width:544px){
+    .Jujutsu{
+        margin: -2.7em 0 0 0;
+    }
+    
+}
+
+@media only screen and (max-width:512px){
+    .NieR{
+        margin: -2.7em 0 0 0;
+    }
+    
+}
+
+@media only screen and (max-width:490px){
+    .Evangelion{
+        margin: -2.7em 0 0 0;
+    }
+    .Chainsaw{
+        margin: -2.7em 0 0 0;
+    }
+}
+
+@media only screen and (max-width:460px){
+    .Raider{
+        margin: -2.7em 0 0 0;
+    }
+    .Takagi-san{
+        margin: -2.7em 0 0 0;
+    }
+    .KudaLive{
+        margin: -2.7em 0 0 0;
+    }
+}
+@media only screen and (max-width:400px){
+
+   .header__nav-ul2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #111;       
+    color: transparent;
+    margin-top: -25em;
+    position: relative;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+    padding: 5px;
+    border-radius: 10px 0 10px 10px;
+    line-height: 1.6;
+
+   }
+   .header__nav-li2 a {
+    background: transparent;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: monospace;
+    line-height: 2.1;
+  
+    }
+
+    .header__nav-li2{
+        line-height: 1.8;
+    }
+    .header__nav2:hover > ul.header__nav-ul2{
+        margin-top: 10em;
+        margin-right: 0;
+        
+    }
+
+}
+
+@media only screen and (max-width:380px){
+    .header__nav-li2 a{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .Evangelion2{
+       margin: -2.7em 0 0 0;       
+    }
+}
+
+
+@media only screen and (max-width:605px){
+    .Tensei-Shitara{
+        margin: -2.7em 0 0 0;
+    }
+}
+
+
+@media only screen and (max-width:563px){
+    .Ayakashi{
+        margin: -2.7em 0 0 0;
+    }
+}
+
+
+/*listas de animes modificacion de letras responsive*/
+
+

@@ -48,10 +48,10 @@
         <main class="container">
            <section class="container1 blocketiquetas">
                 <div class="etiquetas">
-                    <button onclick="funtion()" class="etiquetas__button">
+                    <button onclick="funtion(); flecha()"  class="etiquetas__button">
                         <img class="etiquetas__button-foros" src="assets/foros.png">
-                        <a href="#" class="etiquetas__button-otaku etiquetas__buttona">Cultura Otaku</a>
-                        <img src="assets/flecha.png" class="etiquetas__button-flecha">
+                        <a href="#" class="etiquetas__button-otaku etiquetas__buttona" >Cultura Otaku</a>
+                        <img src="assets/flecha.png" class="etiquetas__button-flecha " id="flecha">
                     </button>
                     <div id="list1" class="etiquetas_list">
                         <a href="#" class="category_item "  category="all">Todo</a>
@@ -72,13 +72,13 @@
                 </div>
 
                 <div class="etiquetas bloque2">
-                    <button onclick="funcion()" class="etiquetas__button">
+                    <button onclick="funcion(); flechas()" class="etiquetas__button">
                         <img class="etiquetas__button-reproductor" src="assets/reproductor.png">
                         <a href="#" class="etiquetas__button-zonanime etiquetas__buttona">Zona Anime</a>
-                        <img src="assets/flecha.png" class="etiquetas__button-flecha">
+                        <img src="assets/flecha.png" class="etiquetas__button-flecha" id="flechas">
                     </button>
                     <div id="list2" class="etiquetas_list" >
-                        <a href="#" class="category_item "  category="allA">Todo</a>
+                        <a href="#" class="category_item "  category="ShonenA, ShojoA, SeinenA, IsekaiA, FantasiaA, AventuraA, AccionA, CienciaficcionA, ComediaA,RomanceA, TerrorA,">Todo</a>
                         <a href="#" class="category_item"  category="ShonenA">Shonen</a>
                         <a href="#" class="category_item"  category="ShojoA">Shojo</a>
                         <a href="#" class="category_item"  category="SeinenA">Seinen</a>
@@ -90,7 +90,6 @@
                         <a href="#" class="category_item"  category="ComediaA">Comedia</a>
                         <a href="#" class="category_item"  category="RomanceA">Romance</a>
                         <a href="#" class="category_item"  category="TerrorA">Terror</a>
-                        <a href="#" class="category_item"  category="PostA">Works</a>
                     </div>
                  
                 </div>
@@ -110,73 +109,75 @@
 
                         <li class="anime-li" category="Comedia, Romance"><a href="https://somoskudasai.com/noticias/cultura-otaku/nier-automata-2b-regresa-en-una-fabulosa-muneca-sexual/">
                             <img class="anime-li-image second11"></a>
-                            <div class="anime-li-h21 correcion">Fans creen que ya hubo ‘delicioso’ en The Dangers in My Heart</div> 
+                            <div class="anime-li-h21 correcion My-Heart">Fans creen que ya hubo ‘delicioso’ en The Dangers in My Heart</div> 
                             <div class="anime-li-day"><span> <i class="fa-regular fa-calendar-days op7"></i>28 septiembre, 2023</span> </div>
                         </li>
 
                         <li class="anime-li" category="Aventura, Accion"><a href="https://somoskudasai.com/noticias/cultura-otaku/nier-automata-2b-regresa-en-una-fabulosa-muneca-sexual/">
                             <img class="anime-li-image second10"></a>
-                            <div class="anime-li-h21">NieR: Automata: 2B regresa en una fabulosa muñeca sexual</div> 
+                            <div class="anime-li-h21 NieR">NieR: Automata: 2B regresa en una fabulosa muñeca sexual</div> 
                             <div class="anime-li-day"><span> <i class="fa-regular fa-calendar-days op7"></i>27 septiembre, 2023</span> </div>
                         </li>
 
                         <li class="anime-li" category="Accion,Aventura, Comedia, Fantasia, Isekai"><a href="https://somoskudasai.com/noticias/anime/tensei-shitara-slime-datta-ken-revela-avance-para-su-nuevo-especial/">
                             <img class="anime-li-image second9"></a>
-                            <div class="anime-li-h21 correcion">Tensei Shitara Slime Datta Ken revela avance para su nuevo especial</div> 
+                            <div class="anime-li-h21 correcion Tensei-Shitara">Tensei Shitara Slime Datta Ken revela avance para su nuevo especial</div> 
                             <div class="anime-li-day"><span> <i class="fa-regular fa-calendar-days op7"></i>27 septiembre, 2023</span> </div>
                         </li>
 
                         <li class="anime-li" category="Accion, Cienciaficcion"><a href="https://somoskudasai.com/noticias/mercancia-de-anime/evangelion-asuka-y-rei-vuelven-en-figuras-con-erotica-lenceria/">
                             <img class="anime-li-image second8"></a>
-                            <div class="anime-li-h21 correcion">Evangelion: Asuka y Rei vuelven en figuras con erótica lencería</div> 
+                            <div class="anime-li-h21 Evangelion">Evangelion: Asuka y Rei vuelven en figuras con erótica lencería</div> 
                             <div class="anime-li-day"><span> <i class="fa-regular fa-calendar-days op7"></i>27 septiembre, 2023</span> </div>
                         </li>
 
                         <li class="anime-li" category="Accion, Comedia, Romance"><a href="https://somoskudasai.com/noticias/cultura-otaku/fans-de-ayakashi-triangle-molestos-por-estafa-en-los-blu-ray/">
                             <img class="anime-li-image second7"></a>
-                            <div class="anime-li-h21 correcion">Fans de Ayakashi Triangle molestos por ‘estafa’ en los Blu-ray</div> 
+                            <div class="anime-li-h21 correcion Ayakashi">Fans de Ayakashi Triangle molestos por ‘estafa’ en los Blu-ray</div> 
                             <div class="anime-li-day"><span> <i class="fa-regular fa-calendar-days op7"></i>27 septiembre, 2023</span> </div>
                         </li>
 
                         <li class="anime-li" category="Fantasia, Accion, Terror, Shonen"><a href="https://somoskudasai.com/noticias/cultura-otaku/chainsaw-man-trae-de-regreso-a-nobara-de-jujutsu-kaisen/">
                             <img class="anime-li-image second6"></a>
-                            <div class="anime-li-h21">Chainsaw Man trae de regreso a Nobara de Jujutsu Kaisen</div> 
+                            <div class="anime-li-h21 Chainsaw">Chainsaw Man trae de regreso a Nobara de Jujutsu Kaisen</div> 
                             <div class="anime-li-day"><span> <i class="fa-regular fa-calendar-days op7"></i>27 septiembre, 2023</span> </div>
                         </li>
 
                         <li class="anime-li" category="Fantasia, Accion, Shonen"><a href="https://somoskudasai.com/noticias/cultura-otaku/jujutsu-kaisen-duolingo-se-burla-del-destino-de-satoru-gojo/">
                             <img class="anime-li-image second5"></a>
-                            <div class="anime-li-h21 correcion">Jujutsu Kaisen: Duolingo se burla del destino de Satoru Gojo</div> 
+                            <div class="anime-li-h21 correcion Jujutsu">Jujutsu Kaisen: Duolingo se burla del destino de Satoru Gojo</div> 
                             <div class="anime-li-day"><span> <i class="fa-regular fa-calendar-days op7"></i>27 septiembre, 2023</span> </div>
                         </li>
 
                         <li class="anime-li" category="Accion, Aventura"><a href="https://somoskudasai.com/noticias/anime/netflix-anuncia-una-serie-de-anime-para-tomb-raider/">
                             <img class="anime-li-image second4"></a>
-                            <div class="anime-li-h21">Netflix anuncia una serie de anime para Tomb Raider</div> 
+                            <div class="anime-li-h21 Raider">Netflix anuncia una serie de anime para Tomb Raider</div> 
                             <div class="anime-li-day"><span> <i class="fa-regular fa-calendar-days op7"></i>27 septiembre, 2023</span> </div>
                         </li>
 
                         <li class="anime-li" category="Accion, Cienciaficcion"><a href="https://somoskudasai.com/noticias/mercancia-de-anime/evangelion-asuka-esta-de-regreso-en-una-erotica-figura/">
                             <img class="anime-li-image second3"></a>
-                            <div class="anime-li-h21">Evangelion: Asuka está de regreso en una erótica figura</div> 
+                            <div class="anime-li-h21 Evangelion2">Evangelion: Asuka está de regreso en una erótica figura</div> 
                             <div class="anime-li-day"><span> <i class="fa-regular fa-calendar-days op7"></i>26 septiembre, 2023</span> </div>
                         </li>
 
                         <li class="anime-li" category="Comedia, Romance"><a href="https://somoskudasai.com/noticias/live-action/llega-el-primer-vistazo-al-live-action-de-takagi-san/">
                             <img class="anime-li-image second"></a>
-                            <div class="anime-li-h21">Llega el primer vistazo al live-action de Takagi-san</div> 
+                            <div class="anime-li-h21 Takagi-san">Llega el primer vistazo al live-action de Takagi-san</div> 
                             <div class="anime-li-day"><span> <i class="fa-regular fa-calendar-days op7"></i>26 septiembre, 2023</span> </div>
                         </li>
 
                         <li class="anime-li" category="Post"><a href="https://somoskudasai.com/noticias/cultura-otaku/buscamos-un-manager-para-las-vtubers-de-kudalive/">
                             <img class="anime-li-image first"></a>
-                            <div class="anime-li-h21">¡Buscamos un mánager para las VTubers de KudaLive!</div> 
+                            <div class="anime-li-h21 KudaLive">¡Buscamos un mánager para las VTubers de KudaLive!</div> 
                             <div class="anime-li-day"><span> <i class="fa-regular fa-calendar-days op7"></i>26 septiembre, 2023</span> </div>
                           </li>
                         
                     </ul>
 
                 </div>
+
+                
 
             </section>
 
