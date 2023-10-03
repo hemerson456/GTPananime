@@ -219,7 +219,7 @@ img.logo-anime {
     background: transparent;
     position: relative;
     z-index: 100;
-    margin: -2.5em 0 0 0;
+    margin: -2.7em 0 0 0;
     color: #f0df;
     text-align: center;
     font-weight: 600;
@@ -234,20 +234,9 @@ img.logo-anime {
 
 
 .anime-li:hover > .anime-li-h21{
-    font-size: 1.3em;
-    background: linear-gradient(to bottom, transparent, #aaa);
-   
+    align-items: center;
+    background-image: linear-gradient(to top  , rgb(220,220, 220) 25%, rgb(190,190, 190) 50% ,transparent);   
 }
-
-.anime-li:hover > .correcion {
-    margin: -3.6em 0 0 0;
-}
-
-.anime-li:hover > .Evangelion{
-    font-size: 1.2em;
-
-}
-
 
 .anime-li-day{
     font-family: 'Martian Mono', monospace;
@@ -958,9 +947,6 @@ img.logo-anime {
         margin: -1.5em 0 0 0;
      }
 
-     .anime-li:hover > .anime-li-h21 {
-        margin: -2.5em 0 0 0;
-     }
      .My-Heart{
         margin: -2.5em 0 0 0;
     }
@@ -989,6 +975,12 @@ img.logo-anime {
     
 }
 
+@media only screen and (max-width:572px){
+    .Evangelion{
+        margin: -2.7em 0 0 0;
+    }
+    
+}
 @media only screen and (max-width:558px){
     .My-Heart{
         margin: -2.7em 0 0 0;
