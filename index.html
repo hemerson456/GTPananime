@@ -10,8 +10,10 @@
         <script src="https://kit.fontawesome.com/bfd803e50b.js" crossorigin="anonymous"></script>
         <script src="code.jquery.com_jquery-3.7.1.js"></script>
         <script src="script.js"></script>
+
     </head>
     <body>
+        
         <header>
             <div class="headers">
                 <nav class="header__nav">
@@ -46,7 +48,12 @@
         <main class="container">
            <section class="container1 blocketiquetas">
                 <div class="etiquetas">
-                    <div class="etiquetas_list">
+                    <button onclick="funtion()" class="etiquetas__button">
+                        <img class="etiquetas__button-foros" src="assets/foros.png">
+                        <a href="#" class="etiquetas__button-otaku etiquetas__buttona">Cultura Otaku</a>
+                        <img src="assets/flecha.png" class="etiquetas__button-flecha">
+                    </button>
+                    <div id="list1" class="etiquetas_list">
                         <a href="#" class="category_item "  category="all">Todo</a>
                         <a href="#" class="category_item"  category="Shonen">Shonen</a>
                         <a href="#" class="category_item"  category="Shojo">Shojo</a>
@@ -60,6 +67,30 @@
                         <a href="#" class="category_item"  category="Romance">Romance</a>
                         <a href="#" class="category_item"  category="Terror">Terror</a>
                         <a href="#" class="category_item"  category="Post">Works</a>
+                    </div>
+                 
+                </div>
+
+                <div class="etiquetas bloque2">
+                    <button onclick="funcion()" class="etiquetas__button">
+                        <img class="etiquetas__button-reproductor" src="assets/reproductor.png">
+                        <a href="#" class="etiquetas__button-zonanime etiquetas__buttona">Zona Anime</a>
+                        <img src="assets/flecha.png" class="etiquetas__button-flecha">
+                    </button>
+                    <div id="list2" class="etiquetas_list" >
+                        <a href="#" class="category_item "  category="allA">Todo</a>
+                        <a href="#" class="category_item"  category="ShonenA">Shonen</a>
+                        <a href="#" class="category_item"  category="ShojoA">Shojo</a>
+                        <a href="#" class="category_item"  category="SeinenA">Seinen</a>
+                        <a href="#" class="category_item"  category="IsekaiA">Isekai</a>
+                        <a href="#" class="category_item"  category="FantasiaA">Fantasía</a>
+                        <a href="#" class="category_item"  category="AventuraA">Aventura</a>
+                        <a href="#" class="category_item"  category="AccionA">Accion</a>
+                        <a href="#" class="category_item"  category="CienciaficcionA">Ciencia Ficcion</a>
+                        <a href="#" class="category_item"  category="ComediaA">Comedia</a>
+                        <a href="#" class="category_item"  category="RomanceA">Romance</a>
+                        <a href="#" class="category_item"  category="TerrorA">Terror</a>
+                        <a href="#" class="category_item"  category="PostA">Works</a>
                     </div>
                  
                 </div>
@@ -227,6 +258,14 @@
 
             </section>
         </main>
-        <script src="" async defer></script>
+        <script src="" async defer>
+            let etiquetasButton = document.querySelector('.etiquetas__button');
+
+// Agrega un event listener para el evento 'click'
+etiquetasButton.addEventListener('click', function() {
+  // Alterna la clase 'arrow' en el elemento .etiquetas__button
+  etiquetasButton.classList.toggle('arrow');
+});
+        </script>
     </body>
 </html>

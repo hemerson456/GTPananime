@@ -44,3 +44,17 @@ $(document).ready(function(){
     });
 
 });
+  
+
+function funtion(){
+    let element = document.getElementById("list1");
+    element.classList.toggle("act_style");
+}
+
+function funcion(){
+    let element = document.getElementById("list2");
+    element.classList.toggle("act_style");
+}
+
+
+

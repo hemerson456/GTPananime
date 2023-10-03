@@ -13,10 +13,11 @@ background-color: #000;/*remove*/
 background-image: url('assets/fondoprincipal-min.gif'); /*remove*/
 width: 100vw;
 background-size: cover;/*remove*/
-transition: all 1.5s;
 background-attachment: fixed; /*remove*/
+transition: all 1.5s;
 
 }
+
 
 body::-webkit-scrollbar {
 width: 0; /* Ancho de la barra de desplazamiento */
@@ -328,19 +329,122 @@ img.logo-anime {
     width: 100%;
     padding: 0;
     justify-content: center;
-    margin-top: 3em;
-    margin-bottom: 2em;
+    margin-top: 3.5em;
+    margin-bottom: 1.5em;
+    flex-direction: column;
     
     
 }
+/*foros*/
+.etiquetas__button{
+    display: flex;
+    width: 14em;
+    background-color: transparent;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    justify-content: center;
+    background: #b0b;
+    cursor: pointer;
+}
+
+.etiquetas__button-foros{
+    width: auto;
+    height: 2.5em;
+    margin-left: 0.2em;
+}
+
+.etiquetas__button-flecha {
+    width: auto;
+    height: 2.5em;
+    transform: rotate(-90deg);
+}
+
+/*.arrow .etiquetas__button-flecha{
+    transform: rotate(0deg);
+}*/
+.etiquetas__button-reproductor{
+    width: auto;
+    height: 2.5em;
+    margin-left: 0.6em;
+    margin-right: 0.2em;
+    
+}
+
+.etiquetas__button-otaku{
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.etiquetas__button-zonanime{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.etiquetas__buttona{
+    text-decoration: none;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    font-family: 'Martian Mono', monospace;
+    animation: textColorChange 5s infinite;
+    font-weight: 900;
+
+}
+@keyframes textColorChange {
+    0% {
+      color: #666; 
+    }
+    25% {
+      color: #aaa; 
+    }
+    50% {
+      color: #ddd; 
+    }
+    75% {
+      color: #fff;
+    }
+    100% {
+      color: #333; 
+    }
+  }
+
+.act_arrow{
+    transform: rotate(0deg);
+}
+
+
+/*foros*/
+.bloque2{
+    margin-top: 0;
+}
+
 
 .etiquetas_list{
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    background-color: transparent;
+    align-items: center; 
+    transition: all 1.2s;
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s;
+    -o-transition: 1.2s;
+}
+
+.act_style{
     display: flex;
     flex-direction: column;
     padding: 0;
     background-color: transparent;
-    
-    
+    align-items: center; 
+    transition: all 1.2s;
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s;
+    -o-transition: 1.2s;
 }
 .category_item{
     width: 9.5em;
@@ -355,7 +459,7 @@ img.logo-anime {
     font-family: 'Martian Mono', monospace;
 }
 
-.etiquetas_list .ct_item-active{
+.act_style .ct_item-active{
    background-color: #d0f;
    color: #fff;
    outline: 1px solid #d0f;
@@ -750,9 +854,25 @@ img.logo-anime {
         justify-content: start;
         margin-left: 5%;
     }
+
+
     /*reponsibe etiqueta*/
-    .etiquetas_list{
+    .etiquetas {
         display: flex;
+        background-color: transparent;
+        background: transparent;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        flex-direction: column;
+        
+        
+    }
+
+    .etiquetas_list{
+        display: none;
         flex-direction: column;
         flex-direction: row;
         flex-wrap: wrap;
@@ -761,6 +881,25 @@ img.logo-anime {
         background-color: transparent;    
         outline: 1px solid #ccc; 
 
+    }
+
+    .act_style{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        background-color: transparent;
+        align-items: center; 
+        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0;
+        background-color: transparent;    
+        outline: 1px solid #ccc; 
+        transition: all 1.2s;
+        -webkit-transition: 1.2s;
+        -moz-transition: 1.2s;
+        -o-transition: 1.2s;
     }
 
     .category_item{
