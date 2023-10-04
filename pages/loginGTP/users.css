@@ -59,6 +59,7 @@ input[type=submit]{
     padding: 10px 30px;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 0.3em;
 }
 
 input[type=submit]:hover {
@@ -113,7 +114,7 @@ h2:hover{
     width: auto;
     margin-right: 0.3em;
 }
-@media only screen and (max-width:900px){
+@media only screen and (max-width:550px){
     form{
         width: 320px;
         margin: auto;
@@ -124,5 +125,37 @@ h2:hover{
     }
     .section{
         margin-bottom: 10px;
+    }
+    .button a{
+        display: flex;
+        text-decoration: none;
+        margin-top: 10px;
+        color: #bbf;
+        font-size: 13px;
+    
+    
+    }
+    input[type=text], input[type=password],input[type=email]{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 13px;
+        outline: none;
+        padding: 10px;
+        width: 100%;
+    
+    }
+    h2{
+        font-size: 28px;
+    }
+    input[type=submit]{
+        border: none;
+        outline: none;
+        background-color: #a0a;
+        font-size: 15px;
+        color: #fff;
+        padding: 10px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 0.3em;
     }
 }
