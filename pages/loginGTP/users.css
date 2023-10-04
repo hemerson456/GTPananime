@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #000;/*remove*/
+    background-image: url('assets.users/fondoprincipal-min.gif'); /*remove*/
+    width: 100vw;
+    background-size: cover;/*remove*/
+    transition: all 1.2s;
+    background-attachment: fixed; /*remove*/
+    display: flex;
+    background-position: center center; 
+}
+
+body::-webkit-scrollbar {
+    width: 0; /* Ancho de la barra de desplazamiento */
+    }
+    
+body::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Fondo transparente para la barra de desplazamiento */
+    border: none; /* Sin borde */
+}
+
+form{
+    width: 400px;
+    margin: auto;
+    border: 2px solid #ccc;
+    padding:  10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(to left, transparent,  #333, #111); 
+}
+
+
+
+input[type=text], input[type=password],input[type=email]{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+
+}
+
+input[type=text]:focus,input[type=password]:focus,input[type=email]:focus{
+    background-color: #aaa;
+}
+
+input[type=submit]{
+    border: none;
+    outline: none;
+    background-color: #a0a;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #f0f;
+}
+
+.section{
+    margin-bottom: 18px;
+}
+
+h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #c0c;
+    font-size: 32px;
+    font-weight: 800;
+    font-family: monospace;
+}
+
+h2:hover{
+    color: #f0f;
+}
+
+.title{
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #bbf;
+
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.button a{
+    display: flex;
+    text-decoration: none;
+    margin-top: 15px;
+    color: #bbf;
+    font-size: 16px;
+
+
+}
+.button a:hover{
+    color: #faf;
+}
+.h2-img{
+    height: 1.3em;
+    width: auto;
+    margin-right: 0.3em;
+}
+@media only screen and (max-width:900px){
+    form{
+        width: 320px;
+        margin: auto;
+        border: 2px solid #ccc;
+        padding:  5px 10px;
+        border-radius: 8px;
+        background: linear-gradient(to left, transparent,  #333, #111); 
+    }
+    .section{
+        margin-bottom: 10px;
+    }
+}

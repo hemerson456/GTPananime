@@ -41,7 +41,7 @@ border: none; /* Sin borde */
 
 .header__nav {
     display: flex;
-    width: 100%;
+    width: 99%;
     background: transparent;
     align-items: center;
 }
@@ -776,17 +776,23 @@ img.logo-anime {
         background: transparent;
         color: #666;
     }
-    .header__nav-ul2 {
+    .header__nav-ul2{
+        display: none;
+    }
+    .header__nav-ul3 {
+        display: flex;
+        flex-direction: column;
         background: #111;       
         color: transparent;
-        margin-top: -20em;
         position: relative;
         z-index: 1000;
+        margin-top: 11em;
         transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
         padding: 10px;
         border-radius: 10px 0 10px 10px;
 
     }
+    
     .header__nav-li2 {
         background: transparent;
         color: transparent;
@@ -811,12 +817,7 @@ img.logo-anime {
         background: transparent;
         margin: 0 0.5em;
     }
-    .header__nav2:hover > ul.header__nav-ul2{
-        margin-top: 11em;
-        margin-right: 0;
-        
-    }
-    
+
     .container {
         grid-template-columns:  none
     }
@@ -1023,13 +1024,13 @@ img.logo-anime {
 }
 @media only screen and (max-width:400px){
 
-   .header__nav-ul2 {
+   .header__nav-ul3{
     display: flex;
     flex-direction: column;
     width: 100%;
     background: #111;       
     color: transparent;
-    margin-top: -25em;
+    margin-top: 10em;
     position: relative;
     z-index: 1000;
     transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
@@ -1050,11 +1051,6 @@ img.logo-anime {
 
     .header__nav-li2{
         line-height: 1.8;
-    }
-    .header__nav2:hover > ul.header__nav-ul2{
-        margin-top: 10em;
-        margin-right: 0;
-        
     }
 
 }

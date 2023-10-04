@@ -66,3 +66,8 @@ function funcion(){
     let element = document.getElementById("list2");
     element.classList.toggle("act_style");
 }
+
+function hamburguesa(){
+    let element = document.getElementById("deslizar");
+    element.classList.toggle("header__nav-ul3");
+}

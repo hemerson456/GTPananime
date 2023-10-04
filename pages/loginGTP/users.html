@@ -1,0 +1,41 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="users.css">
+        <meta name="keywords" content="login, gtpanime, kudasia, facebook, reddit, twitter,jkananime,anime">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" href="assets.users/logohead3.png" type="image/x-icon">
+        <script src="app.js"></script>
+    </head>
+    <body onclick="PlayAudio()"> 
+        <form action="/authenticate" method="POST">
+            <h2>Login<img src="assets.users/logo_copy_V2.0.png" class="h2-img"></h2>
+            <section class="section">
+                <div class="title">Username</div>
+                <div class="field block"><input type="text" id="username" name="username" ></div>
+            </section>
+
+            <section class="section">
+                <div class="title">Password</div>
+                <div class="field"><input type="password" id="password" name="password"></div>
+            </section>
+
+            <section class="section botones">
+                <div class="button" ><input type="submit" value="Login"></div>
+                <div class="button"><a href="register.html">Registrarse</a></div>
+            </section>
+        </form>
+
+        <audio id="musica1" loop >
+            <source src="assets.users/fondousers.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+        
+        
+    </body>
+</html>
