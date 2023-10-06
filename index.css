@@ -355,7 +355,16 @@ img.logo-anime {
     transform: rotate(-90deg);
 }
 
+#flecha{
+    transition: all 500ms;
+}
+
+#flechas{
+    transition: all 500ms;
+}
+
 .arrow{
+    transition: all 500ms;
     transform: rotate(0deg);
 }
 .etiquetas__button-reproductor{
