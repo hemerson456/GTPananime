@@ -307,6 +307,20 @@ img.logo-anime {
 .anime-li a img.second11 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_boku-no-kokoro-no-yabai-19-1536x864.jpg');
 }
+.anime-li a img.second12 {
+    background-image: url('assets/tatenoyusha.png');
+}
+
+
+/*titles modificaciones*/
+.title12{
+    margin: -1.7em 0 0 0;
+}
+
+
+
+/*titles modificaciones*/
+
 /*********************************copiar***********************************************************/
 
 /* etiquetas filt*/
@@ -1089,7 +1103,11 @@ img.logo-anime {
         margin: -2.7em 0 0 0;
     }
 }
-
+@media only screen and (max-width:340px){
+    .title12{
+        margin: -2.7em 0 0 0;
+    }
+}
 
 /*listas de animes modificacion de letras responsive*/
 

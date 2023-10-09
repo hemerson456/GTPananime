@@ -20,11 +20,12 @@ transition: all 1.2s;
     overflow-y: scroll;
 overflow-x: hidden;
 background-color: #000;/*remove*/
-background-image: url('assets.anime/fondoanime.gif'); /*remove*/
+background-image: url('assets.anime/tatenoyusha.png'); /*remove*/
 width: 100vw;
 background-size: cover;/*remove*/
 background-attachment: fixed; /*remove*/
 transition: all 1.2s;
+background-position: center center; 
 }
 
 
@@ -232,7 +233,7 @@ h1{
     font-size: 1em;
     color: #fff;
     font-weight: 100;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 .contenedor1__description-block1{
@@ -243,11 +244,11 @@ h1{
 
 .contenedor1__description-datos{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-evenly;
     margin: 1em 0;
     background: transparent;
-    font-size: 1.3em;
+    font-size: 1em;
 
 }
 .contenedor1__datos span.autors{
@@ -258,7 +259,7 @@ h1{
 }
 
 .contenedor1__datos span.number{
-    color: #dcd;
+    color: #ede;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2em;
     font-weight: 600;
@@ -418,8 +419,8 @@ h1{
 
 .contenedor2{/*fondoprincipalpara aside*/
     width: 100%;
-    height: 440px;
-    background-image: url('https://i.pinimg.com/originals/f2/76/75/f2767594af8e72dca8c996038a546949.gif');
+    max-height: 580px;
+    background-image: url('https://64.media.tumblr.com/976f0b63467bb36a255547e599e83c31/tumblr_plfr98sthc1v6bs4yo1_r1_400.gif');
     background-size: cover;/*remove*/
     display: flex;
     background-position: center center; 
@@ -573,8 +574,10 @@ h1{
     }
 }
 
+
+
 @media only screen and (min-width:841px){
-    footer{
+    .footer{
         height: 3em; /* Altura de 6em */
         width: 100%; /* Ancho del 100% */
         position: fixed; /* Establece una posición fija */
@@ -584,6 +587,17 @@ h1{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+}
+
+@media only screen and (max-width:950px){
+    .active_footers{
+        position: static !important;
+    }
+    .contenedor1__reproductor {
+        margin-bottom: 0.5em;
+        padding: 0;
     }
 
 }
@@ -745,13 +759,16 @@ h1{
 
 
     .contenedor1__episodes{
-        width: 80%;
+        width: 100%;
     }
+    .contenedor1__episodes-ul{
+        width: 100vw;
+    } 
 
     .contenedor2{/*fondoprincipalpara aside*/
         width: 100%;
-        height: 10em;
-        background-image: url('https://i.pinimg.com/originals/f2/76/75/f2767594af8e72dca8c996038a546949.gif');
+        height: 15em;
+        background-image: url('https://media.tenor.com/Jv5d_ydj1SIAAAAC/raphtalia-hug.gif');
         background-size: cover;/*remove*/
         display: flex;
         background-position: center center; 
@@ -785,6 +802,7 @@ h1{
     .contenedor1__reproductor-episodes{
         width: 90%;
     }
+    
 
     
 }
@@ -856,4 +874,10 @@ h1{
         height: 20px;
      }
 
+}
+
+@media only screen and (min-width:950px){
+    .contenedor1__episodes{
+        margin-top: 3em;
+    }
 }

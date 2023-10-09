@@ -17,6 +17,11 @@ function background() {
     element.classList.toggle("active_background");
 }
 
+function footer() {
+    let element = document.getElementById("footers")
+    element.classList.toggle("active_footers");
+}
+
 /*function cap1(){
     let element = document.getElementById("capitulo1")
     element.classList.toggle("repro_capitulos");
