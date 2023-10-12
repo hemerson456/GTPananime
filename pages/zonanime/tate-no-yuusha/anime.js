@@ -34,6 +34,10 @@ function episodes() {
     let element = document.getElementById("episodes")
     element.classList.toggle("active_episodes");
 }
+function lateralimg(){
+    let element = document.getElementById("lateral")
+    element.classList.toggle("block_lateral");
+}
 
 /*function cap1(){
     let element = document.getElementById("capitulo1")
