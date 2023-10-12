@@ -14,18 +14,22 @@ width: 100vw;
 background-size: cover;/*remove*/
 background-attachment: fixed; /*remove*/
 transition: all 1.2s;
-
+display: flex;
+flex-direction: column;
+min-height: 100vh;
 }
+
 .active_background{
     overflow-y: scroll;
 overflow-x: hidden;
 background-color: #000;/*remove*/
-background-image: url('assets.anime/tatenoyusha.png'); /*remove*/
+background-image: url('assets.anime/tatenoyusha.webp'); /*remove*/
 width: 100vw;
 background-size: cover;/*remove*/
 background-attachment: fixed; /*remove*/
 transition: all 1.2s;
 background-position: center center; 
+min-height: 100vh;
 }
 
 
@@ -162,14 +166,29 @@ img.logo-anime {
 
 .main{
     display: grid;
-    width: 1fr;
+    width: 100%;
     grid-template-columns: 0.8fr 0.2fr;
     background: linear-gradient(to bottom, transparent,black, #111,transparent, transparent);
+    align-items: start;
 }
+
+
+/*modificacion activa del main con el click de imagen osea le doy el fondo semi transparente y ademas tambien aplico 100%*/
+.active_principal{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(1, 1, 1, 0.0), rgba(1, 1, 1, 0.8),rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.0));
+    transition: all 1.5s;
+}
+/*modificacion activa del main con el click de imagen osea le doy el fondo semi transparente y ademas tambien aplico 100%*/
+
+
+
 
 @media only screen and (min-width:950px) and (max-width:1440px){
     .main{
-       margin-bottom: 3em;
+       margin-bottom: 1em;
     }
 }
 
@@ -196,8 +215,38 @@ main{
     padding: 10px;
     background: transparent;
     overflow: hidden;
-    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    border-radius: 10px;
 }
+
+/*activo para desaparecer la imagen lateral*/
+.active_lateral{ 
+    display: none !important;
+}
+/*activo para desaparecer la imagen lateral*/
+
+
+
+/*modificando tamaño para el contenedor imagen lateral*/
+ @media only screen and (max-width:1340px){
+    .contenedor2{
+        min-height: 450px!important;
+    }
+ }   
+ @media only screen and (max-width:1060px){
+    .contenedor2{
+        min-height: 480px!important;
+    }
+ }  
+/*modificando tamaño para el contenedor imagen lateral*/
+
+
+
+
+
+
+
+
 
 .contenedor1__description{
     display: flex;
@@ -396,6 +445,15 @@ h1{
     width: 80%;
 }
 
+/*.contenedor1__episodes equivalente hace que sea el 100% activado*/
+
+.active_episodes{
+    width: 100%  !important;
+}
+/*.contenedor1__episodes equivalente hace que sea el 100% activado*/
+
+
+
 .contenedor1__episodes-li{
     outline: 2px solid #333;
     background: #C13584;
@@ -424,6 +482,7 @@ h1{
     background-size: cover;/*remove*/
     display: flex;
     background-position: center center; 
+    min-height: 410px;
 }
 
 @media only screen and (min-width:2387px){
@@ -580,13 +639,13 @@ h1{
     .footer{
         height: 3em; /* Altura de 6em */
         width: 100%; /* Ancho del 100% */
-        position: fixed; /* Establece una posición fija */
         bottom: 0; /* Coloca el footer en la parte inferior de la ventana */
         background-color: #000; /* Cambia el color de fondo según tus preferencias */
         color: #fff; /* Cambia el color de texto según tus preferencias */
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: auto;
     }
 
 }
@@ -611,10 +670,28 @@ h1{
 
 .repro_capitulos{
     display: flex;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     padding: 5px;
     background: linear-gradient(to bottom, transparent,black, #111, transparent);
+    justify-content: center;
 }
+}
+@media only screen and (min-width:1800px){
+    .contenedor1__reproductor-episodes{
+        width: 40%;
+    }
+    .contenedor1__episodes{
+        width: 90vw;
+    }
+    .contenedor2{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width:2400px){
+    .contenedor2{
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width:400px){
@@ -785,8 +862,7 @@ h1{
         justify-content: center;
         align-items: center;
         font-size: 0.9em;
-        position: none;
-        margin-top: 1em;
+        margin-top: auto;
     }
     
     .repro_capitulos{

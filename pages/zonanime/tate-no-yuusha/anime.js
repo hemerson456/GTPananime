@@ -22,6 +22,19 @@ function footer() {
     element.classList.toggle("active_footers");
 }
 
+function laterals() {
+    let element = document.getElementById("lateral")
+    element.classList.toggle("active_lateral");
+}
+function main() {
+    let element = document.getElementById("principal")
+    element.classList.toggle("active_principal");
+}
+function episodes() {
+    let element = document.getElementById("episodes")
+    element.classList.toggle("active_episodes");
+}
+
 /*function cap1(){
     let element = document.getElementById("capitulo1")
     element.classList.toggle("repro_capitulos");
