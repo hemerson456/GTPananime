@@ -415,12 +415,12 @@ h1{
     justify-content: center;
     align-items: center;
     background: #C13584;
+    outline: 2px solid #C13584 !important;
     padding: 5px;
     border-radius: 5px;
     font-size: 1em;
     color: #ccc;
-    border: none;
-    outline: 2px solid #C13584;
+    border: none !important;
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     animation: colores s linear infinite;
@@ -429,7 +429,7 @@ h1{
 .contenedor1__episodes-h2:hover{
     background: #c0c;
     color: #fdf;
-    outline: 2px solid #c0c;
+    outline: 2px solid #c0c !important;
 }
 
 
