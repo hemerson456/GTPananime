@@ -417,18 +417,23 @@ h1{
     background: #C13584;
     padding: 5px;
     border-radius: 5px;
-    font-size: 0.9em;
+    font-size: 1em;
+    color: #ccc;
+    border: none;
+    outline: 2px solid #C13584;
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    animation: colores 5s linear infinite;
+    animation: colores s linear infinite;
     
 }
-
-@keyframes colores{
-    0%{
-
-    }
+.contenedor1__episodes-h2:hover{
+    background: #c0c;
+    color: #fdf;
+    outline: 2px solid #c0c;
 }
+
+
+
 
 .contenedor1__episodes-ul{
     display: none;
@@ -455,7 +460,7 @@ h1{
 
 
 .contenedor1__episodes-li{
-    outline: 2px solid #333;
+    outline: 2px solid #C13584;
     background: #C13584;
     font-size: 1.2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
@@ -713,7 +718,7 @@ h1{
 
 
     .contenedor1__episodes-li{
-      outline: 2px solid #333;
+      outline: 2px solid #C13584;
       background: #C13584;
       font-size: 1.2em;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
