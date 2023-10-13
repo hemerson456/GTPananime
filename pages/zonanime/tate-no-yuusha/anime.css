@@ -401,15 +401,15 @@ h1{
     background: linear-gradient(135deg, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FFDC80);
 }
 
-.reddit{
+.twitter{
     width: 3em;
     height: 3em;
 }
-.contenedor-reddit{
-    background: linear-gradient(to bottom, #FF4500, #FF6347);
+.contenedor-twitter{
+    background: #000;
     margin-right: 0em;
     border: 2px solid #111;
-    animation: borders 4s linear infinite; 
+    animation: borders 5s linear infinite; 
 }
 
 @keyframes borders {
@@ -420,13 +420,13 @@ h1{
         border-color: #666;
     }
     50%{
-        border-color: #aaa;
+        border-color: #111;
     }
     75%{
-        border-color: #fff;
+        border-color: #666;
     }
     100%{
-        border-color:#aaa ;
+        border-color:#111 ;
     }
 
 }
@@ -985,7 +985,7 @@ h1{
 
         }
 
-    .contenedor-reddit {
+    .contenedor-twitter {
             margin-right: 0;
     }    
     .active_capitulos{
