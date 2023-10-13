@@ -314,6 +314,10 @@ img.logo-anime {
     background-image: url('assets/tatenoyusha.png');
 }
 
+.anime-li a img.second13{
+    background-image: url('https://pbs.twimg.com/media/E-39pcBWYAAZ0i4.jpg');
+}
+
 
 /*titles modificaciones*/
 .title12{

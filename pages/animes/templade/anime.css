@@ -618,25 +618,13 @@ h1{
     display: none;
 }
 
-
-/*capitulos img*/
 .ca1{
     display: none;
 }
-.ca2{
-    display: none;
-}
-/*capitulos img*/
 
-/*capitulos video iframe*/
 .capi1{
     display: flex !important;
 }
-.capi2{
-    display: flex !important;
-}
-
-/*capitulos video iframe*/
 
 .repro_capitulos{
     flex-direction: row;
