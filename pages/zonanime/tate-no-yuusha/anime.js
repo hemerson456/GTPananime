@@ -38,6 +38,23 @@ function lateralimg(){
     let element = document.getElementById("lateral")
     element.classList.toggle("block_lateral");
 }
+function lateralimg(){
+    let element = document.getElementById("lateral")
+    element.classList.toggle("block_lateral");
+}
+function anime(){
+    let element = document.getElementById("titulo_anime")
+    element.classList.toggle("modi_title-anime");
+}
+function buttonr(){
+    let element = document.getElementById("miCheckbox")
+    element.classList.toggle("active1");
+}
+
+function buttons(){
+    let element = document.getElementById("miCheckbox2")
+    element.classList.toggle("active2");
+}
 
 /*function cap1(){
     let element = document.getElementById("capitulo1")
