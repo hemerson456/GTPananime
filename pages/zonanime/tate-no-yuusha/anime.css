@@ -150,8 +150,6 @@ img.logo-anime {
 }
 .contenedor-anime-h2 a {
     text-decoration: none;
-    color: #fff;
-    font-family: monospace;
 }
 
 .contenedor-anime-h2 a img{
@@ -159,6 +157,17 @@ img.logo-anime {
     width: 100%;
 }
 
+.zonanime2{
+    display: none;
+}
+
+.zonanime3{
+    display: flex;
+}
+
+.zonanime1{
+    display: none;
+}
 /**********/
 
 .crearcomunity-barras{

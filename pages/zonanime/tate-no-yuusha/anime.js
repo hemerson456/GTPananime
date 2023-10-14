@@ -56,6 +56,20 @@ function buttons(){
     element.classList.toggle("active2");
 }
 
+
+/*imagen ge tu zoinanime*/
+function sun(){
+    let element = document.getElementById("activetu")
+    element.classList.toggle("zonanime3");
+}
+function nigth(){
+    let element = document.getElementById("activeti")
+    element.classList.toggle("zonanime1");
+}
+/*imagen ge tu zoinanime*/
+
+
+
 /*function cap1(){
     let element = document.getElementById("capitulo1")
     element.classList.toggle("repro_capitulos");

@@ -25,7 +25,7 @@ min-height: 100vh;
     overflow-y: scroll;
 overflow-x: hidden;
 background-color: #000;/*remove*/
-background-image: url('https://pbs.twimg.com/media/E-39pcBWYAAZ0i4.jpg'); /*remove*/
+background-image: url('assets.anime/backgroundtokyo.jpg'); /*remove*/
 width: 100vw;
 background-size: cover;/*remove*/
 background-attachment: fixed; /*remove*/
@@ -157,6 +157,18 @@ img.logo-anime {
 .contenedor-anime-h2 a img{
     height: 2.5em;
     width: 100%;
+}
+
+.zonanime2{
+    display: none;
+}
+
+.zonanime3{
+    display: flex;
+}
+
+.zonanime1{
+    display: none;
 }
 
 /**********/
@@ -531,7 +543,7 @@ h1{
 .contenedor2{/*fondoprincipalpara aside*/
     width: 100%;
     max-height: 580px;
-    background-image: url('assets.anime/tatenoyusha.gif');
+    background-image: url('assets.anime/izana.gif');
     background-size: cover;/*remove*/
     display: flex;
     background-position: center center; 
@@ -618,13 +630,28 @@ h1{
     display: none;
 }
 
+
+/*imagenes de fondo de proximamente*/
 .ca1{
     display: none;
 }
+.ca2{
+    display: none;
+}
+/*imagenes de fondo de proximamente*/
 
+
+/*video de iframe puqe ya esta subido darle al capitulo flex*/
 .capi1{
     display: flex !important;
 }
+.capi2{
+    display: flex !important;
+}
+
+/*video de iframe puqe ya esta subido darle al capitulo flex*/
+
+
 
 .repro_capitulos{
     flex-direction: row;
@@ -909,7 +936,7 @@ h1{
 
     .contenedor2{/*fondoprincipalpara aside*/
         width: 100%;
-        background-image: url('assets.anime/tatenoyusha.webp');
+        background-image: url('assets.anime/izanakisaki.gif');
         background-size: cover;/*remove*/
         display: flex;
         background-position: center center; 
