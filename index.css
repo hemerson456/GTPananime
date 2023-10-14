@@ -318,6 +318,9 @@ img.logo-anime {
     background-image: url('https://pbs.twimg.com/media/E-39pcBWYAAZ0i4.jpg');
 }
 
+.anime-li a img.second14{
+    background-image: url('assets/duokanojo.jpg');
+}
 
 /*titles modificaciones*/
 .title12{
