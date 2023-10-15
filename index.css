@@ -322,6 +322,10 @@ img.logo-anime {
     background-image: url('assets/duokanojo.jpg');
 }
 
+.anime-li a img.second15{
+    background-image: url('assets/background.jpg');
+}
+
 /*titles modificaciones*/
 .title12{
     margin: -1.7em 0 0 0;
