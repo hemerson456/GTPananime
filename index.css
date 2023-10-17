@@ -439,7 +439,7 @@ img.logo-anime {
     justify-content: space-between;
     background: #b0b;
     cursor: pointer;
-    border: 1px solid #a0a;
+    border: none;
 }
 
 .etiquetas__button-foros{
