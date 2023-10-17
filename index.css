@@ -9,8 +9,8 @@
 body{
 overflow-y: scroll;
 overflow-x: hidden;
-background-color: #000;/*remove*/
-background-image: url('assets/fondoprincipal-min.gif'); /*remove*/
+background-color: #050005ff;/*remove*/
+/*background-image: url(''); /*remove*/
 width: 100vw;
 background-size: cover;/*remove*/
 background-attachment: fixed; /*remove*/
@@ -29,7 +29,9 @@ border: none; /* Sin borde */
 }
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Kanit:ital,wght@0,100;0,200;1,300&family=Lobster&family=Martian+Mono:wght@800&family=Skranji:wght@400;700&display=swap');
 
-
+header{
+    background: #717;
+}
 
 .headers {
     background: transparent;
@@ -120,13 +122,67 @@ img.logo-anime {
 .container {
     display: grid;
     width: 100vw;
-    grid-template-columns: 0.8fr 2.5fr 1fr;
+    grid-template-columns: 3fr 0.5fr;
+}
+
+
+
+/*rotacion de imagenes*/
+.container-etiquetas{
+    width: 100%; 
+    min-height: 325px; 
+     background-image: url('https://media.discordapp.net/attachments/1162976210440163429/1163209905549881344/1.png?ex=653ebea4&is=652c49a4&hm=74a114e…&=&width=960&height=366');
+    background-repeat: no-repeat; 
+     background-position: center; 
+     margin-top: 0;/*poner1 si es necesario*/
+     animation: image 150s linear infinite;
+
+}
+
+@keyframes image{
+    0% {/*repetir con el 100% la misma imagen para que la transicion no sea fuerte*/
+        background-image: url('https://media.discordapp.net/attachments/1162976210440163429/1163209905549881344/1.png?ex=653ebea4&is=652c49a4&hm=74a114e…&=&width=960&height=366');
+        /*background-size: contain;*/
+    } 
+    15% {
+        background-image: url('assets/fondoprincipal-min.gif');
+       /* background-size: cover;*/
+    }
+    30%{
+        background-image: url('assets/tatenoyusha.png');
+        /*background-size: contain;*/
+    }
+    50%{
+        background-image: url('pages/zonanime/tokyo-revengers3/assets.anime/izanakisaki.gif');
+       /* background-size: cover;*/
+    }
+    72%{
+        background-image: url('pages/zonanime/kanojo-mo-kanojo2/assets.anime/kanojomokanojo2.jpg');
+        /* background-size: cover;*/
+    }
+    92%{
+        background-image: url('pages/zonanime/Berserk-of-Gluttony/assets.anime/berserck2.jpg')
+    }
+    100% {/*repetir con el 100% la misma imagen para que la transicion no sea fuerte*/
+        background-image: url('https://media.discordapp.net/attachments/1162976210440163429/1163209905549881344/1.png?ex=653ebea4&is=652c49a4&hm=74a114e…&=&width=960&height=366');
+       /*background-size: contain;*/
+    }
+}
+
+/*rotacion de imagenes*/
+
+
+
+
+.container-global{
+    margin-top: 3em;
 }
 
 .container1 {
     padding: 10px;
     background: #666;
 }
+
 .anime {
     display: grid;
 }
@@ -143,6 +199,7 @@ img.logo-anime {
     align-items: center;
     margin-top: -10px;
 }
+
 #tendencia {
     color: #fff;
     font-family: 'Martian Mono', monospace;
@@ -338,11 +395,26 @@ img.logo-anime {
 /*********************************copiar***********************************************************/
 
 /* etiquetas filt*/
+
+.container-buscadores{
+    width: 100vw;
+    height: 380px;
+    display: flex;
+}
+
 .blocketiquetas{
     padding: 0;
     background-color: transparent;
-    
-    
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0; 
+    margin-bottom:0;
+    background-size: cover;  
+    height: 100%;
+    padding: 2.5em 0 0.5em 0;
+    transition: all 1.5s;  
+    background: linear-gradient(to top, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0.4),rgba(1, 1, 1, 0.6), rgba(1, 1, 1, 0.0), rgba(1, 1, 1, 0.0));
 }
 
 .etiquetas {
@@ -351,9 +423,7 @@ img.logo-anime {
     background: transparent;
     width: 100%;
     padding: 0;
-    justify-content: center;
-    margin-top: 3.5em;
-    margin-bottom: 1.5em;
+    justify-content: end;
     flex-direction: column;
     
     
@@ -469,7 +539,10 @@ img.logo-anime {
 
 .act_style{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3em;
     padding: 0;
     background-color: transparent;
     align-items: center; 
@@ -479,7 +552,7 @@ img.logo-anime {
     -o-transition: 1.2s;
 }
 .category_item{
-    width: 9.5em;
+    width: 8.9em;
     background-color: #111;
     text-decoration: none;
     text-align: center;
@@ -489,6 +562,11 @@ img.logo-anime {
     border-radius: 10px;
     padding: 5px;
     font-family: 'Martian Mono', monospace;
+    font-size: 0.9em;
+}
+
+.category_item:hover{
+    background-color: #b5b;
 }
 
 .category_items{
@@ -522,7 +600,7 @@ img.logo-anime {
 .news {
     width: 98%;
     background: transparent;
-    outline: 2px solid #aaa;
+    outline: 1px solid #aaa;
     margin-top: 3em;
     border-radius: 5px;
     background-color: #111;
@@ -576,14 +654,15 @@ img.logo-anime {
 .news-container_button {
     display: flex;
     justify-content: center;
-    width: 88%;
+    width: 10em;
     color: #aaa;
     padding: 0.2em 0;
     font-size: 1.1em;
     border: none;
-    outline: 2px solid #aaa;
+    outline: 2px solid #a4a;
     border-radius: 10px;
     background: #a0a;
+    font-family: 'Martian Mono', monospace;
 
 }
 .news-container_buttons:hover > .news-container_button {
@@ -596,7 +675,7 @@ img.logo-anime {
 .crearcomunity{
     width: 98%;
     background: transparent;
-    outline: 2px solid #aaa;
+    outline: 1px solid #aaa;
     margin-top: 1.5em;
     border-radius: 5px;
     background-color: #111;
@@ -659,6 +738,13 @@ img.logo-anime {
     overflow: hidden;
 }
 
+.crearcomunity-botones{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .crearcomunity-buttons{
     display: grid;
     justify-items: center;
@@ -666,6 +752,8 @@ img.logo-anime {
     background-color: transparent;
     transition: all 1.5s;
 }
+
+
 .box2{
     margin: 0 0 0.5em 0;
 }
@@ -673,14 +761,15 @@ img.logo-anime {
 .crearcomunity-button{
     display: flex;
     justify-content: center;
-    width: 88%;
+    width: 10em;
     color: #aaa;
     padding: 0.2em 0;
     font-size: 1.1em;
     border: none;
-    outline: 2px solid #aaa;
+    outline: 2px solid #a4a;
     border-radius: 10px;
     background: #a0a;
+    font-family: 'Martian Mono', monospace;
 }
 
 .crearcomunity-buttons:hover > .crearcomunity-button {
@@ -692,7 +781,7 @@ img.logo-anime {
 /*póliticas*/
 .users{
     width: 98%;
-    outline: 2px solid #aaa;
+    outline: 1px solid #aaa;
     margin-top: 1.5em;
     border-radius: 5px;
     background-color: #111;
@@ -936,11 +1025,13 @@ img.logo-anime {
         width: 100%;
         padding: 0;
         justify-content: center;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
         flex-direction: column;
         
         
+    }
+    .blocketiquetas{
+        display: flex;
+        align-items: end;
     }
 
     .etiquetas_list{
@@ -957,17 +1048,13 @@ img.logo-anime {
 
     .act_style{
         display: flex;
-        flex-direction: column;
-        padding: 0;
-        background-color: transparent;
         align-items: center; 
-        flex-direction: column;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
         padding: 0;
         background-color: transparent;    
-        outline: 1px solid #ccc; 
+        outline: none; 
         transition: all 1.2s;
         -webkit-transition: 1.2s;
         -moz-transition: 1.2s;
@@ -975,7 +1062,7 @@ img.logo-anime {
     }
 
     .category_item{
-        width: 9.5em;
+        width: 8.8em;
         background-color: #111;
         text-decoration: none;
         text-align: center;
@@ -985,11 +1072,16 @@ img.logo-anime {
         border-radius: 10px;
         padding: 5px;
         font-family: 'Martian Mono', monospace;
+        font-size: 0.77em;
 
     }
     /*responsibe etiqueta*/
     .My-Heart{
         margin: -2.5em 0 0 0;
+    }
+
+    .crearcomunity-button{
+      width: 10em;
     }
 
     
@@ -1040,8 +1132,63 @@ img.logo-anime {
     .My-Heart{
         margin: -2.7em 0 0 0;
     }
-    
+    .container-etiquetas{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    }
+    .container-buscadores{
+      height: 100%;
+    }
+    .blocketiquetas{
+        padding: 0;
+        flex-direction: column;
+    }
 }
+
+
+
+
+
+/*modificador de la imagen de fondo animado*/
+ @media only screen and (min-width:846px) {
+    .container-etiquetas{
+        background-size: contain;
+    }
+ }
+
+ @media only screen and (min-width:560px) and (max-width:846px){
+    .container-etiquetas{
+        background-size: cover;
+    }
+ }
+ @media only screen and (max-width:846px){
+    .container-etiquetas{
+        background-position: center;
+    }
+ }
+
+ @media only screen and (max-width:558px){
+    .container-etiquetas{
+        justify-content: center;
+        align-items: center;
+        min-height: 380px;
+        background-size: cover;
+        background-position: unset;
+        animation: none;/*modificar si quiero animacion para mobile*/
+    }
+    .blocketiquetas{
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+ }
+/*modificador de la imagen de fondo animado*/
+
+
+
+
+
 @media only screen and (max-width:544px){
     .Jujutsu{
         margin: -2.7em 0 0 0;
