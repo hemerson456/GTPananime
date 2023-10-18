@@ -30,7 +30,7 @@ border: none; /* Sin borde */
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Kanit:ital,wght@0,100;0,200;1,300&family=Lobster&family=Martian+Mono:wght@800&family=Skranji:wght@400;700&display=swap');
 
 header{
-    background: #717;
+    background: #641164;
 }
 
 .headers {
@@ -62,13 +62,12 @@ header{
 }
 
 .header__nav-li a {
-    background: transparent;
     text-decoration: none;
     font-family: monospace;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #fff;
     background: transparent;
-    outline: 2px solid #000;
+    outline: 2px solid #641164;
     outline-offset: 5px;
     border-radius: 2px;
     animation: giraBorde 5s linear infinite;
@@ -77,19 +76,19 @@ header{
 
 @keyframes giraBorde {
     0% {
-        outline-color: #000;
+        outline-color: #641164;
     }
     20% {
         outline-color: #aaa;
     }
     40%{
-        outline-color: #000;
+        outline-color: #641164;
     }
     60%{
         outline-color: #aaa;
     }
     80%{
-        outline-color: #000;
+        outline-color: #641164;
     }
     100%{
         outline-color: #aaa;
@@ -131,42 +130,44 @@ img.logo-anime {
 .container-etiquetas{
     width: 100%; 
     min-height: 325px; 
-     background-image: url('https://media.discordapp.net/attachments/1162976210440163429/1163209905549881344/1.png?ex=653ebea4&is=652c49a4&hm=74a114e…&=&width=960&height=366');
+    background-image: url('https://media.discordapp.net/attachments/1162976210440163429/1163209905549881344/1.png?ex=653ebea4&is=652c49a4&hm=74a114e…&=&width=960&height=366');
     background-repeat: no-repeat; 
-     background-position: center; 
-     margin-top: 0;/*poner1 si es necesario*/
-     animation: image 150s linear infinite;
+    background-position: center; 
+    margin-top: 0;/*poner1 si es necesario*/
+    animation: image 24s step-end infinite;
 
 }
 
 @keyframes image{
-    0% {/*repetir con el 100% la misma imagen para que la transicion no sea fuerte*/
+    0% {
         background-image: url('https://media.discordapp.net/attachments/1162976210440163429/1163209905549881344/1.png?ex=653ebea4&is=652c49a4&hm=74a114e…&=&width=960&height=366');
-        /*background-size: contain;*/
+        /*suicide hunter*/
     } 
-    15% {
-        background-image: url('assets/fondoprincipal-min.gif');
-       /* background-size: cover;*/
+    17% {
+        background-image: url('https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=85&ImageId=%276894495%27&EntityType=%27Item%27&EntityId=%27411391%27&Width=1920&Height=1080');
+       /* antiguo fondo*/
     }
-    30%{
-        background-image: url('assets/tatenoyusha.png');
-        /*background-size: contain;*/
+    34%{
+        background-image: url('https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/10/03/the-rising-of-the-shield-hero-season-3.jpeg');
+        /*tate no yusha*/
     }
-    50%{
-        background-image: url('pages/zonanime/tokyo-revengers3/assets.anime/izanakisaki.gif');
-       /* background-size: cover;*/
+    51%{
+        background-image: url('https://i.blogs.es/fd7113/f5v4z0ca4aacjzg/840_560.jpeg');
+       /* tokyo revengers*/
     }
-    72%{
-        background-image: url('pages/zonanime/kanojo-mo-kanojo2/assets.anime/kanojomokanojo2.jpg');
-        /* background-size: cover;*/
+    68%{
+        background-image: url('https://animeargentina.net/wp-content/uploads/2023/07/kanokano-poster.png');
+        /*kanojomokanojo*/
     }
-    92%{
-        background-image: url('pages/zonanime/Berserk-of-Gluttony/assets.anime/berserck2.jpg')
+    85%{
+        background-image: url('https://www.manga-news.com/public/2021/news_03/extrait-berserk-of-gluttony.jpg')
+         /*berserk*/
     }
-    100% {/*repetir con el 100% la misma imagen para que la transicion no sea fuerte*/
-        background-image: url('https://media.discordapp.net/attachments/1162976210440163429/1163209905549881344/1.png?ex=653ebea4&is=652c49a4&hm=74a114e…&=&width=960&height=366');
-       /*background-size: contain;*/
+    100%{
+        background-image: url('https://media.discordapp.net/attachments/1162976210440163429/1163209905549881344/1.png?ex=653ebea4&is=652c49a4&hm=74a114e…&=&width=960&height=366')
+         /*lo mismo que el inicio*/
     }
+    
 }
 
 /*rotacion de imagenes*/
@@ -414,7 +415,7 @@ img.logo-anime {
     height: 100%;
     padding: 2.5em 0 0.5em 0;
     transition: all 1.5s;  
-    background: linear-gradient(to top, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0.4),rgba(1, 1, 1, 0.6), rgba(1, 1, 1, 0.0), rgba(1, 1, 1, 0.0));
+    background: linear-gradient(to top, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0.4),rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0.0));
 }
 
 .etiquetas {
@@ -499,10 +500,10 @@ img.logo-anime {
 }
 @keyframes textColorChange {
     0% {
-      color: #666; 
+      color: #999; 
     }
     25% {
-      color: #aaa; 
+      color: #ccc; 
     }
     50% {
       color: #ddd; 
@@ -511,7 +512,7 @@ img.logo-anime {
       color: #fff;
     }
     100% {
-      color: #333; 
+      color: #bbb; 
     }
   }
 
@@ -918,7 +919,7 @@ img.logo-anime {
     .button i{
         font-size: 2em;
         background: transparent;
-        color: #666;
+        color: #ddd;
     }
     .header__nav-ul2{
         display: none;
