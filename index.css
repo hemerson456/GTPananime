@@ -134,6 +134,7 @@ img.logo-anime {
     background-repeat: no-repeat; 
     background-position: center; 
     margin-top: 0;/*poner1 si es necesario*/
+    cursor: pointer;
     animation: image 24s step-end infinite;
 
 }
@@ -160,7 +161,7 @@ img.logo-anime {
         /*kanojomokanojo*/
     }
     85%{
-        background-image: url('https://www.manga-news.com/public/2021/news_03/extrait-berserk-of-gluttony.jpg')
+        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5fb7d836-1124-43d9-937c-f365d9aeaa8b/dedwr5k-4bacd588-0697-442e-9816-a2a63c203596.png/v1/fill/w_1280,h_720,q_80,strp/berserk_of_gluttony_wallpaper_by_muztnafi_dedwr5k-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNWZiN2Q4MzYtMTEyNC00M2Q5LTkzN2MtZjM2NWQ5YWVhYThiXC9kZWR3cjVrLTRiYWNkNTg4LTA2OTctNDQyZS05ODE2LWEyYTYzYzIwMzU5Ni5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.j99rNO-C8Q65vLc8svbjJASqlE7ZYRHdq0SCrWhXGhE')
          /*berserk*/
     }
     100%{
@@ -432,7 +433,7 @@ img.logo-anime {
 /*foros*/
 .etiquetas__button{
     display: flex;
-    width: 14em;
+    width: 15em;
     background-color: transparent;
     margin-right: auto;
     margin-left: auto;
