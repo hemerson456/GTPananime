@@ -141,31 +141,31 @@ img.logo-anime {
 
 @keyframes image{
     0% {
-        background-image: url('https://media.discordapp.net/attachments/1162976210440163429/1163209905549881344/1.png?ex=653ebea4&is=652c49a4&hm=74a114e…&=&width=960&height=366');
+        background-image: url('assets/image-rotation/suicide-hunter.png');
         /*suicide hunter*/
     } 
     17% {
-        background-image: url('https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=85&ImageId=%276894495%27&EntityType=%27Item%27&EntityId=%27411391%27&Width=1920&Height=1080');
-       /* antiguo fondo*/
+        background-image: url('assets/image-rotation/Protocol-Rain.jpg');
+       /* protocol:rain*/
     }
     34%{
-        background-image: url('https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/10/03/the-rising-of-the-shield-hero-season-3.jpeg');
+        background-image: url('assets/image-rotation/tatenoyusha-season-3.avif');
         /*tate no yusha*/
     }
     51%{
-        background-image: url('https://i.blogs.es/fd7113/f5v4z0ca4aacjzg/840_560.jpeg');
+        background-image: url('assets/image-rotation/tenjiku.jpeg');
        /* tokyo revengers*/
     }
     68%{
-        background-image: url('https://animeargentina.net/wp-content/uploads/2023/07/kanokano-poster.png');
+        background-image: url('assets/image-rotation/kanokano2-poster.webp');
         /*kanojomokanojo*/
     }
     85%{
-        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5fb7d836-1124-43d9-937c-f365d9aeaa8b/dedwr5k-4bacd588-0697-442e-9816-a2a63c203596.png/v1/fill/w_1280,h_720,q_80,strp/berserk_of_gluttony_wallpaper_by_muztnafi_dedwr5k-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNWZiN2Q4MzYtMTEyNC00M2Q5LTkzN2MtZjM2NWQ5YWVhYThiXC9kZWR3cjVrLTRiYWNkNTg4LTA2OTctNDQyZS05ODE2LWEyYTYzYzIwMzU5Ni5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.j99rNO-C8Q65vLc8svbjJASqlE7ZYRHdq0SCrWhXGhE')
+        background-image: url('assets/image-rotation/berserk_of_gluttony.jpg')
          /*berserk*/
     }
     100%{
-        background-image: url('https://media.discordapp.net/attachments/1162976210440163429/1163209905549881344/1.png?ex=653ebea4&is=652c49a4&hm=74a114e…&=&width=960&height=366')
+        background-image: url('assets/image-rotation/suicide-hunter.png')
          /*lo mismo que el inicio*/
     }
     
@@ -370,20 +370,25 @@ img.logo-anime {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_boku-no-kokoro-no-yabai-19-1536x864.jpg');
 }
 .anime-li a img.second12 {
-    background-image: url('assets/tatenoyusha.png');
+    background-image: url('assets/image-rotation/tatenoyusha-season-3.avif');
 }
 
 .anime-li a img.second13{
-    background-image: url('https://pbs.twimg.com/media/E-39pcBWYAAZ0i4.jpg');
+    background-image: url('assets/image-rotation/tenjiku.jpeg');
 }
 
 .anime-li a img.second14{
-    background-image: url('assets/duokanojo.jpg');
+    background-image: url('assets/image-rotation/kanokano2-poster.webp');
 }
 
 .anime-li a img.second15{
-    background-image: url('assets/background.jpg');
+    background-image: url('assets/image-rotation/berserk_of_gluttony.jpg');
 }
+
+.anime-li a img.second16{
+    background-image: url('assets/image-rotation/Protocol-Rain.jpg');
+}
+
 
 /*titles modificaciones*/
 .title12{

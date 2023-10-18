@@ -25,7 +25,7 @@ min-height: 100vh;
     overflow-y: scroll;
 overflow-x: hidden;
 background-color: #000;/*remove*/
-background-image: url('https://media.tenor.com/qj2JPzyAttkAAAAC/rain-drops-rain.gif'); /*remove*/
+background-image: url('assets.anime/rain-drops-rain-fondo2.gif'); /*remove*/
 width: 100vw;
 background-size: cover;/*remove*/
 background-attachment: fixed; /*remove*/
@@ -930,7 +930,7 @@ h1{
 
     .contenedor2{/*fondoprincipalpara aside*/
         width: 100%;
-        background-image: url('https://www.anime-planet.com/images/anime/screenshots/protocol-rain-23690-1.jpg');
+        background-image: url('assets.anime/contenedor2-iphone.webp');
         background-size: cover;/*remove*/
         display: flex;
         background-position: top center; 
