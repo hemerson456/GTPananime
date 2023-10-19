@@ -389,6 +389,10 @@ img.logo-anime {
     background-image: url('assets/image-rotation/Protocol-Rain.jpg');
 }
 
+.anime-li a img.second17{
+    background-image: url('assets/image-rotation/elviajedechijiro.jpg');
+    background-position: center right;
+}
 
 /*titles modificaciones*/
 .title12{
