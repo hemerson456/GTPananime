@@ -39,7 +39,7 @@ header{
 .headers {
     background: transparent;
     display: flex;
-    height: 3.5em;
+    height: 3.8em;
     width: 100vw;
     align-items: center;
 }
@@ -49,7 +49,7 @@ header{
     width: 100%;
     background: transparent;
     align-items: center;
-    height: 3.5em;
+    height: 3.8em;
 }
 .header__nav-ul {
     display: inline-block;
@@ -879,6 +879,22 @@ a img.logo-anime {
 }
 /*terminado politicas*/
 
+.footer{
+    height: 2em;
+    display: flex;
+    background: #a800a8;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.footer-text{
+    color: #eee;
+    font-family: 'Martian Mono', monospace;
+    text-align: center;
+}
+
 
 /*aside*/
 @media only screen and (min-width:900px){
@@ -948,7 +964,7 @@ a img.logo-anime {
         background: #111;       
         color: transparent;
         position: absolute;
-        margin-top: 11.9em;
+        margin-top: 14.4em;
         transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
         padding: 10px;
         text-align: start;
@@ -971,7 +987,6 @@ a img.logo-anime {
         font-family: monospace;
         margin-right: 1.3em;
         line-height: 1.5;
-      
     }
 
     .header__nav-li2 a:hover{
@@ -1257,7 +1272,7 @@ a img.logo-anime {
     width: 100%;
     background: #111;       
     color: transparent;
-    margin-top: 11.9em;
+    margin-top: 14.4em;
     position: absolute;
     transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
     padding: 5px;
@@ -1276,6 +1291,12 @@ a img.logo-anime {
     #tendencia{
         font-size: 2.5em;
     }
+    .footer-text{
+        color: #eee;
+        font-family: 'Martian Mono', monospace;
+        font-size: 0.60em;
+    }
+   
 
 }
 
@@ -1302,6 +1323,11 @@ a img.logo-anime {
 @media only screen and (max-width:563px){
     .Ayakashi{
         margin: -2.7em 0 0 0;
+    }
+    .footer-text{
+        color: #eee;
+        font-family: 'Martian Mono', monospace;
+        font-size: 0.80em;
     }
 }
 @media only screen and (max-width:340px){

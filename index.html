@@ -22,9 +22,10 @@
                     <a href="index.html"><img src="assets/logo_copy_V2.0.png" class="logo-anime" alt="logo"></a>
                 <ul class="header__nav-ul">
                  <!--   <li class="header__nav-li"><a href=""><i class="fass fa-solid fa-house"></i>Hogar</a></li> --> 
-                    <li class="header__nav-li"><a href="#tendencia"><i class="fass fa-regular fa-newspaper"></i>Animes & Foros</a></li>
+                    <li class="header__nav-li"><a href="#tendencia"><i class="fass fa-solid fa-chart-column"></i>Animes & Foros</a></li>
                   <!--   <li class="header__nav-li"><a href=""><i class="fass fa-regular fa-newspaper"></i>Lo más nuevo</a></li>  --> 
                     <li class="header__nav-li"><a href=""><i class="fass fa-solid fa-photo-film"></i>Mangas</a></li>
+                    <li class="header__nav-li"><a href=""><i class="fass fa-brands fa-discord"></i>Discord</a></li>
                     <li class="header__nav-li"><a href="pages/loginGTP/users.html"><i class="fass fa-solid fa-users"></i>Registro</a></li>
                 </ul>
                 </nav>
@@ -36,10 +37,11 @@
                 <a href="index.html"><img src="assets/logo_copy_V2.0.png" class="logo-anime" alt="logo"></a>
                 <div class="button" onclick="hamburguesa()"><i class="fa-solid fa-bars" ></i></div>
                 <ul class="header__nav-ul2" id="deslizar">
-                   <li class="header__nav-li2"><a href="#tendencia"><i class="fass fa-regular fa-newspaper"></i>Animes & Foros</a></li>
+                   <li class="header__nav-li2"><a href="#tendencia"><i class="fass fa-solid fa-chart-column"></i>Animes & Foros</a></li>
                    <!--   <li class="header__nav-li2"><a href="#tendencia"><i class="fass fa-solid fa-chart-column"></i>Tendencias</a></li> --> 
                   <!--   <li class="header__nav-li2"><a href=""><i class="fass fa-regular fa-newspaper"></i>Lo más nuevo</a></li> --> 
                     <li class="header__nav-li2"><a href=""><i class="fass fa-solid fa-photo-film"></i>Mangas</a></li>
+                    <li class="header__nav-li2"><a href=""><i class="fass fa-brands fa-discord"></i>Discord</a></li>
                     <li class="header__nav-li2 registro"><a href="pages/loginGTP/users.html"><i class="fass fa-solid fa-users"></i>Registro</a></li>
                 </ul>
                 </nav>
@@ -294,26 +296,27 @@
                             Código de conducta del moderador
                         </a>
                     </div>   
-                    </div> 
-                    <hr class="users-barra">
-
-                    <div class="users_derechos">
-                         <div class="users_derechos-text">
-                            GTPananime, Inc. © 2023. Todos los derechos reservados.
-                        </div>
-                    </div>               
+                    </div>    
                 </div>
 
             </section>
         </main>
+        
+        <footer class="footer">
+            <div class="footer-text">
+                GTPananime, Inc. © 2023. Todos los derechos reservados.
+            </div>
+
+        </footer>
+
         <script src="" async defer>
             let etiquetasButton = document.querySelector('.etiquetas__button');
 
-// Agrega un event listener para el evento 'click'
-etiquetasButton.addEventListener('click', function() {
-  // Alterna la clase 'arrow' en el elemento .etiquetas__button
-  etiquetasButton.classList.toggle('arrow');
-});
+                      // Agrega un event listener para el evento 'click'
+                 etiquetasButton.addEventListener('click', function() {
+                   // Alterna la clase 'arrow' en el elemento .etiquetas__button
+                          etiquetasButton.classList.toggle('arrow');
+                          });
         </script>
     </body>
 </html>
