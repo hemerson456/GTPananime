@@ -33,13 +33,13 @@ border: none; /* Sin borde */
   
 
 header{
-    background: #a800a8;
+    background: #881188;
 }
 
 .headers {
     background: transparent;
     display: flex;
-    height: 3.8em;
+    height: 4em;
     width: 100vw;
     align-items: center;
 }
@@ -49,7 +49,7 @@ header{
     width: 100%;
     background: transparent;
     align-items: center;
-    height: 3.8em;
+    height: 4em;
 }
 .header__nav-ul {
     display: inline-block;
@@ -69,10 +69,10 @@ header{
 .header__nav-li a {
     text-decoration: none;
     font-family: monospace;
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #fff;
     background: transparent;
-    outline: 2px solid #a800a8;
+    outline: 2px solid #881188;
     outline-offset: 5px;
     border-radius: 2px;
     animation: giraBorde 5s ease infinite;
@@ -81,19 +81,19 @@ header{
 
 @keyframes giraBorde {
     0% {
-        outline-color: #a800a8;
+        outline-color: #881188;
     }
     20% {
         outline-color: #aaa;
     }
     40%{
-        outline-color: #a800a8;
+        outline-color: #881188;
     }
     60%{
         outline-color: #aaa;
     }
     80%{
-        outline-color: #a800a8;
+        outline-color: #881188;
     }
     93%{
         outline-color: #aaa;
@@ -112,7 +112,7 @@ header{
 }
 
 a img.logo-anime {
-    width: 7em;
+    width: 8em;
     height: auto;
     display: inline-block;
     background: transparent;
@@ -147,7 +147,7 @@ a img.logo-anime {
 
 @keyframes image{
     0% {
-        background-image: url('assets/image-rotation/suicide-hunter.png');
+        background-image: url('https://i.ytimg.com/vi/FP5YViBSyOw/maxresdefault.jpg');
         /*suicide hunter*/
     } 
     17% {
@@ -171,7 +171,7 @@ a img.logo-anime {
          /*berserk*/
     }
     100%{
-        background-image: url('assets/image-rotation/suicide-hunter.png')
+        background-image: url('https://i.ytimg.com/vi/FP5YViBSyOw/maxresdefault.jpg')
          /*lo mismo que el inicio*/
     }
     
@@ -231,6 +231,7 @@ a img.logo-anime {
     grid-auto-rows: 12rem;
     grid-gap: 10px;
     overflow: hidden;
+    margin-top: 0.5em;
 }
 .anime-li {
     display: grid;
@@ -613,7 +614,7 @@ a img.logo-anime {
     width: 98%;
     background: transparent;
     outline: 1px solid #aaa;
-    margin-top: 3em;
+    margin-top: 3.5em;
     border-radius: 5px;
     background-color: #111;
     padding: 3px 0;
@@ -880,9 +881,9 @@ a img.logo-anime {
 /*terminado politicas*/
 
 .footer{
-    height: 2em;
+    height: 1.8em;
     display: flex;
-    background: #a800a8;
+    background: #881188;
     width: 100vw;
     justify-content: center;
     align-items: center;
@@ -925,18 +926,27 @@ a img.logo-anime {
     }
     .header2{
         background: transparent;
-        height: 3.5em;
+        height: 3.8em;
         width: 100vw;
         display: inline-block;
         }
     .header__nav2{
         background: transparent;
-        height: 3.5em;
+        height: 3.8em;
         width: 100vw;
         display: flex;
         align-items: center;
 
     }    
+    
+    a img.logo-anime {
+        width: 7em;
+        height: auto;
+        display: inline-block;
+        background: transparent;
+        margin-right: auto;
+        margin-left: 0.3em;
+    }
     
 
     .button {
@@ -1053,6 +1063,10 @@ a img.logo-anime {
         width: 100%;
         justify-content: start;
         margin-left: 5%;
+    }
+
+    .news{
+        margin-top: 1em;
     }
 
     
