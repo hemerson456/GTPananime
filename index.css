@@ -29,27 +29,32 @@ border: none; /* Sin borde */
 }
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Kanit:ital,wght@0,100;0,200;1,300&family=Lobster&family=Martian+Mono:wght@800&family=Skranji:wght@400;700&display=swap');
 
+
+  
+
 header{
-    background: #641164;
+    background: #a800a8;
 }
 
 .headers {
     background: transparent;
     display: flex;
-    height: 5em;
+    height: 3.5em;
     width: 100vw;
     align-items: center;
 }
 
 .header__nav {
     display: flex;
-    width: 99%;
+    width: 100%;
     background: transparent;
     align-items: center;
+    height: 3.5em;
 }
 .header__nav-ul {
     display: inline-block;
     background: transparent;
+    margin-left: auto;
     
 }
 
@@ -64,33 +69,33 @@ header{
 .header__nav-li a {
     text-decoration: none;
     font-family: monospace;
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: #fff;
     background: transparent;
-    outline: 2px solid #641164;
+    outline: 2px solid #a800a8;
     outline-offset: 5px;
     border-radius: 2px;
-    animation: giraBorde 5s linear infinite;
+    animation: giraBorde 5s ease infinite;
 
 }
 
 @keyframes giraBorde {
     0% {
-        outline-color: #641164;
+        outline-color: #a800a8;
     }
     20% {
         outline-color: #aaa;
     }
     40%{
-        outline-color: #641164;
+        outline-color: #a800a8;
     }
     60%{
         outline-color: #aaa;
     }
     80%{
-        outline-color: #641164;
+        outline-color: #a800a8;
     }
-    100%{
+    93%{
         outline-color: #aaa;
     }
 }
@@ -106,12 +111,13 @@ header{
     font-size: 0.8em;
 }
 
-img.logo-anime {
-    width: 10em;
+a img.logo-anime {
+    width: 7em;
     height: auto;
     display: inline-block;
     background: transparent;
     margin-right: auto;
+    margin-left: 0.3em;
 }
 
 .header2 {
@@ -174,12 +180,6 @@ img.logo-anime {
 /*rotacion de imagenes*/
 
 
-
-
-.container-global{
-    margin-top: 3em;
-}
-
 .container1 {
     padding: 10px;
     background: #666;
@@ -204,7 +204,7 @@ img.logo-anime {
 
 #tendencia {
     color: #fff;
-    font-family: 'Martian Mono', monospace;
+    font-family: monospace;
     font-size: 2.5em;
     margin-bottom: 10px;
     height: 56px;
@@ -897,6 +897,9 @@ img.logo-anime {
     .users{
         width: 17em!important;
     }
+    .container-global{
+        margin-top: 5em;
+    }
     
 }
 
@@ -906,59 +909,65 @@ img.logo-anime {
     }
     .header2{
         background: transparent;
-        height: 5em;
+        height: 3.5em;
         width: 100vw;
         display: inline-block;
         }
     .header__nav2{
         background: transparent;
-        height: 5em;
+        height: 3.5em;
         width: 100vw;
         display: flex;
         align-items: center;
 
     }    
+    
+
     .button {
         background: transparent;
         display: flex;
         order: 3;
         margin-right: 1em;
         background: transparent;
-
+        margin-left: auto;
     }
+
     .button i{
         font-size: 2em;
         background: transparent;
         color: #ddd;
     }
+
     .header__nav-ul2{
         display: none;
     }
+
     .header__nav-ul3 {
         display: flex;
         flex-direction: column;
         background: #111;       
         color: transparent;
-        position: relative;
-        z-index: 1000;
-        margin-top: 11em;
+        position: absolute;
+        margin-top: 11.9em;
         transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
         padding: 10px;
-        border-radius: 10px 0 10px 10px;
+        text-align: start;
+        width: 100%;
 
     }
     
     .header__nav-li2 {
         background: transparent;
         color: transparent;
-        line-height: 2;
+        line-height: 2.2;
+        font-size: 1.1em;
        
     }
     .header__nav-li2 a {
         background: transparent;
         color: #ccc;
         text-decoration: none;
-        font-size: 1.3em;
+        font-size: 1.1em;
         font-family: monospace;
         margin-right: 1.3em;
         line-height: 1.5;
@@ -981,6 +990,10 @@ img.logo-anime {
         display: grid;
         width: 1fr;
         background-color: transparent;
+    }
+
+    .container-global{
+        margin-top: 3em;
     }
 
     .anime-ul {     
@@ -1151,6 +1164,7 @@ img.logo-anime {
     }
     .container-buscadores{
       height: 100%;
+      margin-top: 1.5em;
     }
     .blocketiquetas{
         padding: 0;
@@ -1243,12 +1257,10 @@ img.logo-anime {
     width: 100%;
     background: #111;       
     color: transparent;
-    margin-top: 10em;
-    position: relative;
-    z-index: 1000;
+    margin-top: 11.9em;
+    position: absolute;
     transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
     padding: 5px;
-    border-radius: 10px 0 10px 10px;
     line-height: 1.6;
 
    }
@@ -1256,14 +1268,13 @@ img.logo-anime {
     background: transparent;
     color: #ccc;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: monospace;
-    line-height: 2.1;
+    line-height: 2.2;
   
     }
-
-    .header__nav-li2{
-        line-height: 1.8;
+    #tendencia{
+        font-size: 2.5em;
     }
 
 }
