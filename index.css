@@ -285,6 +285,7 @@ a img.logo-anime {
     font-weight: 600;
     font-size: 1em;
     transition: all 1.5s;  
+    cursor: pointer;
     background: linear-gradient(to top, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8),rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.3));
 
 }
@@ -320,6 +321,7 @@ a img.logo-anime {
 .anime-li-day span {
     background: transparent;
     font-family: 'Martian Mono', monospace;
+    cursor: pointer;
     
 }
 
