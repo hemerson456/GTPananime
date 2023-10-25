@@ -25,7 +25,7 @@ min-height: 100vh;
     overflow-y: scroll;
 overflow-x: hidden;
 background-color: #000;/*remove*/
-background-image: url('assets.anime/background.webp'); /*remove*/
+background-image: url('assets.anime/background.jpg'); /*remove*/
 width: 100vw;
 background-size: cover;/*remove*/
 background-attachment: fixed; /*remove*/
@@ -304,7 +304,7 @@ h1{
     display: flex !important;
     width: 85%;
     height: 40px;
-    background-image: url('assets.anime/buton2.png'); /*remove*/
+    background-image: url('assets.anime/button5.png'); /*remove*/
     background-size: cover;
     background-position: center center; 
 }
@@ -318,9 +318,6 @@ h1{
 @media only screen and (max-width:700px){
     h1{
         flex-direction: column;
-    }
-    .active2{
-        background-image: url('assets.anime/buton2.png');
     }
 }
 
@@ -540,12 +537,25 @@ h1{
 .contenedor2{/*fondoprincipalpara aside*/
     width: 100%;
     max-height: 580px;
-    background-image: url('assets.anime/frieren-beyon.webp');
+    background-image: url('assets.anime/contenedor2max2.gif');
     background-size: cover;/*remove*/
     display: flex;
     background-position: bottom center; 
     min-height: 410px;
 }
+
+@media only screen and (min-width: 1100px){
+    .active_capitulos{
+        grid-template-columns: 80px 80px 80px 80px 80px; 
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .active_capitulos2{
+        grid-template-columns: 80px 80px 80px 80px 80px 80px; 
+    }
+}
+
 
 @media only screen and (min-width:2387px){
     .contenedor2{
@@ -651,6 +661,59 @@ h1{
 .ca7{
     display: none;
 }
+.ca8{
+    display: none;
+}
+.ca9{
+    display: none;
+}
+.ca10{
+    display: none;
+}
+.ca11{
+    display: none;
+}
+.ca12{
+    display: none;
+}
+.ca13{
+    display: none;
+}
+.ca14{
+    display: none;
+}
+.ca15{
+    display: none;
+}
+.ca16{
+    display: none;
+}
+.ca17{
+    display: none;
+}
+.ca18{
+    display: none;
+}
+.ca19{
+    display: none;
+}
+.ca20{
+    display: none;
+}
+.ca21{
+    display: none;
+}
+.ca22{
+    display: none;
+}
+.ca23{
+    display: none;
+}
+.ca24{
+    display: none;
+}
+
+
 /*capitulos img*/
 
 /*capitulos video iframe*/
@@ -676,6 +739,58 @@ h1{
 .capi7{
     display: flex !important;
 }
+.capi8{
+    display: flex !important;
+}
+.capi9{
+    display: flex !important;
+}
+.capi10{
+    display: flex !important;
+}
+.capi11{
+    display: flex !important;
+}
+.capi12{
+    display: flex !important;
+}
+.capi13{
+    display: flex !important;
+}
+.capi14{
+    display: flex !important;
+}
+.capi15{
+    display: flex !important;
+}
+.capi16{
+    display: flex !important;
+}
+.capi17{
+    display: flex !important;
+}
+.capi18{
+    display: flex !important;
+}
+.capi19{
+    display: flex !important;
+}
+.capi20{
+    display: flex !important;
+}
+.capi21{
+    display: flex !important;
+}
+.capi22{
+    display: flex !important;
+}
+.capi23{
+    display: flex !important;
+}
+.capi24{
+    display: flex !important;
+}
+
 /*capitulos video iframe*/
 
 .repro_capitulos{
@@ -817,20 +932,17 @@ h1{
         height: 2.5em;
     }
 }
-
-@media only screen and (min-width: 1100px){
+@media only screen and (max-width:1000px){
     .active_capitulos{
-        grid-template-columns: 80px 80px 80px 80px 80px; 
+        display: grid;
+        grid-template-columns: 80px 80px  80px 80px ;
+        justify-content: space-evenly; 
+        list-style: none;
     }
 }
-@media only screen and (min-width: 1000px){
-    .active_capitulos2{
-        grid-template-columns: 80px 80px 80px 80px 80px 80px; 
-    }
-}
-
 
 @media only screen and (max-width:1280px){
+
     .contenedor1__episodes-li{
       outline: 2px solid #C13584;
       background: #C13584;
@@ -963,10 +1075,10 @@ h1{
 
     .contenedor2{/*fondoprincipalpara aside*/
         width: 100%;
-        background-image: url('assets.anime/fan-art-of-frieren-beyond.webp');
+        background-image: url('assets.anime/contenedor2.webp');
         background-size: cover;/*remove*/
         display: flex;
-        background-position: center center; 
+        background-position: top left; 
         min-height: 0;
         height: 14em !important;
         clip-path: none;

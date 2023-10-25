@@ -12,11 +12,12 @@ function episodios() {
     element.classList.toggle("active_capitulos");
 }
 
+/*amplia el capitulo a 6 grids*/
 function capitulazo() {
     let element = document.getElementById("capitulos")
     element.classList.toggle("active_capitulos2");
 }
-
+/*amplia el capitulo a 6 grids*/
 
 function background() {
     let element = document.getElementById("body")
