@@ -400,6 +400,10 @@ a img.logo-anime {
     background-position: center right;
 }
 
+.anime-li a img.second18{
+    background-image: url('assets/image-rotation/Frieren-Beyond-Journey.webp');
+    background-position: center right;
+}
 /*titles modificaciones*/
 .title12{
     margin: -1.7em 0 0 0;
