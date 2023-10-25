@@ -404,6 +404,11 @@ a img.logo-anime {
     background-image: url('assets/image-rotation/Frieren-Beyond-Journey.webp');
     background-position: center right;
 }
+
+.anime-li a img.second19{
+    background-image: url('assets/image-rotation/erased.jpg');
+    background-position: center right;
+}
 /*titles modificaciones*/
 .title12{
     margin: -1.7em 0 0 0;
