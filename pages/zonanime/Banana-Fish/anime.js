@@ -12,7 +12,7 @@ function episodios() {
     element.classList.toggle("active_capitulos");
 }
 
-/*amplia el capitulo a 6 grids*/
+/*amplia el capitulo a 6 grids esto ayuda para el contenido pantalla 4k*/
 function capitulazo() {
     let element = document.getElementById("capitulos")
     element.classList.toggle("active_capitulos2");
