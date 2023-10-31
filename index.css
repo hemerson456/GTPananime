@@ -270,9 +270,9 @@ a img.logo-anime {
 
 
 
-.anime-li a img.anime-li-image:hover {
-    transform: scale(1.25);
-    opacity: 0.7;
+.anime-li:hover > a img.anime-li-image {
+    transform: scale(1.30);
+    opacity: none;
    
 }
 
@@ -299,8 +299,9 @@ a img.logo-anime {
 
 .anime-li:hover > .anime-li-h21{
     align-items: center;
-    background-image: linear-gradient(to top  , rgb(220,220, 220) 25%, rgb(190,190, 190) 50% ,transparent); 
-    color: #f0df;  
+    /*background-image: linear-gradient(to top  , rgb(220,220, 220) 25%, rgb(190,190, 190) 50% ,transparent); */
+    background-color: transparent;
+    color: #dfd;  
 }
 
 .anime-li-day{
@@ -313,10 +314,9 @@ a img.logo-anime {
 }
 
 .anime-li:hover > .anime-li-day{
-    margin-left: 0.5em;
+    padding-left: 0.8em;
     font-weight: 800;
-    color: #000;
-    background: transparent;
+    color: #fff;
 
 }
 
