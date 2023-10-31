@@ -25,7 +25,7 @@ min-height: 100vh;
     overflow-y: scroll;
 overflow-x: hidden;
 background-color: #000;/*remove*/
-background-image: url('assets.anime/fondodelviaje.jpg'); /*remove*/
+background-image: url('assets.anime/backgroundfives.gif'); /*remove*/
 width: 100vw;
 background-size: cover;/*remove*/
 background-attachment: fixed; /*remove*/
@@ -541,10 +541,10 @@ h1{
 .contenedor2{/*fondoprincipalpara aside*/
     width: 100%;
     max-height: 580px;
-    background-image: url('assets.anime/contenedor2.gif');
+    background-image: url('assets.anime/five-nigth-freddy.gif');
     background-size: cover;/*remove*/
     display: flex;
-    background-position: center center; 
+    background-position: center right; 
     min-height: 410px;
 }
 
@@ -926,10 +926,10 @@ h1{
 
     .contenedor2{/*fondoprincipalpara aside*/
         width: 100%;
-        background-image: url('assets.anime/contenedor2-movil\ 2.gif');
+        background-image: url('assets.anime/five_nights_at_freddy\'s.webp');
         background-size: cover;/*remove*/
         display: flex;
-        background-position: center center; 
+        background-position: top center; 
         min-height: 0;
         height: 14em !important;
         clip-path: none;
