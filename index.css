@@ -631,6 +631,9 @@ a img.logo-anime {
     background-color: transparent;
 }
 
+.curser{
+    cursor: pointer;
+}
 
 /*adblock*/
 .news {
