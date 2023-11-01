@@ -864,6 +864,9 @@ a img.logo-anime {
     transition: all 1.5s;
 }
 
+.crear-publi{
+    font-family: monospace;
+}
 
 .box2{
     margin: 0 0 0.5em 0;
