@@ -243,13 +243,13 @@ a img.logo-anime {
     border-radius: 5px;   
     transition: all 1.5s; 
     overflow: hidden;
-
+    
 }
 
 .anime-li a {
     text-decoration: none;
     color: #fff;
-    background: #fff;
+    background-color: transparent;
     transition: all 1.5s;
 }
 
@@ -257,22 +257,22 @@ a img.logo-anime {
 /******************************copiar**************************************/
 
 
-.anime-li a img.anime-li-image {
+
+.anime-li a div.anime-li-image {
     
-   /* background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg'); */
-    width: 100%;
-    height: 12em;
-    background-size: cover;
-    transition: all 1.5s;
-    
-}
+    /* background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg'); */
+     width: 100%;
+     height: 12em;
+     background-size: cover;
+     transition: all 1.5s;
+     
+ }
 
 
 
-
-.anime-li:hover > a img.anime-li-image {
+.anime-li:hover > a div.anime-li-image {
     transform: scale(1.30);
-    opacity: none;
+    background-color: transparent;
    
 }
 
@@ -332,89 +332,89 @@ a img.logo-anime {
     background: transparent;
 }
 
-.anime-li a img.first {
+.anime-li a div.first {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg');
 }
 
-.anime-li a img.second {
+.anime-li a div.second {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_takagi-18.jpg');
 }
 
-.anime-li a img.second3 {
+.anime-li a div.second3 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_evangelion-156-1536x864.jpg');
 }
 
-.anime-li a img.second4 {
+.anime-li a div.second4 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_tomb-raider-2-1536x864.jpg');
 }
 
-.anime-li a img.second5 {
+.anime-li a div.second5 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/Duolingo-1536x864.jpg');
 }
 
-.anime-li a img.second6 {
+.anime-li a div.second6 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/Nobara-1536x864.jpg');
 }
 
-.anime-li a img.second7 {
+.anime-li a div.second7 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/43-1536x864.webp');
 }
 
-.anime-li a img.second8 {
+.anime-li a div.second8 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_a-1536x864.jpg');
 }
 
-.anime-li a img.second9 {
+.anime-li a div.second9 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/TenSura_coleus_PV_01_Portada-1536x864.jpg');
 }
 
-.anime-li a img.second10 {
+.anime-li a div.second10 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_nier-reincarnation-30-1536x864.jpg');
 }
 
-.anime-li a img.second11 {
+.anime-li a div.second11 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_boku-no-kokoro-no-yabai-19-1536x864.jpg');
 }
-.anime-li a img.second12 {
+.anime-li a div.second12 {
     background-image: url('assets/image-rotation/tatenoyusha-season-3.avif');
 }
 
-.anime-li a img.second13{
+.anime-li a div.second13{
     background-image: url('assets/image-rotation/tenjiku.jpeg');
 }
 
-.anime-li a img.second14{
+.anime-li a div.second14{
     background-image: url('assets/image-rotation/kanokano2-poster.webp');
 }
 
-.anime-li a img.second15{
+.anime-li a div.second15{
     background-image: url('assets/image-rotation/berserk_of_gluttony.jpg');
 }
 
-.anime-li a img.second16{
+.anime-li a div.second16{
     background-image: url('assets/image-rotation/Protocol-Rain.jpg');
 }
 
-.anime-li a img.second17{
+.anime-li a div.second17{
     background-image: url('assets/image-rotation/elviajedechijiro.jpg');
     background-position: center right;
 }
 
-.anime-li a img.second18{
+.anime-li a div.second18{
     background-image: url('assets/image-rotation/Frieren-Beyond-Journey.webp');
     background-position: center right;
 }
 
-.anime-li a img.second19{
+.anime-li a div.second19{
     background-image: url('assets/image-rotation/erased.jpg');
     background-position: center right;
 }
 
-.anime-li a img.second20{
+.anime-li a div.second20{
     background-image: url('assets/BananaFish.jpg');
     background-position: center right;
 }
-.anime-li a img.second21{
+.anime-li a div.second21{
     background-image: url('assets/fivenightsfreddy.jpg');
     background-position: center right;
 }
@@ -1129,7 +1129,7 @@ a img.logo-anime {
         grid-auto-rows: 14rem;
     }
     
-    .anime-li a img.anime-li-image {
+    .anime-li a div.anime-li-image {
     
         /* background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg'); */
          width: 100%;
