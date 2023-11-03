@@ -134,6 +134,14 @@ img.logo-anime {
     font-size: 0.9em;
 }
 
+.fa-beat{
+    animation: fa-beat 0.8s 3 !important;
+}
+.fa-bounce{
+    animation: fa-bounce 0.8s 3 !important;
+}
+
+
 
 /*zonanime*/
 .contenedor-anime{
@@ -655,6 +663,9 @@ h1{
 .ca8{
     display: none;
 }
+.ca9{
+    display: none;
+}
 /*capitulos img*/
 
 /*capitulos video iframe*/
@@ -681,6 +692,9 @@ h1{
     display: flex !important;
 }
 .capi8{
+    display: flex !important;
+}
+.capi9{
     display: flex !important;
 }
 /*capitulos video iframe*/

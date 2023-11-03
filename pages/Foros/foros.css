@@ -15,9 +15,6 @@ width: 100vw;
 background-size: cover;/*remove*/
 background-attachment: fixed; /*remove*/
 transition: all 1.5s;
-height: 100%;
-display: flex;
-flex-direction: column;
 
 }
 
@@ -30,13 +27,13 @@ body::-webkit-scrollbar-thumb {
 background-color: transparent; /* Fondo transparente para la barra de desplazamiento */
 border: none; /* Sin borde */
 }
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Kanit:ital,wght@0,100;0,200;1,300&family=Lobster&family=Martian+Mono:wght@800&family=Skranji:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Kanit:ital,wght@0,100;0,200;1,300&family=Lobster&family=Martian+Mono:wght@800&family=Skranji:wght@400;700&display=swap'); */
 
 
   
 
 header{
-    background: #222;
+    background: #881188;
 }
 
 .headers {
@@ -75,27 +72,28 @@ header{
     font-size: 1.2em;
     color: #fff;
     background: transparent;
-    outline: 2px solid #222;
+    outline: 2px solid #881188;
     outline-offset: 5px;
     border-radius: 2px;
     animation: giraBorde 5s ease infinite;
 
 }
+
 @keyframes giraBorde {
     0% {
-        outline-color: #222;
+        outline-color: #881188;
     }
     20% {
         outline-color: #aaa;
     }
     40%{
-        outline-color: #222;
+        outline-color: #881188;
     }
     60%{
         outline-color: #aaa;
     }
     80%{
-        outline-color: #222;
+        outline-color: #881188;
     }
     93%{
         outline-color: #aaa;
@@ -113,6 +111,13 @@ header{
     font-size: 0.8em;
 }
 
+.fa-beat{
+    animation: fa-beat 0.8s 3 !important;
+}
+.fa-bounce{
+    animation: fa-bounce 0.8s 3 !important;
+}
+
 a img.logo-anime {
     width: 8em;
     height: auto;
@@ -125,99 +130,54 @@ a img.logo-anime {
 .header2 {
     display: none;
 }
+/*header acabado*/
 
-.fa-beat{
-    animation: fa-beat 0.8s 3 !important;
-}
-.fa-bounce{
-    animation: fa-bounce 0.8s 3 !important;
+
+
+/*comienzo de las imagenes ruleta*/
+.rotacion{
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
 }
 
-.zona{
+.rotacion-image{
+    width: 100vw;
     display: grid;
-    grid-template-columns: 1fr;
-    background: #fff;
-    width: 100vw;
-    height: 100%;
+    grid-template-columns: repeat(6, minmax(400px,1fr)) ;
+    height: 325px;
+    animation: carrusel 20s infinite alternate forwards;
 }
 
-.zona-aside{
-    background: #050005ff;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.t1{
+    background-color: #fff;
 }
 
-
-
-
-/*aside*/
-.aside {
-    background-color: transparent;
+.t2{
+    background-color: #fa0;
 }
 
+.t3{
+    background-color: #f0f;
 
 
-/*footer*/
-.footer{
-    height: 1.8em;
-    display: flex;
-    background: #222;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
 }
 
-.footer-text{
-    color: #eee;
-    font-family: monospace;
-    text-align: center;
-}
-/*footer*/
+.t4{
+    background-color: #ff0;
 
-
-@media only screen and (min-width:1800px){
-    .zona {
-        display: grid;
-        grid-template-columns: 6fr 1fr;
-        background: #fff;
-        width: 100vw;
-        height: 100%;
-    }
 }
 
-@media only screen and (min-width:2200px){
-    .zona {
-        display: grid;
-        grid-template-columns: 8fr 1fr;
-        background: #fff;
-        width: 100vw;
-        height: 100%;
-    }
+.t5{
+    background-color: #f00;
+
 }
-@media only screen and (min-width:900px){
-    .aside{
-        justify-content: start;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .news{
-        width: 17em!important;
-    }
-    .crearcomunity{
-        width: 17em!important;
-    }
-    .users{
-        width: 17em!important;
-    }
-    .container-global{
-        margin-top: 5em;
-    }
-    
+
+.t6{
+    background-color: #00f;
 }
+
+/*final de la rotacion de las imagenes*/
 
 @media only screen and (max-width:900px) {
     .headers {
@@ -273,7 +233,7 @@ a img.logo-anime {
         background: #111;       
         color: transparent;
         position: absolute;
-        margin-top: 14.4em;
+        margin-top: 17em;
         transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
         padding: 10px;
         text-align: start;
@@ -305,11 +265,5 @@ a img.logo-anime {
         background: transparent;
         margin: 0 0.5em;
     }
-
-    .zona {
-        grid-template-columns: none;
-       height: 100%;
-    }
-    
 
 }

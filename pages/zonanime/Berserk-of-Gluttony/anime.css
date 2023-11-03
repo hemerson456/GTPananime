@@ -133,6 +133,12 @@ img.logo-anime {
     margin-left: 0.3em;
     font-size: 0.9em;
 }
+.fa-beat{
+    animation: fa-beat 0.8s 3 !important;
+}
+.fa-bounce{
+    animation: fa-bounce 0.8s 3 !important;
+}
 
 
 /*zonanime*/

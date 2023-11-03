@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
 background-color: transparent; /* Fondo transparente para la barra de desplazamiento */
 border: none; /* Sin borde */
 }
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Kanit:ital,wght@0,100;0,200;1,300&family=Lobster&family=Martian+Mono:wght@800&family=Skranji:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Kanit:ital,wght@0,100;0,200;1,300&family=Lobster&family=Martian+Mono:wght@800&family=Skranji:wght@400;700&display=swap'); */
 
 
   
@@ -123,6 +123,14 @@ a img.logo-anime {
 .header2 {
     display: none;
 }
+
+.fa-beat{
+    animation: fa-beat 0.8s 3 !important;
+}
+.fa-bounce{
+    animation: fa-bounce 0.8s 3 !important;
+}
+
 
 /*header completo aqui acaba*/
 
@@ -1078,7 +1086,7 @@ a img.logo-anime {
         background: #111;       
         color: transparent;
         position: absolute;
-        margin-top: 14.4em;
+        margin-top: 17em;
         transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
         padding: 10px;
         text-align: start;
@@ -1394,7 +1402,7 @@ a img.logo-anime {
     width: 100%;
     background: #111;       
     color: transparent;
-    margin-top: 14.4em;
+    margin-top: 17em;
     position: absolute;
     transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
     padding: 5px;
