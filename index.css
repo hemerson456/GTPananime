@@ -426,11 +426,23 @@ a img.logo-anime {
     background-image: url('assets/fivenightsfreddy.jpg');
     background-position: center right;
 }
+.anime-li a div.second22{
+    background-image: url('assets/escuadron.webp');
+    background-position: center center;
+}
 /*titles modificaciones*/
 
 
 .title12{
     margin: -1.7em 0 0 0;
+}
+.title13{
+    margin: -1.7em 0 0 0;
+    font-size: 0.9em;
+}
+.title14{
+    margin: -1.7em 0 0 0;
+
 }
 
 /*titles modificaciones*/
@@ -1462,6 +1474,9 @@ a img.logo-anime {
 }
 @media only screen and (max-width:340px){
     .title12{
+        margin: -2.7em 0 0 0;
+    }
+    .title13{
         margin: -2.7em 0 0 0;
     }
 }
