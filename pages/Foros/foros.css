@@ -139,43 +139,125 @@ a img.logo-anime {
     display: flex;
     width: 100vw;
     overflow: hidden;
+    position: relative;
+    height: 400px;
 }
 
-.rotacion-image{
+.rotacion-image {
+    display: flex;
+    transition: transform 0.4s ease;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.rotacion-image  .rotacion-images{
     width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(6, minmax(400px,1fr)) ;
-    height: 325px;
-    animation: carrusel 20s infinite alternate forwards;
+    flex-shrink: 0;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-direction: column;
 }
 
-.t1{
-    background-color: #fff;
+.poster{
+   height: 90%;
+   width: 100%;
+   text-decoration: none;
+}
+/*bloques de las imagenes de carrusel responsive*/
+@media only screen and (min-width:670px) {
+    .rotacion-images a .img-poster{
+        height: 100%;
+        /* background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg'); */
+        width: 100%;
+        background-size: contain;
+        transition: all 1.5s;      
+    }
 }
 
-.t2{
-    background-color: #fa0;
+@media only screen and (max-width:670px) {
+    .rotacion-images a .img-poster{
+        height: 100%;
+        background-size: cover;
+        transition: all 1.5s;      
+    }
+    .img-title{
+        font-size: 0.6em;
+    }
+    #prevBtn{
+        border: none!important;
+    }
+    #nextBtn{
+        border: none!important;
+    }
+}
+/*final de los bloques de las imagenes de carrusel responsive*/
+
+.img1{
+    background-image: url('https://elcomercio.pe/resizer/RkQ4CoBVBQZi7gHSQMg0G0iKITs=/980x528/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/VJJ32ZPCNFGKXOFYABRJX4DHMU.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+.img-title{
+    height: 10%;
+    color: #fff;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
 }
 
-.t3{
-    background-color: #f0f;
-
-
+#prevBtn:hover, #nextBtn:hover {
+    background: #a3a;
+    color: #fff; 
+    border: none;
 }
 
-.t4{
-    background-color: #ff0;
-
+#prevBtn {
+    left: 10px;
+    display: flex;
+    width: 4em;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: monospace;
+    border: 2px solid #aaa;
 }
 
-.t5{
-    background-color: #f00;
-
+#nextBtn {
+    right: 10px;
+    display: flex;
+    width: 4em;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: monospace;
+    border: 2px solid #aaa;
 }
 
-.t6{
-    background-color: #00f;
-}
+
 
 /*final de la rotacion de las imagenes*/
 
