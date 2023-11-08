@@ -45,6 +45,10 @@ background-color: transparent; /* Fondo transparente para la barra de desplazami
 border: none; /* Sin borde */
 }
 
+@font-face {
+    font-family: title-p;
+    src: url(../../../Fonts/Japonesa.ttf);
+}
 
 .headers {
     background: transparent;
@@ -92,14 +96,12 @@ img.logo-anime {
 .header__nav-li a{
     background: transparent;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.14em;
     color: #fff;
-    font-family: 'Martian Mono', monospace;
+    font-family: title-p;
     outline: 2px solid #000;
     outline-offset: 5px;
     border-radius: 2px;
-    animation: giraBorde 5s linear infinite;
-   
 }
 
 
@@ -126,6 +128,7 @@ img.logo-anime {
 
 .header__nav-li a:hover{
     color: #ccc;
+    animation: giraBorde 5s linear infinite;
 }
 
 .header__nav-li a i{
@@ -140,7 +143,6 @@ img.logo-anime {
 .fa-bounce{
     animation: fa-bounce 0.8s 3 !important;
 }
-
 
 
 /*zonanime*/
@@ -1010,6 +1012,7 @@ h1{
     }
     .header__nav2 a {
         margin-right: auto;
+
     }
     .header2 a{
         display: flex;
@@ -1045,7 +1048,8 @@ h1{
     .header__nav-li2 a{
         text-decoration: none;
         color: #ccc;
-        font-size: 0.8em;
+        font-size: 1em;
+        font-family: title-p;
     }
     .header__nav-li2 a:hover{
         color:#999
