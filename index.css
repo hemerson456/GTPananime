@@ -659,9 +659,9 @@ a img.logo-anime {
 .news {
     width: 98%;
     background: transparent;
-    outline: 1px solid #aaa;
+    outline: 1.5px solid #aaa;
     margin-top: 3.5em;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #111;
     padding: 3px 0;
     
@@ -734,9 +734,9 @@ a img.logo-anime {
 .aplicacion {
     width: 17em;
     background: transparent;
-    outline: 1px solid #aaa;
+    outline: 1.5px solid #aaa;
     margin-top: 1.5em;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #111;
     padding: 3px 0;
     
@@ -809,11 +809,13 @@ a img.logo-anime {
 .crearcomunity{
     width: 98%;
     background: transparent;
-    outline: 1px solid #aaa;
+    outline: 1.5px solid #aaa;
     margin-top: 1.5em;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #111;
     padding: 0 0 3px 0;
+    z-index: 100;
+    overflow: hidden;
 
 }
 
@@ -918,9 +920,9 @@ a img.logo-anime {
 /*póliticas*/
 .users{
     width: 98%;
-    outline: 1px solid #aaa;
+    outline: 1.5px solid #aaa;
     margin-top: 1.5em;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #111;
     padding:3px ;
 
