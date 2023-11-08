@@ -78,7 +78,6 @@ header{
     outline: 2px solid #881188;
     outline-offset: 5px;
     border-radius: 2px;
-    animation: giraBorde 5s ease infinite;
 
 }
 
@@ -105,13 +104,18 @@ header{
 
 
 .header__nav-li a:hover {
-    color: #aaa;
+    color: #aaa!important;
+    animation: giraBorde 5s ease infinite;
 }
 
 .header__nav-li i {
     background: transparent;
     margin: 0 0.5em;
     font-size: 0.9em;
+}
+
+.color{
+    color: #Ffa2FF !important;
 }
 
 a img.logo-anime {
