@@ -87,3 +87,25 @@ $(document).ready(function(){
 
 });
   
+
+function flechas(){
+    let element = document.getElementById("flechas");
+    element.classList.toggle("arrow");
+}
+
+
+function funcion(){
+    let element = document.getElementById("list1");
+    element.classList.toggle("act_style");
+}
+
+
+function buscado(){
+    let element = document.getElementById("buscadores");
+    element.classList.toggle("act_buscador");
+}
+
+function centrado(){
+    let element = document.getElementById("centrado-bot");
+    element.classList.toggle("act_centrar");
+}

@@ -39,6 +39,7 @@ border: none; /* Sin borde */
     src: url(../../Fonts/kitchen/Kitchen\ Counter.ttf);
 }
 
+
 header{
     background: #881188;
 }
@@ -75,7 +76,7 @@ header{
 
 .header__nav-li a {
     text-decoration: none;
-    font-family: title-p;
+    font-family: 'title-p';
     font-size: 1.14em;
     color: #fff;
     background: transparent;
@@ -153,6 +154,8 @@ a img.logo-anime {
     overflow: hidden;
     position: relative;
     height: 400px;
+    background-color: #000;
+    z-index: 2;
 }
 
 .rotacion-image {
@@ -280,11 +283,24 @@ a img.logo-anime {
 .etiquetas{
     width: 100vw;
     height: auto;
-    margin-top: 2.5em;
+    margin-top: 3em;
 }
+
 .etiquetas_list{
+    transform: scale(0);
+    z-index: 0;
+    gap: 1.5em 2em;
+    height: 0em;
+    transition: 700ms ease-in-out;
+}
+.act_style{
+    transform: scale(1);
     margin-top: 1em;
     gap: 1.5em 2em;
+    z-index: 1;
+    height: auto;
+    margin-bottom: 1.5em;
+    transition: all 700ms ease-in-out;
 }
 
 
@@ -341,6 +357,84 @@ a img.logo-anime {
     align-items: center;
 }
 
+.etiquetas-buscadores{
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    z-index: 2;
+}
+
+.act_centrar{
+    justify-content: center;
+}
+
+#buscadores{
+    border: none;
+    background-color: #000;
+    outline: 3px solid #881188;
+    animation: giraBorde 5s ease infinite;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    font-family: 'category';
+    transition: all 700ms;
+    
+}
+@media only screen and (min-width:500px){
+    .act_buscador{
+        transform: scale(0);
+        transition: all 700ms;
+        width: 0px!important ;
+        
+    }
+    
+}
+
+
+::placeholder {
+    color: #bbb;
+    text-align: center;
+    font-family: 'title-p';
+    font-size: 1.6em;
+
+}
+
+.etiquetas-buscadores input:focus {
+    background: #aaa;
+    color: #ffffff;
+    
+}
+
+@media only screen and (min-width:500px) and (max-width:659px){
+    #buscadores{
+        width: 20em;
+    }
+}
+
+@media only screen and (min-width:000px) and (max-width:500px){
+    .etiquetas-buscadores{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .etiquetas__button{
+        order: 2;
+        margin-top: 1.5em;
+    }
+    #buscadores{
+        height: 2.5em;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:660px){
+    #buscadores{
+        width: 30em;
+    }
+}
+
 .etiquetas__button{
     background: transparent;
     border: none;
@@ -362,7 +456,7 @@ a img.logo-anime {
 .etiquetas__img-text{
     text-decoration: none;
     color: #fff;
-    font-family: category;
+    font-family: 'category';
     font-size: 1.1em;
     margin-top: 0.4em;
     height: auto;
@@ -372,6 +466,13 @@ a img.logo-anime {
     width: auto;
     height: 3em;
     transform: rotate(-90deg);
+    transition: all 800ms ease-in-out;
+}
+
+.arrow{
+    transform: rotate(0deg)!important;
+    transition: all 800ms ease-in-out;
+    
 }
 /*final de las categorias botones de categorias*/
 
@@ -386,7 +487,7 @@ a img.logo-anime {
    justify-content: center;
    align-items: center;
    animation:giraBorde 5s ease infinite;
-   font-family: category;
+   font-family: 'category';
    margin-top: 0.4em;
    height: 2.5em;
 }
@@ -430,7 +531,7 @@ a img.logo-anime {
 
 #tendencia {
     color: #fff;
-    font-family: monospace;
+    font-family: 'category';
     font-size: 2.5em;
     margin-bottom: 10px;
     height: 56px;
@@ -445,7 +546,7 @@ a img.logo-anime {
 
 .Titulo:hover >  #tendencia{
     font-size: 2em;
-    font-family: monospace;
+    font-family: 'category';
     color: #666;
     transform: rotateY(360deg);
     
@@ -1042,7 +1143,7 @@ a img.logo-anime {
         width: 17em!important;
     }
     .container-global{
-        margin-top: 5em;
+        margin-top: 3em;
     }
 }
 
@@ -1123,7 +1224,7 @@ a img.logo-anime {
         color: #ccc;
         text-decoration: none;
         font-size: 1.1em;
-        font-family: title-p;
+        font-family: 'title-p' ;
         margin-right: 1.3em;
         line-height: 1.5;
     }

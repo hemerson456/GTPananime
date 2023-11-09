@@ -106,11 +106,14 @@
         </section>
 
         <section class="etiquetas etiquetas-centrado">
-            <button onclick="funtion(); flecha()"  class="etiquetas__button">
+            <div class="etiquetas-buscadores" id="centrado-bot">
+            <button onclick="funcion(); flechas(); buscado(); centrado()"  class="etiquetas__button">
                 <img src="../../assets/foros.png" class="etiquetas__img-foros">
                 <div class="etiquetas__img-text">CATEGORIAS</div>
-                <img src="../../assets/flecha-final.png" class="etiquetas__img-flecha">
+                <img src="../../assets/flecha-final.png" id="flechas" class="etiquetas__img-flecha">
             </button>
+            <input type="search" placeholder="Buscar" id="buscadores" name="buscador">
+            </div>
             <div id="list1" class="etiquetas_list">
                 <a href="#" class="category_item "  category="all">TODO</a>
                 <a href="#" class="category_item"  category="ShonenB">SHONEN</a>
