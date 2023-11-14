@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'category';
-    src: url(../../Fonts/kitchen/Kitchen\ Counter.ttf);
+    src: url(Fonts/kitchen/Kitchen\ Counter.ttf);
 }
 .loader {
     position: fixed;
