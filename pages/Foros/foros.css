@@ -184,19 +184,70 @@ a img.logo-anime {
     flex-direction: column;
 }
 
-.poster{
-   height: 90%;
-   width: 100%;
-   text-decoration: none;
+.rotacion-image1{
+    width: 100vw;
+    flex-shrink: 0;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-direction: column;
 }
-/*bloques de las imagenes de carrusel responsive*/
-@media only screen and (min-width:670px) {
+
+
+.rotacion-images{
+    width: 600px;
+    height: 400px;
+}
+
+
+
+@media only screen and (max-width:670px){
     .rotacion-images a .img-poster{
         height: 100%;
         width: 100%;
-        background-size: contain;
+    }
+    .poster{
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+     }
+}
+
+/*bloques de las imagenes de carrusel responsive*/
+@media only screen and (min-width:670px) and (max-width:1400px){
+    .rotacion-images a .img-poster{
+        height: 100%;
+        width: 600px;
+        background-size: cover;
         transition: all 1.5s;      
     }
+    .poster{
+        height: 100%;
+        width: 600px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+     }
+}
+
+@media only screen and (min-width:1400px) and (max-width:2755px){
+    .rotacion-images a .img-poster{
+        height: 100%;
+        width: 800px;
+        background-size: cover;
+        transition: all 1.5s;      
+    }
+    .poster{
+        height: 100%;
+        width: 800px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+     }
 }
 
 @media only screen and (max-width:670px) {
@@ -220,6 +271,38 @@ a img.logo-anime {
 /*imagenes de la ruleta*/
 .img1{
     background-image: url('https://img.asmedia.epimg.net/resizer/bVHNiJHQHQXgkRJgObC3StT6ntQ=/1472x1104/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/WUWJGQUU65KJZGLGAN45GBUM7M.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img2{
+    background-image: url('../../assets/fivenightsfreddy.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img3{
+    background-image: url('../../assets/image-rotation/Protocol-Rain.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img4{
+    background-image: url('../../assets/image-rotation/Frieren-Beyond-Journey.webp'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img5{
+    background-image: url('../../assets/tatenoyusha.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img6{
+    background-image: url('../../assets/image-rotation/tenjiku.jpeg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img7{
+    background-image: url('../../assets/image-rotation/kanokano2-poster.webp'); 
     background-position: center;
     background-repeat: no-repeat;
 }
