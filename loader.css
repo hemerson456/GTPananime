@@ -2,6 +2,12 @@
     font-family: 'category';
     src: url(Fonts/kitchen/Kitchen\ Counter.ttf);
 }
+
+@font-face {
+    font-family: 'title-p';
+    src: url(Fonts/Japonesa.ttf);
+}
+
 .loader {
     position: fixed;
     top: 0;
@@ -78,8 +84,54 @@
     }
 }
 
+.loading{
+    width: 12em;
+}
 
 .title-loader{
      color: #fff;
      font-family: 'category';
+     font-size: 1.5em;
+}
+
+.title-loader span {
+    text-align: center;
+    
+}
+
+.title-loader span::before{
+    content: "____";
+    color: #000;
+}
+
+.title-loader::after{
+    font-size: 1.5em;
+    font-family: 'category';
+    content: " .";
+    color: #fff;
+    animation: Load 2s linear infinite;
+}
+
+@keyframes Load {
+    0%{
+       content: " ";
+    }
+    33%{
+        content: " . ";
+    }
+    66%{
+        content: " . .";
+    }
+    100%{
+        content: " . . .";
+    }
+}
+
+@media only screen and (max-width:600px){
+    .title-loader{
+        font-size: 1em;
+    }
+    .loading{
+        width: 8em;
+    }
 }
