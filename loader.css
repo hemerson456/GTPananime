@@ -39,7 +39,7 @@
 
 .cubo {
     height: 60%;
-    width: 60%; 
+    width: 70vw; 
     transform-style: preserve-3d;
     animation: rotar 8s linear infinite;
 }
