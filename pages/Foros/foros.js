@@ -109,3 +109,5 @@ function centrado(){
     let element = document.getElementById("centrado-bot");
     element.classList.toggle("act_centrar");
 }
+
+
