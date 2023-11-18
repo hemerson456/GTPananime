@@ -20,6 +20,7 @@
     background-color: #000;
     transition: opacity 3.5s, visibility 3.5s;
     z-index: 1000;
+    cursor: url("assets/cursor2.png"),auto;
 }
 
 .loader-hidden {
