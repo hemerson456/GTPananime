@@ -8,6 +8,10 @@
     src: url(Fonts/Japonesa.ttf);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 .loader {
     position: fixed;
     top: 0;
@@ -19,9 +23,10 @@
     align-items: center;
     background-color: #000;
     transition: opacity 3.5s, visibility 3.5s;
-    z-index: 1000;
-    cursor: url("assets/cursor2.png"),auto;
+    z-index: 900;
+    cursor: none;
 }
+
 
 .loader-hidden {
     opacity: 0;
@@ -135,4 +140,44 @@
     .loading{
         width: 8em;
     }
+}
+
+
+/*cursor custom*/
+.cursors{
+    position: absolute;
+    z-index: 999;
+}
+
+.cursor{
+   z-index: 999;
+   position: fixed;
+   background: #a2a;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   pointer-events: none;
+   box-shadow: 0 0 20px #a2a;
+   animation: colors 2s infinite;
+   display: none;
+}
+
+@keyframes colors{
+    0%{
+       filter: hue-rotate(0deg);
+    }
+    100%{
+       filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before{
+   content: "";
+   position: absolute;
+   background: #a2a;
+   width: 50px;
+   height: 50px;
+   opacity: 0.2;
+   transform: translate(-30%,-30%);
+   border-radius: 50%;
 }
