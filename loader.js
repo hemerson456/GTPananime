@@ -8,6 +8,8 @@ window.addEventListener("load", () => {
     })
 })
 
+
+//cursor animado 1
 document.addEventListener("DOMContentLoaded", function() {
     // Tu código JavaScript aquí
     const cursor = document.querySelector(".cursor");
@@ -37,3 +39,5 @@ document.addEventListener("DOMContentLoaded", function() {
         cursor.style.display = "none";
     });
 });
+
+
