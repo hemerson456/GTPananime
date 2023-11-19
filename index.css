@@ -470,7 +470,7 @@ a img.logo-anime {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    margin-top: 0; 
+    margin-top: 3em; 
     margin-bottom:0;
     background-size: cover;  
     height: 100%;
