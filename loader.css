@@ -107,7 +107,7 @@
 
 .title-loader span::before{
     content: "____";
-    color: #000;
+    color: #000!important;
 }
 
 .title-loader::after{
