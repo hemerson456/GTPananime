@@ -651,49 +651,90 @@ a img.logo-anime {
 }
 
 .anime-li {
-    display: grid;
-    color:none;
-    background: transparent;
-    border-radius: 5px;   
-    transition: all 1.5s; 
+    position: relative;
     overflow: hidden;
-    
+    border-radius: 5px;
+    list-style-type: none;
 }
 
-.anime-li a {
+.anime-link {
     text-decoration: none;
     color: #fff;
-    background-color: transparent;
-    transition: all 1.5s;
+    display: flex;
 }
-
 
 .anime-ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    grid-auto-rows: 12rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 12em;
     grid-gap: 10px;
     overflow: hidden;
     margin-top: 0.5em;
 }
-/*main terminado oficiales cambio*/
 
-/*imagenes dentro de los backgrounds*/
-.anime-li a div.anime-li-image {
-     /*background-image: url('../../assets/escuadron.webp'); */
-     width: 100%;
-     height: 12em;
-     background-size: cover;
-     transition: background 500ms ease-in-out;
-     display: flex;
-     
- }
- 
-
-
-.anime-li:hover > a div.anime-li-image {
-    transition: background 500ms ease-in-out
+.anime-li:hover .anime-li-image {
+    transform: scale(1.3);
 }
+
+.anime-li .anime-li-image {
+    width: 100%;
+    height: 12em;
+    background-size: cover;
+    transition: transform 400ms ease-in-out;
+}
+
+.anime-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: bottom center;
+    transition: transform 500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.anime-li:hover .anime-details {
+    transform: scale(1);
+}
+
+.anime-details span {
+    font-family: 'text-p' !important;
+
+    transition: all 400ms ease-in-out;
+    background: linear-gradient(to top, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.3));
+}
+
+
+.anime-li:hover  .anime-li-day span{
+    padding-left: 0.7em;
+    transition: all 400ms ease-in-out;
+}
+
+.anime-details span i {
+    background: transparent;
+    margin-right: 0.3em;
+}
+
+.anime-li-h21 {
+    font-family: 'text-p' !important;
+    color: #fff;
+    font-weight: 200;
+    padding: 1.5px 0;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    margin-top: auto;
+    transition: all 1.5s;
+    background: linear-gradient(to top, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.3));
+}
+
+.anime-li:hover .anime-li-h21 {
+    color: #dfd;
+    transform: scale(1);
+}
+
 /*terminado las imagenes backgtound*/
 
 /*imagenes fondos de las noticias presentacion*/
@@ -702,144 +743,48 @@ a img.logo-anime {
     background-image: url('https://img.asmedia.epimg.net/resizer/bVHNiJHQHQXgkRJgObC3StT6ntQ=/1472x1104/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/WUWJGQUU65KJZGLGAN45GBUM7M.jpg');
 }
 
-.anime-li:hover > a div.second1{
-    background-image: url('https://phantom-marca.unidadeditorial.es/56a04e97ce03cdf2684c96d4d0520789/resize/1200/f/webp/assets/multimedia/imagenes/2022/01/21/16427899382505.jpg');
-}
-
 .first{
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg');
-}
-
-.anime-li:hover > a div.first{
-    background-image: url('https://static.wikia.nocookie.net/overlord/images/8/84/Homunculus_Maids.png/revision/latest?cb=20180821224940&path-prefix=es');
 }
 
 .anime-li a div.second {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_takagi-18.jpg');
 }
 
-.anime-li:hover > a div.second{
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/a1-12-1024x683.jpg');
-}
-
 .anime-li a div.second3 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_evangelion-156-1536x864.jpg');
-}
-
-.anime-li:hover > a div.second3{
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/03/portada_evangelion-142.jpg');
 }
 
 .anime-li a div.second4 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_tomb-raider-2-1536x864.jpg');
 }
 
-.anime-li:hover > a div.second4{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD1_h-H_jZb7q-Wve_wNVLjJ1VWRj9LuPOtF2zYJk0fKnm7hPEpMEL2mfnt1A4pk1d-Bo&usqp=CAU');
-}
-
 .anime-li a div.second5 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/Duolingo-1536x864.jpg');
-}
-.anime-li:hover > a div.second5{
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/06/image-24.png');
 }
 
 .anime-li a div.second6 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/Nobara-1536x864.jpg');
 }
-.anime-li:hover > a div.second6{
-    background-image: url('https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/09/Epico-fanart-nos-regala-el-crossover-de-Chainsaw-Man-con-Jujutsu-Kaisen-que-sonamos.jpg');
-}
 
 .anime-li a div.second7 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/43-1536x864.webp');
-}
-.anime-li:hover > a div.second7{
-    background-image: url('https://voltageapps.com/ayakashi/wp-content/themes/voltage_ayakoi/images/movie_thumbnail.png');
 }
 
 .anime-li a div.second8 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_a-1536x864.jpg');
 }
-.anime-li:hover > a div.second8{
-    background-image: url('https://i.blogs.es/0bbe7c/netflix-neon-genesis-evangelion-espinof-ver-en-orden/1366_2000.jpg');
-}
 
 .anime-li a div.second9 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/TenSura_coleus_PV_01_Portada-1536x864.jpg');
-}
-.anime-li:hover > a div.second9{
-    background-image: url('https://areajugones.sport.es/wp-content/uploads/2021/09/tensei-shitara-slime-datta-ken.jpg');
 }
 
 .anime-li a div.second10 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_nier-reincarnation-30-1536x864.jpg');
 }
-.anime-li:hover > a div.second10{
-    background-image: url('https://www.egames.news/__export/1675200457103/sites/debate/img/2023/01/31/2b-bride-cosplay-nier-automata-nime.jpg_759710130.jpg');
-}
 
 .anime-li a div.second11 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_boku-no-kokoro-no-yabai-19-1536x864.jpg');
-}
-.anime-li:hover > a div.second11{
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/07/portada_boku-no-kokoro-no-yabai-15.jpg');
-}
-/*terminado imagenes fondos de las noticias presentacion*/
-
-
-/*titulo y fecha de las nuevas publicaciones*/
-.anime-li-h21 {
-    width: 100%;
-    font-family: 'text-p'!important;
-    background: transparent;
-    position: relative;
-    z-index: 100;
-    color: #ddd;
-    padding: 5px 0;
-    text-align: center;
-    font-weight: 200;
-    font-size: 1em;
-    transition: all 1.5s;  
-    cursor: pointer;
-    margin-top: auto;
-    background: linear-gradient(to top, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8),rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.3));
-
-}
-
-.anime-li:hover > .anime-li-h21{
-    align-items: center;
-    /*background-image: linear-gradient(to top  , rgb(220,220, 220) 25%, rgb(190,190, 190) 50% ,transparent); */
-    background-color: transparent;
-    color: #dfd; 
-    transform: scale(0.7); 
-}
-
-.anime-li-day{
-    font-family: 'Martian Mono', monospace;
-    background: linear-gradient(to top, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8),rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.3));
-    position: absolute;
-    margin: 0;
-    transition: all 1.5s;  
-    color: #ddd;
-}
-
-.anime-li-image:hover > .anime-li-day{
-    padding-left: 0.8em;
-    font-weight: 200;
-    color: #fff;
-}
-
-.anime-li-day span {
-    background: transparent;
-    font-family: 'text-p'!important;
-    cursor: pointer;
-    
-}
-
-.anime-li-day span i {
-    background: transparent;
 }
 /*terminado titulo y fecha de las nuevas publicaciones*/
 
