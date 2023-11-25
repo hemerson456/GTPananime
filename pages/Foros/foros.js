@@ -111,3 +111,30 @@ function centrado(){
 }
 
 
+//buscador operando
+document.addEventListener("DOMContentLoaded", function () {
+    const buscadorInput = document.getElementById("buscadores");
+  
+    buscadorInput.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        const filtro = buscadorInput.value.toLowerCase();
+        const listaItems = document.querySelectorAll(".anime-ul li a"); // Cambia el selector a ID
+  
+        listaItems.forEach(function (item) {
+          const textoItem = item.textContent.toLowerCase();
+          const itemPadre = item.parentNode;
+  
+          if (textoItem.includes(filtro) || filtro.trim() === "") {
+            itemPadre.style.transform = "scale(1)";
+            itemPadre.style.transition = "transform 400ms";
+            itemPadre.style.display = "block";
+          } else {
+            itemPadre.style.display = "none";
+            itemPadre.style.transition = "transform 400ms";
+          }
+        });
+      }
+    });
+});
+  
