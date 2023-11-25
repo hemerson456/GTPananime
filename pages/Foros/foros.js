@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
             itemPadre.style.display = "block";
           } else {
             itemPadre.style.display = "none";
+            itemPadre.style.transform = "scale(0)";
             itemPadre.style.transition = "transform 400ms";
           }
         });
