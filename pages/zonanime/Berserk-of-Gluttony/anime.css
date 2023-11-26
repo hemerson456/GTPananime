@@ -664,6 +664,9 @@ h1{
 .ca8{
     display: none;
 }
+.ca9{
+    display: none;
+}
 /*capitulos img*/
 
 /*capitulos video iframe*/
@@ -690,6 +693,9 @@ h1{
     display: flex !important;
 }
 .capi8{
+    display: flex !important;
+}
+.capi9{
     display: flex !important;
 }
 /*capitulos video iframe*/
