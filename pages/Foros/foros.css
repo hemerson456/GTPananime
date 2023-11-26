@@ -279,7 +279,7 @@ a img.logo-anime {
 
 /*imagenes de la ruleta*/
 .img1{
-    background-image: url('https://img.asmedia.epimg.net/resizer/bVHNiJHQHQXgkRJgObC3StT6ntQ=/1472x1104/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/WUWJGQUU65KJZGLGAN45GBUM7M.jpg'); 
+    background-image: url('../../assets/escuadron.webp'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -740,7 +740,7 @@ a img.logo-anime {
 /*imagenes fondos de las noticias presentacion*/
 
 .second1{
-    background-image: url('https://img.asmedia.epimg.net/resizer/bVHNiJHQHQXgkRJgObC3StT6ntQ=/1472x1104/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/WUWJGQUU65KJZGLGAN45GBUM7M.jpg');
+    background-image: url('../../assets/escuadron.webp');
 }
 
 .first{

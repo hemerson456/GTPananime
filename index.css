@@ -14,8 +14,7 @@ background-color: #050005ff;/*remove*/
 width: 100vw;
 background-size: cover;/*remove*/
 background-attachment: fixed; /*remove*/
-transition: all 1.5s;
-
+transition: all 1.5s;;
 }
 
 
@@ -28,10 +27,30 @@ background-color: transparent; /* Fondo transparente para la barra de desplazami
 border: none; /* Sin borde */
 }
 @font-face {
-    font-family: title-p;
+    font-family: 'title-p';
     src: url(Fonts/Japonesa.ttf);
 }
 
+
+@font-face {
+    font-family: 'category';
+    src: url(Fonts/kitchen/Kitchen\ Counter.ttf);
+}
+
+/*@font-face {
+    font-family: 'text-p';
+    src: url(../../Fonts/monospace/nk57-monospace-cd-lt.otf);
+}*/
+
+@font-face {
+    font-family: 'sub-p';
+    src: url(Fonts/mono-2/Monopoly\ Regular.ttf);
+}
+
+@font-face {
+    font-family: 'text-p';
+    src: url(Fonts/arial-narrow/arial_narrow_7.ttf);
+}
 
   
 
@@ -138,64 +157,447 @@ a img.logo-anime {
     animation: fa-bounce 0.8s 3 !important;
 }
 
-
-/*header completo aqui acaba*/
-
-
-.container {
-    display: grid;
+/*comienzo de las imagenes ruleta*/
+.rotacion{
+    display: flex;
     width: 100vw;
-    grid-template-columns: 3fr 0.5fr;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    background-color: #000;
+    z-index: 2;
+}
+
+.rotacion-image {
+    display: flex;
+    transition: transform 0.4s ease;
+    width: 100%;
+    height: 100%;
 }
 
 
 
-/*rotacion de imagenes*/
-.container-etiquetas{
-    width: 100%; 
-    min-height: 325px; 
-    background-image: url('https://media.discordapp.net/attachments/1162976210440163429/1163209905549881344/1.png?ex=653ebea4&is=652c49a4&hm=74a114e…&=&width=960&height=366');
-    background-repeat: no-repeat; 
-    background-position: center; 
-    margin-top: 0;/*poner1 si es necesario*/
+.rotacion-image  .rotacion-images{
+    width: 100vw;
+    flex-shrink: 0;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-direction: column;
+}
+
+.rotacion-image1{
+    width: 100vw;
+    flex-shrink: 0;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-direction: column;
+}
+
+
+.rotacion-images{
+    width: 600px;
+    height: 400px;
+}
+
+
+@media only screen and (max-width:670px){
+    .rotacion-images a .img-poster{
+        height: 100%;
+        width: 100%;
+    }
+    .poster{
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+     }
+}
+
+/*bloques de las imagenes de carrusel responsive*/
+@media only screen and (min-width:670px) and (max-width:1400px){
+    .rotacion-images a .img-poster{
+        height: 100%;
+        width: 600px;
+        background-size: cover;
+        transition: all 1.5s;      
+    }
+    .poster{
+        height: 100%;
+        width: 600px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+     }
+}
+
+@media only screen and (min-width:1400px) and (max-width:2755px){
+    .rotacion-images a .img-poster{
+        height: 100%;
+        width: 800px;
+        background-size: cover;
+        transition: all 1.5s;      
+    }
+    .poster{
+        height: 100%;
+        width: 800px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+     }
+}
+
+@media only screen and (max-width:670px) {
+    .rotacion-images a .img-poster{
+        height: 100%;
+        background-size: cover;
+        transition: all 1.5s;      
+    }
+    .img-title{
+        font-size: 0.6em;
+    }
+    #prevBtn{
+        border: none!important;
+    }
+    #nextBtn{
+        border: none!important;
+    }
+}
+/*final de los bloques de las imagenes de carrusel responsive*/
+
+/*imagenes de la ruleta*/
+.img1{
+    background-image: url('assets/escuadron.webp'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img2{
+    background-image: url('assets/fivenightsfreddy.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img3{
+    background-image: url('assets/image-rotation/Protocol-Rain.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img4{
+    background-image: url('assets/image-rotation/Frieren-Beyond-Journey.webp'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img5{
+    background-image: url('assets/tatenoyusha.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img6{
+    background-image: url('assets/image-rotation/tenjiku.jpeg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img7{
+    background-image: url('assets/image-rotation/kanokano2-poster.webp'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*final de las imagenes de la ruleta*/
+
+
+
+.img-title{
+    height: 10%;
+    color: #fff;
+    font-family: 'sub-p' ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
     cursor: pointer;
-    animation: image 24s step-end infinite;
-
+    border: none;
+    transition: background 0.3s;
 }
 
-@keyframes image{
-    0% {
-        background-image: url('https://i.ytimg.com/vi/FP5YViBSyOw/maxresdefault.jpg');
-        /*suicide hunter*/
-    } 
-    17% {
-        background-image: url('assets/image-rotation/Protocol-Rain.jpg');
-       /* protocol:rain*/
-    }
-    34%{
-        background-image: url('assets/image-rotation/tatenoyusha-season-3.avif');
-        /*tate no yusha*/
-    }
-    51%{
-        background-image: url('assets/image-rotation/tenjiku.jpeg');
-       /* tokyo revengers*/
-    }
-    68%{
-        background-image: url('assets/image-rotation/kanokano2-poster.webp');
-        /*kanojomokanojo*/
-    }
-    85%{
-        background-image: url('assets/image-rotation/berserk_of_gluttony.jpg')
-         /*berserk*/
-    }
-    100%{
-        background-image: url('https://i.ytimg.com/vi/FP5YViBSyOw/maxresdefault.jpg')
-         /*lo mismo que el inicio*/
+#prevBtn:hover, #nextBtn:hover {
+    background: #a3a;
+    color: #fff; 
+    border: none;
+}
+
+#prevBtn {
+    left: 10px;
+    display: flex;
+    width: 4em;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: monospace;
+    border: 2px solid #aaa;
+}
+
+#nextBtn {
+    right: 10px;
+    display: flex;
+    width: 4em;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: monospace;
+    border: 2px solid #aaa;
+}
+
+
+
+/*final de la rotacion de las imagenes*/
+
+/*etiquetas*/
+.etiquetas{
+    width: 100vw;
+    height: auto;
+    margin-top: 3em;
+}
+
+.etiquetas_list{
+    transform: scale(0);
+    z-index: 0;
+    gap: 1.5em 2em;
+    height: 0em;
+    transition: 700ms ease-in-out;
+}
+.act_style{
+    transform: scale(1);
+    margin-top: 1em;
+    gap: 1.5em 2em;
+    z-index: 1;
+    height: auto;
+    margin-bottom: 1.5em;
+    transition: all 700ms ease-in-out;
+}
+
+
+@media only screen and (min-width:200px) and (max-width:350px){
+    .etiquetas_list{
+        width: 99%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 2em;
     }
     
 }
 
-/*rotacion de imagenes*/
+@media only screen and (min-width:350px) and (max-width:750px){
+    .etiquetas_list{
+        width: 98%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 2em;
+    }
+}
+
+@media only screen and (min-width:00px) and (max-width:900px){
+    .category_item{
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width:750px) and (max-width:1529px){
+    .etiquetas_list{
+        width: 98%;
+        display: grid;
+        grid-template-columns: repeat(6 , 1fr);
+        grid-auto-rows: 2em;
+    }
+    
+}
+
+@media only screen and (min-width:1529px) and (max-width:4000px){
+    .etiquetas_list{
+        width: 98%;
+        display: grid;
+        grid-template-columns:minmax(9em,1fr) repeat(11 , 1fr);
+        grid-auto-rows: 2em;
+    }
+    
+}
+
+/*botones de categorias*/
+.etiquetas-centrado{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.etiquetas-buscadores{
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    z-index: 2;
+}
+
+.act_centrar{
+    justify-content: center;
+}
+
+#buscadores{
+    border: none;
+    background-color: #000;
+    outline: 3px solid #881188;
+    animation: giraBorde 5s ease infinite;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    font-family: 'text-p';
+    transition: all 700ms;
+    
+}
+@media only screen and (min-width:500px){
+    .act_buscador{
+        transform: scale(0);
+        transition: all 700ms;
+        width: 0px!important ;
+        
+    }
+    
+}
+
+
+::placeholder {
+    color: #bbb;
+    text-align: center;
+    font-family: 'title-p';
+    font-size: 1.6em;
+
+}
+
+.etiquetas-buscadores input:focus {
+    background: #aaa;
+    color: #ffffff;
+    
+}
+
+@media only screen and (min-width:500px) and (max-width:659px){
+    #buscadores{
+        width: 20em;
+    }
+}
+
+@media only screen and (min-width:000px) and (max-width:500px){
+    .etiquetas-buscadores{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .etiquetas__button{
+        order: 2;
+        margin-top: 1.5em;
+    }
+    #buscadores{
+        height: 2.5em;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:660px){
+    #buscadores{
+        width: 30em;
+    }
+}
+
+.etiquetas__button{
+    background: transparent;
+    border: none;
+    background-color: #882288;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    width: 13em;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.etiquetas__img-foros{
+    width: auto;
+    height: 2.5em;
+    color: #fff;
+}
+
+.etiquetas__img-text{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'category';
+    font-size: 1.1em;
+    margin-top: 0.4em;
+    height: auto;
+}
+
+.etiquetas__img-flecha{
+    width: auto;
+    height: 3em;
+    transform: rotate(-90deg);
+    transition: all 800ms ease-in-out;
+}
+
+.arrow{
+    transform: rotate(0deg)!important;
+    transition: all 800ms ease-in-out;
+    
+}
+/*final de las categorias botones de categorias*/
+
+.category_item{
+    display: flex;
+   text-decoration: none;
+   color: #fff;
+   outline: 3px solid #881188 ;
+   outline-offset: -0.1em;
+   border-radius: 45px;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   animation:giraBorde 5s ease infinite;
+   font-family: 'category';
+   margin-top: 0.4em;
+   height: 2.5em;
+}
+
+.category_item:hover{
+   background-color: #881188;
+   transition: all 800ms;
+   animation: none;
+}
+/*final de las etiquetas*/
+
+
+/*main*/
+.container{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 3fr 0.5fr;
+}
 
 
 .container1 {
@@ -210,7 +612,6 @@ a img.logo-anime {
 .container2 {
     padding: 10px;
 }
-
 .Titulo {
     display: grid;
     width: 100%;
@@ -222,7 +623,7 @@ a img.logo-anime {
 
 #tendencia {
     color: #fff;
-    font-family: monospace;
+    font-family: 'category';
     font-size: 2.5em;
     margin-bottom: 10px;
     height: 56px;
@@ -237,420 +638,151 @@ a img.logo-anime {
 
 .Titulo:hover >  #tendencia{
     font-size: 2em;
-    font-family: monospace;
+    font-family: 'category';
     color: #666;
     transform: rotateY(360deg);
     
 }
 
+.anime-li {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+.anime-link {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+}
+
 .anime-ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    grid-auto-rows: 12rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 12em;
     grid-gap: 10px;
     overflow: hidden;
     margin-top: 0.5em;
 }
-.anime-li {
-    display: grid;
-    color:none;
+
+.anime-li:hover .anime-li-image {
+    transform: scale(1.3);
+}
+
+.anime-li .anime-li-image {
+    width: 100%;
+    height: 12em;
+    background-size: cover;
+    transition: transform 400ms ease-in-out;
+}
+
+.anime-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: bottom center;
+    transition: transform 500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.anime-li:hover .anime-details {
+    transform: scale(1);
+}
+
+.anime-details span {
+    font-family: 'text-p' !important;
+
+    transition: all 400ms ease-in-out;
+    background: linear-gradient(to top, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.3));
+}
+
+
+.anime-li:hover  .anime-li-day span{
+    padding-left: 0.7em;
+    transition: all 400ms ease-in-out;
+}
+
+.anime-details span i {
     background: transparent;
-    border-radius: 5px;   
-    transition: all 1.5s; 
-    overflow: hidden;
-    
-}
-
-.anime-li a {
-    text-decoration: none;
-    color: #fff;
-    background-color: transparent;
-    transition: all 1.5s;
-}
-
-
-/******************************copiar**************************************/
-
-
-
-.anime-li a div.anime-li-image {
-    
-    /* background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg'); */
-     width: 100%;
-     height: 12em;
-     background-size: cover;
-     transition: all 1.5s;
-     
- }
-
-
-
-.anime-li:hover > a div.anime-li-image {
-    transform: scale(1.30);
-    background-color: transparent;
-   
+    margin-right: 0.3em;
 }
 
 .anime-li-h21 {
-    width: 100%;
-    font-family: 'Martian Mono', monospace;
-    background: transparent;
-    position: relative;
-    z-index: 100;
-    margin: -2.7em 0 0 0;
-    color: #ddd;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1em;
-    transition: all 1.5s;  
-    cursor: pointer;
-    background: linear-gradient(to top, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8),rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.3));
-
-}
-
-
-
-
-
-.anime-li:hover > .anime-li-h21{
-    align-items: center;
-    /*background-image: linear-gradient(to top  , rgb(220,220, 220) 25%, rgb(190,190, 190) 50% ,transparent); */
-    background-color: transparent;
-    color: #dfd;  
-}
-
-.anime-li-day{
-    font-family: 'Martian Mono', monospace;
-    background: linear-gradient(to top, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8),rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.3));
-    position: absolute;
-    margin: 0;
-    transition: all 1.5s;  
-    color: #ddd;
-}
-
-.anime-li:hover > .anime-li-day{
-    padding-left: 0.8em;
-    font-weight: 800;
+    font-family: 'text-p' !important;
     color: #fff;
-
-}
-
-
-.anime-li-day span {
-    background: transparent;
-    font-family: 'Martian Mono', monospace;
+    font-weight: 200;
+    font-size: 1em;
+    text-align: center;
     cursor: pointer;
-    
+    margin-top: auto;
+    transition: all 1.5s;
+    background: linear-gradient(to top, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.3));
 }
 
-.anime-li-day span i {
-    background: transparent;
+.anime-li:hover .anime-li-h21 {
+    color: #dfd;
+    transform: scale(1);
 }
 
-.anime-li a div.first {
+/*terminado las imagenes backgtound*/
+
+/*imagenes fondos de las noticias presentacion*/
+
+.second1{
+    background-image: url('assets/escuadron.webp');
+}
+
+/*.first{
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg');
-}
+}*/
 
 .anime-li a div.second {
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_takagi-18.jpg');
+    background-image: url('assets/tatenoyusha.png');
 }
 
 .anime-li a div.second3 {
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_evangelion-156-1536x864.jpg');
-}
-
-.anime-li a div.second4 {
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_tomb-raider-2-1536x864.jpg');
-}
-
-.anime-li a div.second5 {
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/Duolingo-1536x864.jpg');
-}
-
-.anime-li a div.second6 {
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/Nobara-1536x864.jpg');
-}
-
-.anime-li a div.second7 {
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/43-1536x864.webp');
-}
-
-.anime-li a div.second8 {
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_a-1536x864.jpg');
-}
-
-.anime-li a div.second9 {
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/TenSura_coleus_PV_01_Portada-1536x864.jpg');
-}
-
-.anime-li a div.second10 {
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_nier-reincarnation-30-1536x864.jpg');
-}
-
-.anime-li a div.second11 {
-    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_boku-no-kokoro-no-yabai-19-1536x864.jpg');
-}
-.anime-li a div.second12 {
-    background-image: url('assets/image-rotation/tatenoyusha-season-3.avif');
-}
-
-.anime-li a div.second13{
     background-image: url('assets/image-rotation/tenjiku.jpeg');
 }
 
-.anime-li a div.second14{
+.anime-li a div.second4 {
     background-image: url('assets/image-rotation/kanokano2-poster.webp');
 }
 
-.anime-li a div.second15{
+.anime-li a div.second5 {
     background-image: url('assets/image-rotation/berserk_of_gluttony.jpg');
 }
 
-.anime-li a div.second16{
+.anime-li a div.second6 {
     background-image: url('assets/image-rotation/Protocol-Rain.jpg');
 }
 
-.anime-li a div.second17{
+.anime-li a div.second7 {
     background-image: url('assets/image-rotation/elviajedechijiro.jpg');
-    background-position: center right;
 }
 
-.anime-li a div.second18{
+.anime-li a div.second8 {
     background-image: url('assets/image-rotation/Frieren-Beyond-Journey.webp');
-    background-position: center right;
 }
 
-.anime-li a div.second19{
+.anime-li a div.second9 {
     background-image: url('assets/image-rotation/erased.jpg');
-    background-position: center right;
 }
 
-.anime-li a div.second20{
+.anime-li a div.second10 {
     background-image: url('assets/BananaFish.jpg');
-    background-position: center right;
 }
-.anime-li a div.second21{
+
+.anime-li a div.second11 {
     background-image: url('assets/fivenightsfreddy.jpg');
-    background-position: center right;
-}
-.anime-li a div.second22{
-    background-image: url('assets/escuadron.webp');
-    background-position: center center;
-}
-/*titles modificaciones*/
-
-
-.title12{
-    margin: -1.7em 0 0 0;
-}
-.title13{
-    margin: -1.7em 0 0 0;
-    font-size: 0.9em;
-}
-.title14{
-    margin: -1.7em 0 0 0;
-
 }
 
-/*titles modificaciones*/
+/*terminado imagenes fondos de las noticias presentacion*/
+/*terminado titulo y fecha de las nuevas publicaciones*/
 
-/*********************************copiar***********************************************************/
-
-/* etiquetas filt*/
-
-.container-buscadores{
-    width: 100vw;
-    height: 380px;
-    display: flex;
-}
-
-.blocketiquetas{
-    padding: 0;
-    background-color: transparent;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    margin-top: 3em; 
-    margin-bottom:0;
-    background-size: cover;  
-    height: 100%;
-    padding: 2.5em 0 0.5em 0;
-    transition: all 1.5s;  
-    background: linear-gradient(to top, rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0.4),rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.2), rgba(1, 1, 1, 0.0));
-}
-
-.etiquetas {
-    display: flex;
-    background-color: transparent;
-    background: transparent;
-    width: 100%;
-    padding: 0;
-    justify-content: end;
-    flex-direction: column;
-    
-    
-}
-/*foros*/
-.etiquetas__button{
-    display: flex;
-    width: 15em;
-    background-color: transparent;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 10px;
-    justify-content: space-between;
-    background: #b0b;
-    cursor: pointer;
-    border: none;
-}
-
-.etiquetas__button-foros{
-    width: auto;
-    height: 2.5em;
-    margin-left: 0.2em;
-}
-
-.etiquetas__button-flecha {
-    width: auto;
-    height: 2.5em;
-    transform: rotate(-90deg);
-}
-
-#flecha{
-    transition: all 500ms;
-}
-
-#flechas{
-    transition: all 500ms;
-}
-
-.arrow{
-    transition: all 500ms;
-    transform: rotate(0deg);
-}
-.etiquetas__button-reproductor{
-    width: auto;
-    height: 2.5em;
-    margin-left: 0.6em;
-    margin-right: 0.2em;
-    
-}
-
-.etiquetas__button-otaku{
-    margin-top: auto;
-    margin-bottom: auto;
-
-}
-
-.etiquetas__button-zonanime{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-
-.etiquetas__buttona{
-    text-decoration: none;
-    color: #ddd;
-    display: flex;
-    align-items: center;
-    font-size: 1.1em;
-    font-family: 'Martian Mono', monospace;
-    animation: textColorChange 5s infinite;
-    font-weight: 900;
-
-}
-@keyframes textColorChange {
-    0% {
-      color: #999; 
-    }
-    25% {
-      color: #ccc; 
-    }
-    50% {
-      color: #ddd; 
-    }
-    75% {
-      color: #fff;
-    }
-    100% {
-      color: #bbb; 
-    }
-  }
-
-.act_arrow{
-    transform: rotate(0deg);
-}
-
-
-/*foros*/
-.bloque2{
-    margin-top: 0;
-}
-
-
-.etiquetas_list{
-    display: none;
-    flex-direction: column;
-    padding: 0;
-    background-color: transparent;
-    align-items: center; 
-    transition: all 1.2s;
-    -webkit-transition: 1.2s;
-    -moz-transition: 1.2s;
-    -o-transition: 1.2s;
-}
-
-.act_style{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.3em;
-    padding: 0;
-    background-color: transparent;
-    align-items: center; 
-    transition: all 1.2s;
-    -webkit-transition: 1.2s;
-    -moz-transition: 1.2s;
-    -o-transition: 1.2s;
-}
-.category_item{
-    width: 8.9em;
-    background-color: #111;
-    text-decoration: none;
-    text-align: center;
-    color: #ddd;
-    margin: 0.5em 0;
-    outline: 1px solid #666;
-    border-radius: 10px;
-    padding: 5px;
-    font-family: 'Martian Mono', monospace;
-    font-size: 0.9em;
-}
-
-.category_item:hover{
-    background-color: #b5b;
-}
-
-.category_items{
-    width: 9.5em;
-    background-color: #111;
-    text-decoration: none;
-    text-align: center;
-    color: #ddd;
-    margin: 0.5em 0;
-    outline: 1px solid #666;
-    border-radius: 10px;
-    padding: 5px;
-    font-family: 'Martian Mono', monospace;
-}
-
-.act_style .ct_item-active{
-   background-color: #d0f;
-   color: #fff;
-   outline: 1px solid #d0f;
-}
-/* etiquetas filt*/
 
 /*aside*/
 
@@ -668,7 +800,7 @@ a img.logo-anime {
     background: transparent;
     outline: 1.5px solid #aaa;
     margin-top: 3.5em;
-    border-radius: 15px;
+    border-radius: 8px;
     background-color: #111;
     padding: 3px 0;
     
@@ -698,15 +830,15 @@ a img.logo-anime {
 .news-container_security {
     background-color: transparent;
     color: #ccc;
-    font-family: 'Martian Mono', monospace;
-    font-size: 1.2em;
+    font-family: 'title-p';
+    font-size: 1.3em;
 }
 
 .news-container_text {
     background-color: transparent;
     color: #ccc;
-    font-family: 'Martian Mono', monospace;
-    font-size: 0.8em;
+    font-family: 'text-p';
+    font-size: 0.9em;
 
 }
 
@@ -728,7 +860,7 @@ a img.logo-anime {
     outline: 2px solid #a4a;
     border-radius: 10px;
     background: #a0a;
-    font-family: 'Martian Mono', monospace;
+    font-family: 'title-p'!important;
 
 }
 .news-container_buttons:hover > .news-container_button {
@@ -739,11 +871,11 @@ a img.logo-anime {
 
 /*descargar app*/
 .aplicacion {
-    width: 17em;
+    width: 98%;
     background: transparent;
     outline: 1.5px solid #aaa;
     margin-top: 1.5em;
-    border-radius: 15px;
+    border-radius: 8px;
     background-color: #111;
     padding: 3px 0;
     
@@ -773,15 +905,15 @@ a img.logo-anime {
  .container-app-titulo {
      background-color: transparent;
      color: #ccc;
-     font-family: 'Martian Mono', monospace;
-     font-size: 1.2em;
+     font-family: 'title-p'!important;
+     font-size: 1.3em;
  }
 
  .container-app-subtext {
     background-color: transparent;
     color: #ccc;
-    font-family: 'Martian Mono', monospace;
-    font-size: 0.8em;
+    font-family: 'text-p';
+    font-size: 0.9em;
 
 }
 
@@ -803,7 +935,7 @@ a img.logo-anime {
     outline: 2px solid #a4a;
     border-radius: 10px;
     background: #a0a;
-    font-family: 'Martian Mono', monospace;
+    font-family: 'title-p'!important;
 
 }
 .aplicacion-container_buttons:hover > .aplicacion-container_button {
@@ -818,7 +950,7 @@ a img.logo-anime {
     background: transparent;
     outline: 1.5px solid #aaa;
     margin-top: 1.5em;
-    border-radius: 15px;
+    border-radius: 8px;
     background-color: #111;
     padding: 0 0 3px 0;
     z-index: 100;
@@ -857,17 +989,17 @@ a img.logo-anime {
     display: inline-block;
     color: #ccc;
     background-color: transparent;
-    font-family: 'Martian Mono', monospace;
-    font-size: 1.2em;
+    font-family: 'title-p'!important;
+    font-size: 1.5em;
 }
 
 .crearcomunity-parrafo {
     display: flex;
     color: #aaa;
     background-color: transparent;
-    font-family: 'Martian Mono', monospace;
-    padding: 3px;
-    font-size: 0.8em;
+    font-family: 'text-p';
+    padding: 3px 12px;
+    font-size: 0.9em;
     margin-top: 0.5em;
     line-height: 1.3;
 
@@ -897,7 +1029,7 @@ a img.logo-anime {
 }
 
 .crear-publi{
-    font-family: monospace;
+    font-family: 'title-p';
 }
 
 .box2{
@@ -910,12 +1042,12 @@ a img.logo-anime {
     width: 11em;
     color: #aaa;
     padding: 0.2em 0;
-    font-size: 1.1em;
+    font-size: 1.2em;
     border: none;
     outline: 2px solid #a4a;
     border-radius: 10px;
     background: #a0a;
-    font-family: 'Martian Mono', monospace;
+    font-family: 'title-p'!important;
 }
 
 .crearcomunity-buttons:hover > .crearcomunity-button {
@@ -929,7 +1061,7 @@ a img.logo-anime {
     width: 98%;
     outline: 1.5px solid #aaa;
     margin-top: 1.5em;
-    border-radius: 15px;
+    border-radius: 8px;
     background-color: #111;
     padding:3px ;
 
@@ -939,6 +1071,7 @@ a img.logo-anime {
     margin-top: 0.5em;
     width: 100%;
     background-color: #111;
+    font-family: 'text-p';
 
 }
 
@@ -1007,8 +1140,7 @@ a img.logo-anime {
 }
 .users_derechos-text{
     background-color: #111;
-    color: #ccc;
-    font-family: 'Martian Mono', monospace;
+    color: #ccc'text-p';
     font-size: 0.8em;
 }
 /*terminado politicas*/
@@ -1025,12 +1157,11 @@ a img.logo-anime {
 
 .footer-text{
     color: #eee;
-    font-family: 'Martian Mono', monospace;
+    font-family: 'text-p';
     text-align: center;
 }
+/*aside terminado*/
 
-
-/*aside*/
 @media only screen and (min-width:900px){
     .aside{
         justify-content: start;
@@ -1047,11 +1178,15 @@ a img.logo-anime {
     .users{
         width: 17em!important;
     }
-    .container-global{
-        margin-top: 5em;
+    .aplicacion{
+        width: 17em!important;
     }
-    
+    .container-global{
+        margin-top: 3em;
+    }
 }
+
+
 
 @media only screen and (max-width:900px) {
     .headers {
@@ -1102,11 +1237,12 @@ a img.logo-anime {
     }
 
     .header__nav-ul3 {
-        display: flex;
+        display: flex  !important;
         flex-direction: column;
         background: #111;       
         color: transparent;
         position: absolute;
+        z-index: 10000;
         margin-top: 17em;
         transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
         padding: 10px;
@@ -1127,7 +1263,7 @@ a img.logo-anime {
         color: #ccc;
         text-decoration: none;
         font-size: 1.1em;
-        font-family: monospace;
+        font-family: 'title-p' ;
         margin-right: 1.3em;
         line-height: 1.5;
     }
@@ -1139,6 +1275,7 @@ a img.logo-anime {
         background: transparent;
         margin: 0 0.5em;
     }
+
 
     .container {
         grid-template-columns:  none
@@ -1206,290 +1343,4 @@ a img.logo-anime {
         display: none;
     }
 
-    
-    /*reponsibe etiqueta*/
-
-    .etiquetas {
-        display: flex;
-        background-color: transparent;
-        background: transparent;
-        width: 100%;
-        padding: 0;
-        justify-content: center;
-        flex-direction: column;
-        
-        
-    }
-    .blocketiquetas{
-        display: flex;
-        align-items: end;
-    }
-
-    .etiquetas_list{
-        display: none;
-        flex-direction: column;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding: 0;
-        background-color: transparent;    
-        outline: 1px solid #ccc; 
-
-    }
-
-    .act_style{
-        display: flex;
-        align-items: center; 
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding: 0;
-        background-color: transparent;    
-        outline: none; 
-        transition: all 1.2s;
-        -webkit-transition: 1.2s;
-        -moz-transition: 1.2s;
-        -o-transition: 1.2s;
-    }
-
-    .category_item{
-        width: 8.8em;
-        background-color: #111;
-        text-decoration: none;
-        text-align: center;
-        color: #ddd;
-        margin: 0.5em 0.5em;
-        outline: 1px solid #666;
-        border-radius: 10px;
-        padding: 5px;
-        font-family: 'Martian Mono', monospace;
-        font-size: 0.77em;
-
-    }
-    /*responsibe etiqueta*/
-    .My-Heart{
-        margin: -2.5em 0 0 0;
-    }
-
-    .crearcomunity-button{
-      width: 11em;
-    }
-
-    
-
-    
 }
-
-@media only screen and (max-width:628px){
-    .anime-li-h21 {
-        margin: -1.5em 0 0 0;
-     }
-
-     .My-Heart{
-        margin: -2.5em 0 0 0;
-    }
-    
-    
-}
-
-@media only screen and (min-width: 900px) and (max-width: 1135px){
-    .anime-li-h21 {
-        margin: -1.5em 0 0 0;
-     }
-
-    .anime-li:hover > .anime-li-h21{
-        margin: -2.5em 0 0 0;
-     }
-    
-}
-
-
-/*listas de animes modificacion de letras responsive  solo agregar para el texto*/
-
-@media only screen and (max-width:628px){
-    .My-Heart{
-        margin: -1.7em 0 0 0;
-    }
-    
-}
-
-@media only screen and (max-width:572px){
-    .Evangelion{
-        margin: -2.7em 0 0 0;
-    }
-    
-}
-@media only screen and (max-width:558px){
-    .My-Heart{
-        margin: -2.7em 0 0 0;
-    }
-    .container-etiquetas{
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    }
-    .container-buscadores{
-      height: 100%;
-      margin-top: 1.5em;
-    }
-    .blocketiquetas{
-        padding: 0;
-        flex-direction: column;
-    }
-}
-
-
-
-
-
-/*modificador de la imagen de fondo animado*/
- @media only screen and (min-width:846px) {
-    .container-etiquetas{
-        background-size: contain;
-    }
- }
-
- @media only screen and (min-width:560px) and (max-width:846px){
-    .container-etiquetas{
-        background-size: cover;
-    }
- }
- @media only screen and (max-width:846px){
-    .container-etiquetas{
-        background-position: center;
-    }
- }
-
- @media only screen and (max-width:558px){
-    .container-etiquetas{
-        justify-content: center;
-        align-items: center;
-        min-height: 380px;
-        background-size: cover;
-        background-position: unset;
-        animation: none;/*modificar si quiero animacion para mobile*/
-    }
-    .blocketiquetas{
-        align-items: center;
-        justify-content: center;
-        gap: 1em;
-    }
- }
-/*modificador de la imagen de fondo animado*/
-
-
-
-
-
-@media only screen and (max-width:544px){
-    .Jujutsu{
-        margin: -2.7em 0 0 0;
-    }
-    
-}
-
-@media only screen and (max-width:512px){
-    .NieR{
-        margin: -2.7em 0 0 0;
-    }
-    
-}
-
-@media only screen and (max-width:490px){
-    .Evangelion{
-        margin: -2.7em 0 0 0;
-    }
-    .Chainsaw{
-        margin: -2.7em 0 0 0;
-    }
-}
-
-@media only screen and (max-width:460px){
-    .Raider{
-        margin: -2.7em 0 0 0;
-    }
-    .Takagi-san{
-        margin: -2.7em 0 0 0;
-    }
-    .KudaLive{
-        margin: -2.7em 0 0 0;
-    }
-}
-@media only screen and (max-width:400px){
-
-   .header__nav-ul3{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background: #111;       
-    color: transparent;
-    margin-top: 17em;
-    position: absolute;
-    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
-    padding: 5px;
-    line-height: 1.6;
-
-   }
-   .header__nav-li2 a {
-    background: transparent;
-    color: #ccc;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-family: monospace;
-    line-height: 2.2;
-  
-    }
-    #tendencia{
-        font-size: 2.5em;
-    }
-    .footer-text{
-        color: #eee;
-        font-family: 'Martian Mono', monospace;
-        font-size: 0.60em;
-    }
-   
-
-}
-
-@media only screen and (max-width:380px){
-    .header__nav-li2 a{
-        font-size: 1em;
-    }
-}
-
-@media only screen and (max-width:500px){
-    .Evangelion2{
-       margin: -2.7em 0 0 0;       
-    }
-}
-
-
-@media only screen and (max-width:605px){
-    .Tensei-Shitara{
-        margin: -2.7em 0 0 0;
-    }
-}
-
-
-@media only screen and (max-width:563px){
-    .Ayakashi{
-        margin: -2.7em 0 0 0;
-    }
-    .footer-text{
-        color: #eee;
-        font-family: 'Martian Mono', monospace;
-        font-size: 0.80em;
-    }
-}
-@media only screen and (max-width:340px){
-    .title12{
-        margin: -2.7em 0 0 0;
-    }
-    .title13{
-        margin: -2.7em 0 0 0;
-    }
-}
-
-/*listas de animes modificacion de letras responsive*/
-
-

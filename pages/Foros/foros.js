@@ -66,6 +66,7 @@ $(document).ready(function(){
             if (catProduct === 'all') {
                 $('.anime-li').show();
                 $('.anime-li').css('transform', 'scale(1)');
+                $('.anime-li').css('transition', '400ms');
             } else {
                 // Separa las categorías por comas y las convierte en un arreglo
                 var categories = catProduct.split(',');
@@ -73,6 +74,7 @@ $(document).ready(function(){
                     var category = categories[i].trim(); // Elimina espacios en blanco
                     $('.anime-li[category*="'+category+'"]').show();
                     $('.anime-li[category*="'+category+'"]').css('transform', 'scale(1)');
+                    $('.anime-li[category*="'+category+'"]').css('transition', '400ms');
                 }
             }
         }
@@ -83,6 +85,7 @@ $(document).ready(function(){
     $('.category_item[category="all"]').click(function(){
         $('.anime-li').show();
         $('.anime-li').css('transform', 'scale(1)');
+        $('.anime-li').css('transition', '400ms');
     });
 
 });
