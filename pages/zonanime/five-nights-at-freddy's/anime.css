@@ -5,8 +5,8 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Kanit:ital,wght@0,100;0,200;1,300&family=Lobster&family=Martian+Mono:wght@800&family=Skranji:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Kanit:ital,wght@0,100;0,200;1,300&family=Lobster&family=Martian+Mono:wght@800&family=Skranji:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');*/
 body{
 overflow-y: scroll;
 overflow-x: hidden;
@@ -46,9 +46,27 @@ border: none; /* Sin borde */
 }
 
 @font-face {
-    font-family: title-p;
+    font-family: 'title-p';
     src: url(../../../Fonts/Japonesa.ttf);
 }
+
+@font-face {
+    font-family: 'category';
+    src: url(../../../Fonts/kitchen/Kitchen\ Counter.ttf);
+}
+
+@font-face {
+    font-family: 'sub-ps';
+    src: url(../../../Fonts/mono-2/Monopoly\ Regular.ttf);
+}
+
+@font-face {
+    font-family: 'text-ps';
+    src: url(../../../Fonts/arial-narrow/arial_narrow_7.ttf);
+
+}
+
+
 
 .headers {
     background: transparent;
@@ -97,7 +115,7 @@ img.logo-anime {
     text-decoration: none;
     font-size: 1.14em;
     color: #fff;
-    font-family: title-p;
+    font-family: 'title-p';
     outline: 2px solid #000;
     outline-offset: 5px;
     border-radius: 2px;
