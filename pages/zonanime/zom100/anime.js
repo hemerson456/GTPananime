@@ -71,14 +71,14 @@ function PlayAudio(){
 }
 function pauseAudio() {
     document.getElementById("musica1").pause();
-}
+};
 
 
 
 /*body saludo*/
 function Entry(){
     document.getElementById("entrada").play();
-}
+};
 
 
 
