@@ -330,6 +330,9 @@ h1{
     
 }
 
+
+
+/*reproductor para la musica*/
 .music-bloq{
     display: flex;
     justify-content: center;

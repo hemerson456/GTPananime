@@ -75,6 +75,13 @@ function pauseAudio() {
 
 
 
+/*body saludo*/
+function Entry(){
+    document.getElementById("entrada").play();
+}
+
+
+
 /*imagen ge tu zoinanime*/
 function sun(){
     let element = document.getElementById("activetu")
