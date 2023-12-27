@@ -350,8 +350,9 @@ h1{
     height: 50px;
     border-radius: 50%;
     animation: border-music 4s linear infinite;
-    outline: 4px solid rgb(193, 53, 132);
+    outline: 6px dashed #000; /*#389   color para fondo compatible*/
     overflow: hidden;
+    outline-offset: 0.9px;
 }
 
 @keyframes border-music{
@@ -366,14 +367,14 @@ h1{
 .play1{
     height: 50px;
     width: 50px;
-    background-image: url('../../../assets/botones/boton-play.png');
+    background-image: url('../../../assets/botones/movie.gif');
     background-size: cover;
     background-position: center center; 
 
 }
 
 .play1:hover{
-    background-image: url('../../../assets/botones/movie.gif');
+    background-image: url('../../../assets/botones/plays.gif');
 }
 .play2{
     width: 50px;
@@ -389,7 +390,7 @@ h1{
     display: flex!important;
     width: 50px;
     height: 50px;
-    background-image: url('../../../assets/botones/butonstop.png');
+    background-image: url('../../../assets/botones/stops.gif');
     background-size: cover;
     background-position: center center; 
     
