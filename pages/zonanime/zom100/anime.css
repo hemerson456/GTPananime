@@ -346,8 +346,20 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: border-music 4s linear infinite;
+    outline: 4px solid rgb(193, 53, 132);
+}
+
+@keyframes border-music{
+    0%{
+        filter: hue-rotate(0deg);
+     }
+     100%{
+        filter: hue-rotate(360deg);
+     }
 }
 
 #miPlay{
@@ -369,11 +381,14 @@ h1{
     display: flex!important;
     width: 50px;
     height: 50px;
-    background-image: url('assets.anime/butonstop.png');
+    background-image: url('../../../assets/botones/butonstop.png');
     background-size: cover;
     background-position: center center; 
     
 }
+
+/*reproductor para la musica*/
+
 
 
 @media only screen and (max-width:700px){
