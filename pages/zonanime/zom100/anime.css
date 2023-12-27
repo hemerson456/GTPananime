@@ -351,6 +351,7 @@ h1{
     border-radius: 50%;
     animation: border-music 4s linear infinite;
     outline: 4px solid rgb(193, 53, 132);
+    overflow: hidden;
 }
 
 @keyframes border-music{
@@ -362,11 +363,18 @@ h1{
      }
 }
 
-#miPlay{
+.play1{
     height: 50px;
-    width: auto;
+    width: 50px;
+    background-image: url('../../../assets/botones/boton-play.png');
+    background-size: cover;
+    background-position: center center; 
+
 }
 
+.play1:hover{
+    background-image: url('../../../assets/botones/movie.gif');
+}
 .play2{
     width: 50px;
     height: 50px;
