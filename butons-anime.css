@@ -1,0 +1,65 @@
+/*reproductor para la musica*/
+.music-bloq{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: border-music 4s linear infinite;
+    outline: 6px dashed #000; /*#389   color para fondo compatible*/
+    overflow: hidden;
+    outline-offset: 0.9px;
+}
+
+@keyframes border-music{
+    0%{
+        filter: hue-rotate(0deg);
+     }
+     100%{
+        filter: hue-rotate(360deg);
+     }
+}
+
+.play1{
+    height: 50px;
+    width: 50px;
+    background-image: url('assets/botones/movie.gif');
+    background-size: cover;
+    background-position: center center; 
+
+}
+
+.play1:hover{
+    background-image: url('assets/botones/plays.gif');
+}
+.play2{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.active3{
+    display: none;
+}
+
+.active4{
+    display: flex!important;
+    width: 50px;
+    height: 50px;
+    background-image: url('assets/botones/stops.gif');
+    background-size: cover;
+    background-position: center center; 
+    
+}
+
+/*reproductor para la musica*/

@@ -2,7 +2,9 @@
 <html lang="es">
     <head>
         <link rel="stylesheet" href="../../../loader.css">
+        <link rel="stylesheet" href="../../../butons-anime.css">
         <script src="../../../loader.js"></script>
+        <script src="../../../butons-animes.js"></script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>GTPananime.ZAnime</title>
@@ -19,7 +21,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 
     </head>
-    <body id="body">
+    <body id="body" onload="Entry()">
         
       <header>
         <div class="headers">
@@ -69,6 +71,11 @@
       </div> 
       <div class="cursor"> </div>
     </div>
+
+    <audio id="entrada">
+      <source src="assets.anime/akira.mp3" type="audio/mpeg">
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
 
 
         <main>
@@ -176,6 +183,18 @@
             <section class="contenedor2" id="lateral">
                 <div class="contenedor2__lateral">
                 </div>
+
+                <div class="music-bloq">
+                  <div class="music" onclick="play(), stop()">
+                      <div onclick="PlayAudio()" type="checkbox" class="play1" id="miPlay"> </div>
+                      <div type="checkbox" class="play2" onclick="pauseAudio()" id="miPlay2"> </div>
+                  </div>
+                </div>
+  
+                <audio id="musica1" >
+                      <source src="assets.anime/opening.mp3" type="audio/mpeg">
+                      Tu navegador no soporta la reproducción de audio.
+                </audio>
             </section>
 
             
