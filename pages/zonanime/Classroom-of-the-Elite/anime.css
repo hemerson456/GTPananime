@@ -300,13 +300,13 @@ h1{
 
 #miCheckbox{ /*borrar es el input del boton*/
     width: auto;
-    height: 40px;
+    height: 30px;
     transform: rotate(180deg);
 }
 
 .img2{ /*borrar es el input del boton*/
-    width: auto;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: none;
 }
 
@@ -316,8 +316,8 @@ h1{
 
 .active2{
     display: flex !important;
-    width: 80%;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-image: url('assets.anime/NOCHE-.png'); /*remove*/
     background-size: cover;
     background-position: center center; 
@@ -326,16 +326,21 @@ h1{
     display: flex;
     width: 50px;
     height: 40px;
+    align-items: center;
     
 }
 
 @media only screen and (max-width:700px){
     h1{
         flex-direction: column;
+        gap: 0;
+        margin-bottom: 0.5em;
     }
     .active2{
         background-image: url('assets.anime/NOCHE-.png');
     }
+
+
 }
 
 
