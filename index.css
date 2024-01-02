@@ -273,7 +273,7 @@ a img.logo-anime {
 
 /*imagenes de la ruleta*/
 .img1{
-    background-image: url('assets/escuadron.webp'); 
+    background-image: url('assets/classroom-of-the-elite-season-3.webp'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -782,6 +782,10 @@ a img.logo-anime {
 
 .anime-li a div.second12 {
     background-image: url('assets/zom100.jpg');
+}
+
+.anime-li a div.second13 {
+    background-image: url('assets/classroom-of-the-elite-season-3.webp');
 }
 
 /*terminado imagenes fondos de las noticias presentacion*/
