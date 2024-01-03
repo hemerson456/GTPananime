@@ -279,7 +279,7 @@ a img.logo-anime {
 }
 
 .img2{
-    background-image: url('assets/fivenightsfreddy.jpg'); 
+    background-image: url('assets/image-rotation/Dungeon-Meshi.webp'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -786,6 +786,10 @@ a img.logo-anime {
 
 .anime-li a div.second13 {
     background-image: url('assets/classroom-of-the-elite-season-3.webp');
+}
+
+.anime-li a div.second14 {
+    background-image: url('assets/image-rotation/Dungeon-Meshi.webp');
 }
 
 /*terminado imagenes fondos de las noticias presentacion*/
