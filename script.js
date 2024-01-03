@@ -27,17 +27,18 @@ document.addEventListener("DOMContentLoaded", function () {
     nextBtn.addEventListener("click", nextSlide);
     prevBtn.addEventListener("click", prevSlide);
 
-    const interval = setInterval(nextSlide, 6000);//6000 es los milisegundos osea 6s equivale a 6000ms
+    let interval = setInterval(nextSlide, 6000);
 
     // Detener el intervalo al pasar el ratón sobre el carrusel
-    rotacion.addEventListener("mouseenter", () => clearInterval(interval));
+    rotacionImage.addEventListener("mouseenter", () => clearInterval(interval));
 
     // Reanudar el intervalo al retirar el ratón del carrusel
-    rotacion.addEventListener("mouseleave", () => {
+    rotacionImage.addEventListener("mouseleave", () => {
         clearInterval(interval);
-        interval = setInterval(nextSlide, 6000);//6000 es los milisegundos osea 6s equivale a 6000ms
+        interval = setInterval(nextSlide, 6000);
     });
 });
+
 
 
 $(document).ready(function(){
