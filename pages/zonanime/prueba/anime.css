@@ -1,0 +1,32 @@
+/*activar un assets de carpeta y poner lo archivos para esto*/
+
+.active_background{
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/08/The-Wrong-Way-to-Use-Healing-Magic_Portada.jpeg')
+}
+    
+    
+    
+/*buton noche*/
+.active2{
+    background-image: url('../../../assets/botones/NOCHE6-.png');
+}
+    
+/*buton noche movil*/
+@media only screen and (max-width:700px){
+       .active2{
+           background-image: url('../../../assets/botones/NOCHE6-.png');
+        }
+}
+    
+    
+/*modificacion del gif de pc que para siempre a la derecha*/
+.contenedor2{
+      background-image: url('../../../assets/classroom-of-the-elite-season-3.webp');
+}
+    
+/*modificacion del mismo gil pero en movil*/
+ @media only screen and (max-width:950px){
+      .contenedor2{
+        background-image: url('../../../assets/escuadron.webp');
+      }
+}

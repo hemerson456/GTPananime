@@ -285,7 +285,7 @@ a img.logo-anime {
 }
 
 .img3{
-    background-image: url('assets/image-rotation/Protocol-Rain.jpg'); 
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/08/The-Wrong-Way-to-Use-Healing-Magic_Portada.jpeg'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -792,6 +792,9 @@ a img.logo-anime {
     background-image: url('assets/image-rotation/Dungeon-Meshi.webp');
 }
 
+.anime-li a div.second15 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/08/The-Wrong-Way-to-Use-Healing-Magic_Portada.jpeg');
+}
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
 
