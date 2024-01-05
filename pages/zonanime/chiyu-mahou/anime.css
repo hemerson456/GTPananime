@@ -25,7 +25,7 @@ min-height: 100vh;
     overflow-y: scroll;
 overflow-x: hidden;
 background-color: #000;/*remove*/
-background-image: url('https://somoskudasai.com/wp-content/uploads/2023/08/The-Wrong-Way-to-Use-Healing-Magic_Portada.jpeg'); /*remove*/
+background-image: url('assets.anime/background.jpeg'); /*remove*/
 width: 100vw;
 background-size: cover;/*remove*/
 background-attachment: fixed; /*remove*/

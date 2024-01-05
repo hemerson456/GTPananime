@@ -195,6 +195,7 @@ img.logo-anime {
     grid-template-columns: 0.8fr 0.2fr;
     background: linear-gradient(to bottom, transparent,black, #111,transparent, transparent);
     align-items: start;
+    padding: 0 10px 0 0;
 }
 
 
@@ -573,6 +574,8 @@ h1{
     display: flex;
     background-position: center center; 
     min-height: 410px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (min-width:2387px){
@@ -939,6 +942,7 @@ h1{
     main{
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
 
     .main{

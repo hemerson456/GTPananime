@@ -290,7 +290,7 @@ a img.logo-anime {
     background-repeat: no-repeat;
 }
 .img4{
-    background-image: url('assets/image-rotation/Frieren-Beyond-Journey.webp'); 
+    background-image: url('pages/zonanime/mashle-2/assets.anime/background2.webp'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -794,6 +794,14 @@ a img.logo-anime {
 
 .anime-li a div.second15 {
     background-image: url('https://somoskudasai.com/wp-content/uploads/2023/08/The-Wrong-Way-to-Use-Healing-Magic_Portada.jpeg');
+}
+
+.anime-li a div.second15 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/08/The-Wrong-Way-to-Use-Healing-Magic_Portada.jpeg');
+}
+
+.anime-li a div.second16 {
+    background-image: url('pages/zonanime/mashle-2/assets.anime/background2.webp');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
