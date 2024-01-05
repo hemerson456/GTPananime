@@ -295,12 +295,12 @@ a img.logo-anime {
     background-repeat: no-repeat;
 }
 .img5{
-    background-image: url('assets/tatenoyusha.png'); 
+    background-image: url('pages/zonanime/blue-exorcist/assets.anime/background.webp'); 
     background-position: center;
     background-repeat: no-repeat;
 }
 .img6{
-    background-image: url('assets/image-rotation/tenjiku.jpeg'); 
+    background-image: url('pages/zonanime/kingdom/assets.anime/background.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -802,6 +802,14 @@ a img.logo-anime {
 
 .anime-li a div.second16 {
     background-image: url('pages/zonanime/mashle-2/assets.anime/background2.webp');
+}
+
+.anime-li a div.second17 {
+    background-image: url('pages/zonanime/blue-exorcist/assets.anime/background.webp');
+}
+
+.anime-li a div.second18 {
+    background-image: url('pages/zonanime/kingdom/assets.anime/background.jpg');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
