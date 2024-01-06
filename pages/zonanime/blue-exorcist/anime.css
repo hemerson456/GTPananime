@@ -29,3 +29,12 @@
         background-image: url('assets.anime/contenedor2Movils.gif');
       }
 }
+
+
+.ca1{
+    display: none;
+}
+
+.capi1{
+    display: flex!important;
+}
