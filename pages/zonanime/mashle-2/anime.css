@@ -39,3 +39,16 @@
         z-index: 100;
     }
 }
+
+
+
+/*ocultar imagen de proximamente*/
+
+.ca1{
+    display: none;
+}
+
+/*mostrar el anime*/
+.capi1{
+    display: flex!important;
+}
