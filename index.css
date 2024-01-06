@@ -305,7 +305,7 @@ a img.logo-anime {
     background-repeat: no-repeat;
 }
 .img7{
-    background-image: url('assets/image-rotation/kanokano2-poster.webp'); 
+    background-image: url('pages/zonanime/boku-no-kokoro/assets.anime/background.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -810,6 +810,10 @@ a img.logo-anime {
 
 .anime-li a div.second18 {
     background-image: url('pages/zonanime/kingdom/assets.anime/background.jpg');
+}
+
+.anime-li a div.second19 {
+    background-image: url('pages/zonanime/boku-no-kokoro/assets.anime/background.jpg');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
