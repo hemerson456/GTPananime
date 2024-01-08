@@ -309,6 +309,11 @@ a img.logo-anime {
     background-position: center;
     background-repeat: no-repeat;
 }
+.img8{
+    background-image: url('pages/zonanime/tsuki-ga-michibiku/assets.anime/base-tuski.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /*final de las imagenes de la ruleta*/
 
 
@@ -814,6 +819,10 @@ a img.logo-anime {
 
 .anime-li a div.second19 {
     background-image: url('pages/zonanime/boku-no-kokoro/assets.anime/background.jpg');
+}
+
+.anime-li a div.second20 {
+    background-image: url('pages/zonanime/tsuki-ga-michibiku/assets.anime/base-tuski.jpg');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
