@@ -314,6 +314,11 @@ a img.logo-anime {
     background-position: center;
     background-repeat: no-repeat;
 }
+.img9{
+    background-image: url('pages/zonanime/shaman-king-flowers/assets.anime/index-back.webp'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /*final de las imagenes de la ruleta*/
 
 
@@ -823,6 +828,10 @@ a img.logo-anime {
 
 .anime-li a div.second20 {
     background-image: url('pages/zonanime/tsuki-ga-michibiku/assets.anime/base-tuski.jpg');
+}
+
+.anime-li a div.second21 {
+    background-image: url('pages/zonanime/shaman-king-flowers/assets.anime/index-back.webp');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/

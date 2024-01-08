@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /*agregar uno al % tanto en el nextslide como el prevsile*/
     function nextSlide() {
-        currentIndex = (currentIndex + 1) % 8;
+        currentIndex = (currentIndex + 1) % 9;
         moveToIndex(currentIndex);
     }
 
     function prevSlide() {
-        currentIndex = (currentIndex - 1 + 8) % 8;
+        currentIndex = (currentIndex - 1 + 9) % 9;
         moveToIndex(currentIndex);
     }
 
