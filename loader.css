@@ -92,6 +92,8 @@
 
 .loading{
     width: 12em;
+    position: absolute;
+    z-index: -1;
 }
 
 .title-loader{
