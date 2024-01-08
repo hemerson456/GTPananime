@@ -319,6 +319,11 @@ a img.logo-anime {
     background-position: center;
     background-repeat: no-repeat;
 }
+.img10{
+    background-image: url('pages/zonanime/akuyaku-reijou-level99/assets.anime/index-background.webp'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /*final de las imagenes de la ruleta*/
 
 
@@ -832,6 +837,9 @@ a img.logo-anime {
 
 .anime-li a div.second21 {
     background-image: url('pages/zonanime/shaman-king-flowers/assets.anime/index-back.webp');
+}
+.anime-li a div.second22 {
+    background-image: url('pages/zonanime/akuyaku-reijou-level99/assets.anime/index-background.webp');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
