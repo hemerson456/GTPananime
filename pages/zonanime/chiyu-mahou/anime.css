@@ -659,7 +659,9 @@ h1{
 .ca1{
     display: none;
 }
-
+.ca2{
+    display: none;
+}
 /*imagenes de fondo de proximamente*/
 
 
@@ -667,6 +669,9 @@ h1{
 .capi1{
    display: flex!important;
 }
+.capi2{
+    display: flex!important;
+ }
 
 /*video de iframe puqe ya esta subido darle al capitulo flex*/
 
