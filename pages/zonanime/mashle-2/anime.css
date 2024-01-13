@@ -47,8 +47,14 @@
 .ca1{
     display: none;
 }
+.ca2{
+    display: none;
+}
 
 /*mostrar el anime*/
 .capi1{
+    display: flex!important;
+}
+.capi2{
     display: flex!important;
 }
