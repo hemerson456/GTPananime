@@ -26,6 +26,59 @@ function laterals() {
     let element = document.getElementById("lateral")
     element.classList.toggle("active_lateral");
 }
+
+
+/*languaje*/
+document.addEventListener('DOMContentLoaded', function () {
+    // Activa la bandera de Japón por defecto en todos los capítulos
+    activateDefaultFlags();
+});
+
+function activateDefaultFlags() {
+    // Recorre todos los contenedores de capítulos
+    document.querySelectorAll('.contenedor1__reproductor').forEach(chapterContainer => {
+        // Encuentra la bandera de Japón en el contenedor
+        let defaultFlag = chapterContainer.querySelector('.bandera.japan');
+
+        // Ajusta la opacidad de la bandera
+        defaultFlag.classList.add("active_country");
+
+        // Encuentra la otra bandera y ajusta su opacidad
+        let otherFlag = chapterContainer.querySelector('.bandera.mexico');
+        otherFlag.classList.remove("active_country");
+
+        // Agrega el evento clic a las banderas
+        defaultFlag.addEventListener('click', function () {
+            toggleOpacity(this, 'mexico');
+        });
+
+        otherFlag.addEventListener('click', function () {
+            toggleOpacity(this, 'japan');
+        });
+    });
+}
+
+function toggleOpacity(clickedElement, otherElementClass) {
+    // Encuentra el contenedor del capítulo clicado
+    let chapterContainer = clickedElement.closest('.contenedor1__reproductor');
+
+    // Recorre las banderas dentro del contenedor y ajusta la opacidad
+    chapterContainer.querySelectorAll('.bandera').forEach(flag => {
+        if (flag === clickedElement) {
+            flag.classList.add("active_country");
+        } else {
+            flag.classList.remove("active_country");
+        }
+    });
+
+    // Recorre las otras banderas dentro del contenedor y ajusta la opacidad
+    chapterContainer.querySelectorAll('.' + otherElementClass).forEach(otherFlag => {
+        otherFlag.classList.remove("active_country");
+    });
+}
+
+/*languaje*/
+
 function main() {
     let element = document.getElementById("principal")
     element.classList.toggle("active_principal");

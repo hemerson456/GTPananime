@@ -685,9 +685,53 @@ h1{
     width: 33.5%;
     background: transparent;
     padding: 10px;
+    gap: 1em;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+
+/*banderas de idiomas*/
+.languaje-contenedor{
+    display: flex;
+    gap: 1em;
+}
+
+.bandera{
+    width: 80px;
+    height: 50px;
+    transition: all 200ms ease-in-out;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.pais {
+    height: 100%;
+    width: 100%;
+}
+
+
+.bandera{
+    opacity: 0.5;
+}
+
+.bandera:hover{
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+}
+
+
+.active_country{
+    opacity: 1 ;
+}
+
+.inactive_country{
+    opacity: 0.5 ;
+}
+/*final de banderas de idioma*/
+
+
 .contenedor1__reproductor-fechas{
     display: flex;
     flex-direction: column;
