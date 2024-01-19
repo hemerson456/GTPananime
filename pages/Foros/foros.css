@@ -1148,6 +1148,16 @@ a img.logo-anime {
     color: #ccc'text-p';
     font-size: 0.8em;
 }
+
+.anouncer{
+    width: 17em;
+    height: 5em;
+    outline: 1.5px solid #aaa;
+    margin-top: 1.5em;
+    border-radius: 8px;
+    background-color: #111;
+    padding:3px ;
+}
 /*terminado politicas*/
 
 .footer{
@@ -1346,6 +1356,10 @@ a img.logo-anime {
 
     .aplicacion{
         display: none;
+    }
+
+    .anouncer{
+        width: 98%;
     }
 
 }

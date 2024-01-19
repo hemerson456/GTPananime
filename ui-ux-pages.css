@@ -39,6 +39,11 @@ min-height: 100vh;
     src: url('Fonts/Japonesa.ttf');
 }
 
+@font-face {
+    font-family: 'text';
+    src: url('Fonts/arial-narrow/Poppins-Medium.ttf');
+}
+
 body::-webkit-scrollbar {
 width: 0; /* Ancho de la barra de desplazamiento */
 }
@@ -355,8 +360,8 @@ h1{
 
 
 .contenedor1__description-p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-family: 'text';
+    font-size: 0.98em;
     color: #fff;
     font-weight: 100;
     line-height: 1.6;
@@ -364,8 +369,8 @@ h1{
 
 .contenedor1__description-p2{ /*segunda activacion 950px*/
     display: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-family: 'text';
+    font-size: 0.98em;
     color: #fff;
     font-weight: 100;
     line-height: 1.6;
