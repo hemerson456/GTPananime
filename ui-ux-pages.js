@@ -77,7 +77,54 @@ function toggleOpacity(clickedElement, otherElementClass) {
     });
 }
 
+
+/*activar*/
+let bloqueActivo = null;
+
+function cambiarmx(elemento){
+    if (bloqueActivo !== null) {
+        bloqueActivo.classList.remove('contenedor1_jpn', 'contenedor1_mx');
+        bloqueActivo.style.display = 'none';
+    }
+
+    if (elemento.classList.contains('contenedor1_jpn')) 
+    {
+        elemento.classList.remove('contenedor1_jpn');
+        elemento.classList.add('contenedor1_mx');
+    } 
+    else if (elemento.classList.contains('contenedor1_mx')){
+        elemento.classList.remove('contenedor1_mx');
+        elemento.classList.add('contenedor1_jpn')
+    }
+
+    bloqueActivo = elemento;
+}
+
+function activarDesactivar(boton){
+    const bloque1 = document.querySelector('contenedor1_jpn');
+    const bloque2 = document.querySelector('contenedor1_mx');
+    if (boton === 'boton1'){
+        bloque1.style.display = 'flex';
+        bloque2.style.display = 'none';
+        
+        bloque1.removeEventListener('click', cambiarmx);
+        bloque2.addEventListener('click', cambiarmx);
+    }
+
+    else if (boton === 'boton2'){
+        bloque1.style.display = 'none';
+        bloque2.style.display = 'flex';
+
+        bloque2.removeEventListener('click', cambiarmx);
+        bloque1.addEventListener('click', cambiarmx);
+
+    }
+}
+
+
 /*languaje*/
+
+
 
 function main() {
     let element = document.getElementById("principal")

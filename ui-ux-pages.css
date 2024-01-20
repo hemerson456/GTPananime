@@ -632,6 +632,16 @@ h1{
     animation: border 4s linear infinite;
 }
 
+/*modificar el contenedor anime*/
+.contenedor1__reproductor-episodes.contenedor1_jpn{
+    display: flex;
+}
+
+.contenedor1__reproductor-episodes.contenedor1_mx{
+    display: none;
+}
+/*modificar el contenedor anime*/
+
 @keyframes border{
     0%{
         border-color: #833AB4;
