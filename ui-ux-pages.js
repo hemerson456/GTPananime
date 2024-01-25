@@ -107,16 +107,16 @@ function activarDesactivar(boton){
         bloque1.style.display = 'flex';
         bloque2.style.display = 'none';
         
-        bloque1.removeEventListener('click', cambiarmx);
-        bloque2.addEventListener('click', cambiarmx);
+        bloque1.removeEventListener('click', cambiar2);
+        bloque2.addEventListener('click', cambiar2);
     }
 
     else if (boton === 'boton2'){
         bloque1.style.display = 'none';
         bloque2.style.display = 'flex';
 
-        bloque2.removeEventListener('click', cambiarmx);
-        bloque1.addEventListener('click', cambiarmx);
+        bloque2.removeEventListener('click', cambiar2);
+        bloque1.addEventListener('click', cambiar2);
 
     }
 }
