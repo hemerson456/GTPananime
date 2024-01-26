@@ -92,6 +92,9 @@
 .ca19{
     display: none;
 }
+.ca20{
+    display: none;
+}
 /*capitulos img*/
 
 /*capitulos video iframe*/
@@ -151,6 +154,9 @@
     display: flex !important;
 }
 .capi19{
+    display: flex !important;
+}
+.capi20{
     display: flex !important;
 }
 /*capitulos video iframe*/
