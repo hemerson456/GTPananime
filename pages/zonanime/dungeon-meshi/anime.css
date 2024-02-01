@@ -43,6 +43,9 @@
 .ca4{
     display: none!important;
 }
+.capi5{
+    display: none!important;
+}
 
 /*imagenes de fondo de proximamente*/
 
@@ -58,6 +61,9 @@
     display: flex!important; 
 }
 .capi4{
+    display: flex!important; 
+}
+.capi5{
     display: flex!important; 
 }
 /*video de iframe puqe ya esta subido darle al capitulo flex*/
