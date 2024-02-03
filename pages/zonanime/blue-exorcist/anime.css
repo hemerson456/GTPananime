@@ -43,7 +43,9 @@
 .ca4{
     display: none;
 }
-
+.ca5{
+    display: none;
+}
 
 
 .capi1{
@@ -56,5 +58,8 @@
     display: flex!important;
 }
 .capi4{
+    display: flex!important;
+}
+.capi5{
     display: flex!important;
 }
