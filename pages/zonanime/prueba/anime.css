@@ -28,3 +28,10 @@
         background-image: url('../../../assets/escuadron.webp');
       }
 }
+
+
+@media only screen and (min-width:1304px) {
+    .contenedor1__description-block2{
+         align-items: start;
+    }
+}

@@ -8,35 +8,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Kanit:ital,wght@0,100;0,200;1,300&family=Lobster&family=Martian+Mono:wght@800&family=Skranji:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 body{
-overflow-y: scroll;
-overflow-x: hidden;
-background-color: #000;/*remove*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #000;/*remove*/
 /*background-image: url('assets.anime/fondoanime.gif'); *//*remove*/
-width: 100vw;
-background-size: cover;/*remove*/
-background-attachment: fixed; /*remove*/
-transition: all 1.2s;
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+    width: 100vw;
+    background-size: cover;/*remove*/
+    background-attachment: fixed; /*remove*/
+    transition: all 1.2s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .active_background{
     overflow-y: scroll;
-overflow-x: hidden;
-background-color: #000;/*remove*/
-background-image: url('https://somoskudasai.com/wp-content/uploads/2023/08/The-Wrong-Way-to-Use-Healing-Magic_Portada.jpeg'); /*remove*/
-width: 100vw;
-background-size: cover;/*remove*/
-background-attachment: fixed; /*remove*/
-transition: all 1.2s;
-background-position: center center; 
-min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #000;/*remove*/
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/08/The-Wrong-Way-to-Use-Healing-Magic_Portada.jpeg'); /*remove*/
+    width: 100vw;
+    background-size: cover;/*remove*/
+    background-attachment: fixed; /*remove*/
+    transition: all 1.2s;
+    background-position: center center; 
+    min-height: 100vh;
 }
 
 @font-face {
     font-family: title-p;
     src: url('Fonts/Japonesa.ttf');
+}
+
+@font-face {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src: url('Fonts/apple/SF-Pro.dmg');
 }
 
 @font-face {
@@ -294,12 +299,14 @@ main{
 
 h1{
     margin: 0 0 0.1em 0!important;
-    font-family: 'Montserrat', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2em;
+    font-weight: 400;
     color: #ddd;
     display: flex;
     align-items: center;
     gap: 0.5em;
+    cursor: default;
 }
 .modi_title-anime{
     color: #fff;
@@ -309,13 +316,21 @@ h1{
     width: auto;
     height: 30px;
     transform: rotate(180deg);
+    cursor: pointer;
+}
+
+#miCheckbox:hover{
+    animation: 4s linear 0s infinite normal none running border-music;
 }
 
 .img2{ /*borrar es el input del boton*/
     width: 30px;
     height: 30px;
     display: none;
+    cursor: pointer;
 }
+
+
 
 .active1{
     display: none!important;
@@ -360,20 +375,22 @@ h1{
 
 
 .contenedor1__description-p{
-    font-family: 'text';
-    font-size: 0.98em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.05em;
     color: #fff;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 1.6;
+    cursor: default;
 }
 
 .contenedor1__description-p2{ /*segunda activacion 950px*/
     display: none;
-    font-family: 'text';
-    font-size: 0.98em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.05em;
     color: #fff;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 1.6;
+    cursor: default;
 }
 .contenedor1__description-block1{
     display: flex;
@@ -392,17 +409,21 @@ h1{
 
 }
 .contenedor1__datos span.autors{
-   color: #c0c;
-   font-family: 'Montserrat', sans-serif;
+   color: #0bf; /*#f5f*/
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    font-size: 1.2em;
-   font-weight: 600;
+   font-weight: 400;
+   animation: border-music 4s linear infinite;
+   cursor: default;
 }
 
 .contenedor1__datos span.number{
     color: #ede;
-    font-family: 'Montserrat', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 400;
+    margin-left: 0.3em;
+    cursor: default;
  }
 
 .contenedor1__description-block2{
@@ -514,7 +535,6 @@ h1{
     border: none !important;
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    animation: colores s linear infinite;
     
 }
 .contenedor1__episodes-h2:hover{
@@ -527,16 +547,29 @@ h1{
 
 
 .contenedor1__episodes-ul{
-    display: none;
+    transform: scale(0)!important;
+    transition: all 400ms!important;
+    height: 0px;
+    width: 0px;
 }
 .active_capitulos{
     display: grid;
     grid-template-columns: 80px 80px  80px 80px ;
     justify-content: space-evenly; 
     list-style: none;
-    gap: 1em;
-    
+    gap: 1.2em 1em;
+    transform: scale(1)!important;
+    transition: all 400ms!important;   
+    height: auto;
+    width: 100%;
+    margin-top: 0.5em;
 }
+
+.contenedor1__episodes-li{
+    margin: auto;
+    padding: 6px 0!important;
+}
+
 .contenedor1__episodes{
     width: 80%;
 }
@@ -553,9 +586,11 @@ h1{
 .contenedor1__episodes-li{
     outline: 2px solid #C13584;
     background: #C13584;
-    font-size: 1.2em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 1.1em;
+    width: 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
     padding: 5px;
+    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -754,10 +789,11 @@ h1{
     color: #fff;
     line-height: 1.6;
     background: transparent;
-    padding: 5px;
+    padding: 5px 8px;
     outline: 2px solid #fff;
     border-radius: 5px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-weight: 400;
     animation: fechas 6s linear infinite;
 }
 
@@ -793,7 +829,7 @@ h1{
 }
 
 .footer__creditos{
-    font-family: 'Montserrat', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @media only screen and (max-width:1020px){
@@ -806,7 +842,7 @@ h1{
 
 @media only screen and (min-width:841px){
     .footer{
-        height: 3em; /* Altura de 6em */
+        height: 2em; /* Altura de 6em */
         width: 100%; /* Ancho del 100% */
         bottom: 0; /* Coloca el footer en la parte inferior de la ventana */
         background-color: #000; /* Cambia el color de fondo según tus preferencias */
@@ -831,6 +867,12 @@ h1{
     .contenedor1__reproductor {
         margin-bottom: 0.5em;
         padding: 0;
+    }
+
+    .contenedor1__episodes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }
@@ -1007,6 +1049,7 @@ h1{
     .main{
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
     
 
@@ -1014,7 +1057,7 @@ h1{
     .contenedor1__episodes{
         width: 100%;
     }
-    .contenedor1__episodes-ul{
+    .active_capitulos{
         width: 100vw;
     } 
 
@@ -1029,9 +1072,12 @@ h1{
         clip-path: none;
         border: none;
         border-radius: 0;
+        transform: scale(1)!important;
+        transition: all 400ms!important;
       }
     .block_lateral{
-        display: none;
+        transform: scale(0)!important;
+
     } 
 
     footer{
@@ -1102,7 +1148,7 @@ h1{
     }    
     .active_capitulos{
             display: grid;
-            grid-template-columns: 70px 70px  70px ;
+            grid-template-columns: 80px 80px  80px 80px ;
             justify-content: space-evenly; 
             list-style: none;
             
@@ -1145,4 +1191,29 @@ h1{
         width: 100%;
         height: 10em !important;
       }
+}
+
+@media only screen and (max-width:432px){
+    .active_capitulos{
+        grid-template-columns: 70px 70px 70px;
+    }
+}
+
+
+
+
+
+/*solo para esto*/
+@media only screen and (max-width:950px){
+    .block_lateral{
+        transform: scale(0);
+        width: 0px!important;
+        height: 0px!important;
+        transition: all 400ms!important;
+    } 
+
+    .active_capitulos{
+        width: 100vw;
+        height: auto!important;
+    }
 }
