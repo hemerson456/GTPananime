@@ -1416,3 +1416,27 @@ a img.logo-anime {
     }
 
 }
+
+
+
+/*
+.img-anime a {
+    --view-timeline-name: --image!important;
+    --view-timeline-axis: block!important;
+
+    opacity: 0.1!important;
+    transform: scale(0.10) !important;
+    transition: opacity 600ms ease-in-out, transform 600ms ease-in-out!important;
+}
+
+.img-anime a.active {
+    opacity: 1!important;
+    transform: scale(1) !important;
+    transition: opacity 600ms ease-in-out, transform 600ms ease-in-out!important;
+}
+
+.img-anime a.active.scale-08 {
+    opacity: 0.35!important;
+    transform: scale(0.9) !important;
+}
+*/

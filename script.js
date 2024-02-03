@@ -143,3 +143,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
   
+
+
+
+
+//animacion pero no sirve//
+/*window.addEventListener('scroll', function() {
+    var elements = document.querySelectorAll('.img-anime a');
+
+    elements.forEach(function(element) {
+        if (isElementInViewport(element)) {
+            element.classList.add('active');
+            element.classList.remove('scale-08');
+        } else {
+            element.classList.remove('active');
+            if (element.classList.contains('scale-08')) {
+                element.classList.add('scale-08');
+            }
+        }
+    });
+});
+
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}*/
