@@ -39,6 +39,11 @@ border: none; /* Sin borde */
     src: url(../../Fonts/kitchen/Kitchen\ Counter.ttf);
 }
 
+@font-face {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src: url('../../Fonts/apple/SF-Pro.dmg');
+}
+
 /*@font-face {
     font-family: 'text-p';
     src: url(../../Fonts/monospace/nk57-monospace-cd-lt.otf);
@@ -613,6 +618,7 @@ a img.logo-anime {
 
 .anime {
     display: grid;
+    padding:  0 6px;
 }
 
 .container2 {
@@ -1160,6 +1166,128 @@ a img.logo-anime {
 }
 /*terminado politicas*/
 
+
+
+
+
+
+/*movil footer body*/
+.footer-pages-movil{
+    display: none;
+    color: #fff;
+}
+
+.list-file-page{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.lista-footer-a{
+    text-decoration: none;
+    color: #888;
+    transition: color 300ms;
+}
+.lista-footer-a:hover{
+    line-clamp:initial;
+    color:#d0f;
+    transition: color 300ms;
+}
+
+.actives{
+    color:#d0f;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.bton-descubrir{
+    display: flex;
+    font-weight: 100;
+    font-family: 'title-p';
+    cursor: pointer;
+    
+}
+.flechas-buton{
+    height: 17px;
+    padding: 5px 0 0 0;
+    margin-left: auto;
+    height: 15px;
+    transition: all 350ms ease;
+}
+
+.list-file-movil{
+    transform: scale(0) translateY(-50px) ;
+    height: 0;
+    width: 0;
+    transition: all 350ms ease;
+    margin-left: auto;
+}
+
+/*activables del boton*/
+.active-list1{
+    padding: 10px 0 0 0;
+    transform: scale(1) translateY(0px) translateX(0px);
+    height: auto;
+    width: auto;
+    transition: all 350ms ease;
+    margin-left: 1px;
+}
+.active-list2{
+    padding: 10px 0 0 0;
+    transform: scale(1) translateY(0px) translateX(0px);
+    height: auto;
+    width: auto;
+    transition: all 350ms ease;
+    margin-left: 1px;
+}
+.active-list3{
+    padding: 10px 0 0 0;
+    transform: scale(1) translateY(0px) translateX(0px);
+    height: auto;
+    width: auto;
+    transition: all 350ms ease;
+    margin-left: 1px;
+}
+
+.active-list4{
+    padding: 10px 0 0 0;
+    transform: scale(1) translateY(0px) translateX(0px);
+    height: auto;
+    width: auto;
+    transition: all 350ms ease;
+    margin-left: 1px;
+}
+
+/*girar la flecha activable*/
+.active-flecha1{
+    transform: rotate(90deg);
+    transition: transform 350ms ease;
+}
+.active-flecha2{
+    transform: rotate(90deg);
+    transition: transform 350ms ease;
+}
+.active-flecha3{
+    transform: rotate(90deg);
+    transition: transform 350ms ease;
+}
+.active-flecha4{
+    transform: rotate(90deg);
+    transition: transform 350ms ease;
+}
+
+/*separador hr*/
+.separador{
+    margin: 17px 0;
+}
+
+
+
+
+
+
 .footer{
     height: 1.8em;
     display: flex;
@@ -1321,11 +1449,15 @@ a img.logo-anime {
 
      .aside{
         background: transparent;
-        display: flex;
+        display: none;/*cambiar a diplay flex si no funca*/
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         
+     }
+
+     .users{
+        padding: 3px 10px;
      }
 
      .users_containers1{
@@ -1360,6 +1492,18 @@ a img.logo-anime {
 
     .anouncer{
         width: 98%;
+    }
+
+    .footer-pages-movil{
+        display: flex;
+        flex-direction: column;
+        margin:  0 10px 10px 10px;
+    }
+
+    .footer{
+        height: auto;
+        padding: 5px 0;
+        margin-top: 0.5em;
     }
 
 }

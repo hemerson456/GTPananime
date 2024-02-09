@@ -144,7 +144,48 @@ document.addEventListener("DOMContentLoaded", function () {
 });
   
 
+//footer de movil aparecer desaparecer
+function des(){
+    let element = document.getElementById("list15")
+    element.classList.toggle("active-list1")
+}
 
+function desp(){
+    let element = document.getElementById("list2")
+    element.classList.toggle("active-list2")
+}
+
+function despla(){
+    let element = document.getElementById("list3")
+    element.classList.toggle("active-list3")
+}
+
+function desplas(){
+    let element = document.getElementById("list4")
+    element.classList.toggle("active-list4")
+}
+
+function gir(){
+    let element = document.getElementById("flecha1")
+    element.classList.toggle("active-flecha1")
+}
+
+function gira(){
+    let element = document.getElementById("flecha2")
+    element.classList.toggle("active-flecha2")
+}
+
+function girar(){
+    let element = document.getElementById("flecha3")
+    element.classList.toggle("active-flecha3")
+}
+
+function giras(){
+    let element = document.getElementById("flecha4")
+    element.classList.toggle("active-flecha4")
+}
+
+//footer de movil aparecer desaparecer final
 
 
 //animacion pero no sirve//
