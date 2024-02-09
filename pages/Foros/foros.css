@@ -1189,6 +1189,9 @@ a img.logo-anime {
     text-decoration: none;
     color: #888;
     transition: color 300ms;
+    gap: 0.2em;
+    display: flex;
+    align-items: center;
 }
 .lista-footer-a:hover{
     line-clamp:initial;
