@@ -50,6 +50,9 @@
 .ca5{
     display: none;
 }
+.ca6{
+    display: none;
+}
 
 
 
@@ -67,5 +70,8 @@
     display: flex!important;
 }
 .capi5{
+    display: flex!important;
+}
+.capi6{
     display: flex!important;
 }
