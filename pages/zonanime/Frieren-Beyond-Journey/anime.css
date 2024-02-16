@@ -101,6 +101,9 @@
 .ca22{
     display: none;
 }
+.ca23{
+    display: none;
+}
 /*capitulos img*/
 
 /*capitulos video iframe*/
@@ -169,6 +172,9 @@
     display: flex !important;
 }
 .capi22{
+    display: flex !important;
+}
+.capi23{
     display: flex !important;
 }
 /*capitulos video iframe*/
