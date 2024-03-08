@@ -61,6 +61,10 @@
 .ca9{
     display: none;
 }
+.ca10{
+    display: none;
+}
+
 /*imagenes de fondo de proximamente*/
 
 
@@ -90,6 +94,9 @@
     display: flex!important;
 }
 .capi9{
+    display: flex!important;
+}
+.capi10{
     display: flex!important;
 }
 /*video de iframe puqe ya esta subido darle al capitulo flex*/
