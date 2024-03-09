@@ -54,7 +54,9 @@
 .ca8{
     display: none;
 }
-
+.ca9{
+    display: none;
+}
 
 
 .capi1{
@@ -79,5 +81,8 @@
     display: flex!important;
 }
 .capi8{
+    display: flex!important;
+}
+.capi9{
     display: flex!important;
 }
