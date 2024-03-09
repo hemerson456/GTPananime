@@ -68,6 +68,9 @@
 .ca8{
     display: none;
 }
+.ca9{
+    display: none;
+}
 /*mostrar el anime*/
 .capi1{
     display: flex!important;
@@ -91,5 +94,8 @@
     display: flex!important;
 }
 .capi8{
+    display: flex!important;
+}
+.capi9{
     display: flex!important;
 }
