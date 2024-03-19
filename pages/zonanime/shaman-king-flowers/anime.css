@@ -65,6 +65,11 @@
 .ca10{
     display: none;
 }
+.ca11{
+    display: none;
+}
+
+
 
 .capi1{
     display: flex!important;
@@ -94,5 +99,8 @@
     display: flex!important;
 }
 .capi10{
+    display: flex!important;
+}
+.capi11{
     display: flex!important;
 }
