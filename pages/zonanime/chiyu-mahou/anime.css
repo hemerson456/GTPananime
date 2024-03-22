@@ -67,6 +67,9 @@
 .ca11{
     display: none;
 }
+.ca12{
+    display: none;
+}
 /*imagenes de fondo de proximamente*/
 
 
@@ -102,6 +105,9 @@
     display: flex!important;
 }
 .capi11{
+    display: flex!important;
+}
+.capi12{
     display: flex!important;
 }
 /*video de iframe puqe ya esta subido darle al capitulo flex*/

@@ -116,6 +116,9 @@
 .ca27{
     display: none;
 }
+.ca28{
+    display: none;
+}
 /*capitulos img*/
 
 /*capitulos video iframe*/
@@ -199,6 +202,9 @@
     display: flex !important;
 }
 .capi27{
+    display: flex !important;
+}
+.capi28{
     display: flex !important;
 }
 /*capitulos video iframe*/
