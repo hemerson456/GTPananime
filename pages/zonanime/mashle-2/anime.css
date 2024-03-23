@@ -74,6 +74,12 @@
 .ca10{
     display: none;
 }
+.ca10{
+    display: none;
+}
+.ca11{
+    display: none;
+}
 /*mostrar el anime*/
 
 
@@ -105,5 +111,8 @@
     display: flex!important;
 }
 .capi10{
+    display: flex!important;
+}
+.capi11{
     display: flex!important;
 }
