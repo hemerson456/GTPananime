@@ -80,6 +80,9 @@
 .ca11{
     display: none;
 }
+.ca12{
+    display: none;
+}
 /*mostrar el anime*/
 
 
@@ -114,5 +117,8 @@
     display: flex!important;
 }
 .capi11{
+    display: flex!important;
+}
+.capi12{
     display: flex!important;
 }
