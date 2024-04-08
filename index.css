@@ -278,7 +278,7 @@ a img.logo-anime {
 
 /*imagenes de la ruleta*/
 .img1{
-    background-image: url('assets/classroom-of-the-elite-season-3.webp'); 
+    background-image: url('pages/zonanime/Re-Monster/assets.anime/back.webp'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -340,6 +340,7 @@ a img.logo-anime {
     display: flex;
     align-items: center;
     text-align: center;
+    cursor: default;
 }
 #prevBtn, #nextBtn {
     position: absolute;
@@ -841,6 +842,9 @@ a img.logo-anime {
 }
 .anime-li a div.second22 {
     background-image: url('pages/zonanime/akuyaku-reijou-level99/assets.anime/index-background.webp');
+}
+.anime-li a div.second23 {
+    background-image: url('pages/zonanime/Re-Monster/assets.anime/back.webp');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
