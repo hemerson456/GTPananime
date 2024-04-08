@@ -213,9 +213,9 @@ img.logo-anime {
 .active_principal{
     display: flex;
     width: 100%;
-    flex-direction: column;
+    /*flex-direction: column;*/
     background: linear-gradient(to top, rgba(1, 1, 1, 0.0), rgba(1, 1, 1, 0.8),rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.0));
-    transition: all 1.5s;
+    transition: all 200ms;
 }
 /*modificacion activa del main con el click de imagen osea le doy el fondo semi transparente y ademas tambien aplico 100%*/
 
@@ -258,6 +258,11 @@ main{
 /*activo para desaparecer la imagen lateral*/
 .active_lateral{ 
     display: none !important;
+    /*display: flex;
+    transform: scale(0)!important;
+    width: 0!important;
+    height: 0!important;
+    transition: all 200ms;*/
 }
 /*activo para desaparecer la imagen lateral*/
 

@@ -1,6 +1,6 @@
 /*activar un assets de carpeta y poner lo archivos para esto*/
 .active_background{
-    background-image: url('assets.anime/back.webp')
+    background-image: url('assets.anime/back.jpeg')
 }   
     
 /*buton noche*/
@@ -18,13 +18,13 @@
     
 /*modificacion del gif de pc que para siempre a la derecha*/
 .contenedor2{
-      background-image: url('assets.anime/contenedor-web.jpe');
+      background-image: url('assets.anime/web.gif');
 }
     
 /*modificacion del mismo gil pero en movil*/
  @media only screen and (max-width:950px){
       .contenedor2{
-        background-image: url('assets.anime/contenedor-movil.avif');
+        background-image: url('assets.anime/movil.gif');
       }
 }
 
@@ -35,7 +35,7 @@
 }
 
 
-.ca1{
+/*.ca1{
    display:none;
 }
 
@@ -43,4 +43,4 @@
 
 .capi1{
    display: flex!important;
-}
+}*/

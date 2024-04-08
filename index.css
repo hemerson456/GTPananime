@@ -290,7 +290,7 @@ a img.logo-anime {
 }
 
 .img3{
-    background-image: url('pages/zonanime/chiyu-mahou/assets.anime/background.jpeg'); 
+    background-image: url('pages/zonanime/Date-a-Live-5/assets.anime/back.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -845,6 +845,9 @@ a img.logo-anime {
 }
 .anime-li a div.second23 {
     background-image: url('pages/zonanime/Re-Monster/assets.anime/back.webp');
+}
+.anime-li a div.second24 {
+    background-image: url('pages/zonanime/Date-a-Live-5/assets.anime/back.jpg');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
