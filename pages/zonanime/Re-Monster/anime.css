@@ -38,9 +38,15 @@
 .ca1{
    display:none;
 }
-
+.ca2{
+    display:none;
+}
+ 
 
 
 .capi1{
    display: flex!important;
+}
+.capi2{
+    display: flex!important;
 }
