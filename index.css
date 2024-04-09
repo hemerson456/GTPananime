@@ -209,7 +209,11 @@ a img.logo-anime {
     width: 600px;
     height: 400px;
 }
-
+@media only screen and (min-width:671px){
+    .rotacion-images a .img-poster{
+        border-radius: 0 0 10px 10px!important;
+    }
+}
 
 @media only screen and (max-width:670px){
     .rotacion-images a .img-poster{
@@ -295,7 +299,7 @@ a img.logo-anime {
     background-repeat: no-repeat;
 }
 .img4{
-    background-image: url('pages/zonanime/mashle-2/assets.anime/background2.webp'); 
+    background-image: url('pages/zonanime/konosuba-3/assets.anime/konosuba.webp'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -848,6 +852,9 @@ a img.logo-anime {
 }
 .anime-li a div.second24 {
     background-image: url('pages/zonanime/Date-a-Live-5/assets.anime/back.jpeg');
+}
+.anime-li a div.second25 {
+    background-image: url('pages/zonanime/konosuba-3/assets.anime/konosuba.webp');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
