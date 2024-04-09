@@ -304,7 +304,7 @@ a img.logo-anime {
     background-repeat: no-repeat;
 }
 .img5{
-    background-image: url('pages/zonanime/blue-exorcist/assets.anime/background.webp'); 
+    background-image: url('pages/zonanime/wind-breaker/assets.anime/back.jpeg'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -855,6 +855,9 @@ a img.logo-anime {
 }
 .anime-li a div.second25 {
     background-image: url('pages/zonanime/konosuba-3/assets.anime/konosuba.webp');
+}
+.anime-li a div.second26 {
+    background-image: url('pages/zonanime/wind-breaker/assets.anime/back.jpeg');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
