@@ -1,0 +1,52 @@
+/*activar un assets de carpeta y poner lo archivos para esto*/
+.active_background{
+    background-image: url('assets.anime/back.png')
+}   
+    
+/*buton noche*/
+.active2{
+    background-image: url('../../../assets/botones/NOCHE6-.png');
+}
+    
+/*buton noche movil*/
+@media only screen and (max-width:700px){
+       .active2{
+           background-image: url('../../../assets/botones/NOCHE6-.png');
+        }
+}
+    
+    
+/*modificacion del gif de pc que para siempre a la derecha*/
+.contenedor2{
+      background-image: url('assets.anime/web.webp');
+}
+    
+/*modificacion del mismo gil pero en movil*/
+ @media only screen and (max-width:950px){
+      .contenedor2{
+        background-image: url('assets.anime/movil.webp');
+      }
+}
+
+@media only screen and (min-width:950px) and (max-width: 1300px){
+    .contenedor1__description-block2{
+        align-items: center!important;
+    }
+}
+
+@media only screen and (min-width:1301px) and (max-width: 1800px){
+    .contenedor1__description-block2{
+        align-items: start!important;
+    }
+}
+
+
+.ca1{
+   display:none;
+}
+
+
+
+.capi1{
+   display: flex!important;
+}

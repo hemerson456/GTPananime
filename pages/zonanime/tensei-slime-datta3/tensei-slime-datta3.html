@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="../../../loader.css">
+        <link rel="stylesheet" href="../../../butons-anime.css">
+        <link rel="stylesheet" href="../../../ui-ux-pages.css">
+        <script src="../../../loader.js"></script> 
+        <script src="../../../butons-animes.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GTPananime.ZAnime</title>
+        <meta name="description" content="Cuando Satoru recupera la conciencia, descubre que se ha reencarnado en un slime en un reino desconocido. Al hacerlo, adquiere nuevas habilidades, sobre todo el poder de devorar cualquier cosa e imitar su apariencia y habilidades.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Tensei shitara Slime Datta Ken">
+        <link rel="stylesheet" href="../../../normalize.css">
+        <link rel="stylesheet" href="anime.css">
+        <link rel="icon" href="../../../assets/logohead3.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/bfd803e50b.js" crossorigin="anonymous"></script>
+        <script src="../../../code.jquery.com_jquery-3.7.1.js"></script>
+        <script src="../../../ui-ux-pages.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    </head>
+    <body id="body" onload="Entry()">
+        
+      <header>
+        <div class="headers">
+            <nav class="header__nav">
+            <a href="../../../index.html"><img src="../../../assets/logo_copy_V2.0.png" class="logo-anime" alt="logo"></a> 
+            <ul class="header__nav-ul">
+              <li class="header__nav-li"><a href="../../../index.html"><i class="fass fa-brands fa-algolia fa-bounce"></i>Animes</a></li>
+              <li class="header__nav-li"><a href="../../Foros/foros.html"><i class="fass fa-brands fa-stack-overflow fa-beat"></i>Foros</a></li>
+              <li class="header__nav-li"><a href="../../Mangas/manga.html"><i class="fass fa-solid fa-photo-film fa-bounce"></i>Mangas</a></li>
+              <li class="header__nav-li"><a href="https://discord.gg/rnkZM5xbsW" target="_blank"><i class="fass fa-brands fa-discord fa-beat"></i>Discord</a></li>
+              <li class="header__nav-li"><a href="../../loginGTP/users.html"><i class="fass fa-solid fa-users fa-bounce"></i>Registro</a></li>
+            </ul>
+            </nav>
+            
+        </div>
+
+        <div class="header2">
+            <nav class="header__nav2">
+            <a href="../../../index.html"><img src="../../../assets/logo_copy_V2.0.png" class="logo-anime" alt="logo"></a>
+            
+            <ul class="header__nav-ul2" id="deslizar">
+              <li class="header__nav-li2"><a href="../../../index.html"><i class="fass fa-brands fa-algolia"></i>Animes</a></li>
+              <li class="header__nav-li2"><a href="../../Foros/foros.html"><i class="fass fa-brands fa-stack-overflow"></i>Foros</a></li>
+              <li class="header__nav-li2"><a href="../../Mangas/manga.html"><i class="fass fa-solid fa-photo-film "></i>Mangas</a></li>
+              <li class="header__nav-li2"><a href="https://discord.gg/rnkZM5xbsW" target="_blank"><i class="fass fa-brands fa-discord "></i>Discord</a></li>
+              <li class="header__nav-li2 registro"><a href="../../loginGTP/users.html"><i class="fass fa-solid fa-users"></i>Registro</a></li>
+            </ul>
+            <div class="button" onclick="hamburguesa()"><i class="fa-solid fa-bars" ></i></div>
+            </nav>
+            
+        </div>
+     </header>
+
+    <div class="loader">
+      <div class="containerv">
+       <div class="cubo">
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+       </div>
+       <div class="loading">
+           <h2 class="title-loader">=> GTPANANIME</h2>
+       </div>
+      </div> 
+      <div class="cursor"> </div>
+
+    </div> 
+
+   <!-- <audio id="entrada">
+      <source src="assets.anime/akira.mp3" type="audio/mpeg">
+      Tu navegador no soporta la reproducción de audio.
+    </audio> -->
+
+
+
+        <main>
+
+            <section class="contenedor-anime">
+              <h2 class="contenedor-anime-h2"><a href="../../../index.html"><img src="../../../assets/redes/tuzonanime2.png" alt="tuzonanime" 
+                class="tuzonanime"  id="activeti"> <img src="../../../assets/redes/tuzonanime5.png" alt="tuzonanime"     
+                class="tuzonanime zonanime2" id="activetu"> </a> </h2><!--../../../assets/redes/tuzonanime5.png-->
+            </section>
+            <section class="main" id="principal">
+            <section class="contenedor1">
+                <section class="contenedor1__description">
+
+                     <h1 id="titulo_anime"> Tensei shitara Slime Datta Ken (Temporada3)
+                      <div class="buton_night" onclick="background(), laterals(), main(), episodes(), anime(),buttonr(),buttons(), sun(), nigth()">
+                       <img src="../../../assets/botones/dia-.png" type="checkbox" id="miCheckbox"> 
+                       <div type="checkbox" class="img2" id="miCheckbox2"> </div>
+                      </div>
+                    </h1>
+
+                    <section class="contenedor1__description-section">
+                       <div class="contenedor1__description-block1">
+                         <p class="contenedor1__description-p">                                                                 
+                            Tensei Shitara Slime Datta Ken", también conocido como "That Time I Got Reincarnated as a Slime", es una serie de anime y novelas ligeras japonesas que sigue la historia de Satoru Mikami, un oficinista promedio 
+                            que es asesinado en un incidente aleatorio y reencarna en un mundo de fantasía como un slime (una criatura gelatinosa). Aunque inicialmente decepcionado por su nueva forma, Satoru descubre rápidamente que ha adquirido 
+                            habilidades únicas que le permiten absorber y copiar las habilidades de otros seres vivos. Adoptando el nombre de Rimuru Tempest, comienza a explorar el mundo y a hacer amigos, mientras intenta utilizar sus habilidades 
+                            para construir un lugar pacífico donde tanto humanos como monstruos puedan coexistir en armonía. 
+                        </p>
+
+                        <p class="contenedor1__description-p2">                                                 
+                            Tensei Shitara Slime Datta Ken", también conocido como "That Time I Got Reincarnated as a Slime", es una serie de anime y novelas ligeras japonesas que sigue la historia de Satoru Mikami, un oficinista promedio 
+                            que es asesinado en un incidente aleatorio y reencarna en un mundo de fantasía como un slime (una criatura gelatinosa). Aunque inicialmente decepcionado por su nueva forma, Satoru descubre rápidamente que ha adquirido 
+                            habilidades únicas que le permiten absorber y copiar las habilidades de otros seres vivos. Adoptando el nombre de Rimuru Tempest, comienza a explorar el mundo y a hacer amigos, mientras intenta utilizar sus habilidades 
+                            para construir un lugar pacífico donde tanto humanos como monstruos puedan coexistir en armonía.
+                        </p>
+
+                        <div class="contenedor1__description-datos">
+                            <div class="contenedor1__datos">
+                                <span class="autors">Estudio:</span>
+                                <span class="number"> CloverWorks </span>
+                            </div>
+                            <div class="contenedor1__datos">
+                                <span class="autors">Año:</span>
+                                <span class="number"> 2024</span>
+                            </div>
+                            <div class="contenedor1__datos">
+                                <span class="autors">Genero:</span>
+                                <span class="number"> Fantasía, acción, comedia y aventura</span>
+                            </div>
+
+                        </div>
+
+                      </div>
+
+
+                      <div class="contenedor1__description-block2">
+                        <div class="contenedor1__description-facebook contenedor-facebook redes">
+                            <a href="https://www.facebook.com/profile.php?id=61552268458603" target="_blank">
+                              <img src="../../../assets/redes/facebook2.png" alt="facebook" class="facebook"></a>
+                        </div>
+
+                        <div class="contenedor1__description-twitter  contenedor-twitter redes">
+                            <a href="https://twitter.com/GTPananime" target="_blank">
+                              <img src="../../../assets/redes/twitter2.png" alt="twitter" class="twitter"></a>
+                        </div>
+
+                        <div class="contenedor1__description-instagram contenedor-instagram redes">
+                            <a href="https://www.instagram.com/gtpananime/" target="_blank">
+                              <img src="../../../assets/redes/instagram2.png" alt="instagram" class="instagram"></a> 
+                        </div>
+
+
+                      </div>
+
+                    </section>  
+
+                </section>
+
+                <section class="contenedor1__episodes" id="episodes">
+                    <div class="contenedor1__episodes-text"   >
+                        <button class="contenedor1__episodes-h2"   onclick="flechas() , episodios(), footer(), lateralimg()" >
+                            EPISODES
+                             <img src="../../../assets/botones/flecha.png" alt="flecha" id="flecha" class="imagen"></button>
+                    </div>
+                    <ul class="contenedor1__episodes-ul" id="capitulos">
+                        <li class="contenedor1__episodes-li  "  onclick="mostrarReproductor('capitulo1'),agregarHoverList(this)"> CAP 1 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo2'),agregarHoverList(this)"> CAP 2 </li>
+                        <li class="contenedor1__episodes-li"  onclick="mostrarReproductor('capitulo3'),agregarHoverList(this)"> CAP 3 </li>
+                        <li class="contenedor1__episodes-li " onclick="mostrarReproductor('capitulo4'),agregarHoverList(this)"> CAP 4 </li>
+                        <li class="contenedor1__episodes-li"  onclick="mostrarReproductor('capitulo5'),agregarHoverList(this)"> CAP 5 </li>
+                        <li class="contenedor1__episodes-li"  onclick="mostrarReproductor('capitulo6'),agregarHoverList(this)"> CAP 6 </li>
+                        <li class="contenedor1__episodes-li" onclick="mostrarReproductor('capitulo7'),agregarHoverList(this)"> CAP 7 </li>
+                        <li class="contenedor1__episodes-li" onclick="mostrarReproductor('capitulo8'),agregarHoverList(this)"> CAP 8 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo9'),agregarHoverList(this)"> CAP 9 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo10'),agregarHoverList(this)"> CAP 10 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo11'),agregarHoverList(this)"> CAP 11 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo12'),agregarHoverList(this)"> CAP 12 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo13'),agregarHoverList(this)"> CAP 13 </li>
+                    </ul>
+
+                </section>
+
+
+            </section>
+
+            <section class="contenedor2" id="lateral">
+                <div class="contenedor2__lateral">
+                </div>
+
+                <div class="music-bloq">
+                  <div class="music" onclick="play(), stop()">
+                      <div onclick="PlayAudio()" type="checkbox" class="play1" id="miPlay"> </div>
+                      <div type="checkbox" class="play2" onclick="pauseAudio()" id="miPlay2"> </div>
+                </div>
+                </div>
+
+                <audio id="musica1" >
+                  <source src="assets.anime/opening.mp3" type="audio/mpeg">
+                  Tu navegador no soporta la reproducción de audio.
+                </audio>
+            </section>
+
+            
+
+            
+           
+           </section>
+          
+
+        <section class="contenedor1__reproductor" id="capitulo1">                  <!--toma esta referencia anula la img con none y dale el importan al cap en css-->
+            <div class="contenedor1__reproductor-episodes">                         <!--quita el color de background del div le deje el color #111-->
+                <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca1">
+              <iframe src="https://streamwish.to/e/8s336vot603t" width="100%" height="100%" class="capi1"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" >
+              </iframe>
+            </div>
+
+            <div class="contenedor1__reproductor-redesociales">
+              <div class="contenedor1__reproductor-fechas">
+                <div class="contenedor1__reproductor-fechas-completo">
+                  Episodio 1:  Estreno 5 de abril
+                </div>
+              </div>
+            </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo2">     
+            <div class="contenedor1__reproductor-episodes">
+                <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca2">
+                <iframe src="" width="100%" height="100%"  class="capi2"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+            </div>
+
+            <div class="contenedor1__reproductor-redesociales">
+              <div class="contenedor1__reproductor-fechas">
+                <div class="contenedor1__reproductor-fechas-completo">
+                  Episodio 2:  Estreno 12 de abril
+                </div>
+              </div>
+            </div> 
+              
+        </section>      
+        
+        <section class="contenedor1__reproductor" id="capitulo3">   
+              <div class="contenedor1__reproductor-episodes">
+                <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca3">
+                <iframe src="" width="100%" height="100%"  class="capi3"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 3:  Estreno 19 de abril
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo4">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca4">
+                <iframe src="" width="100%" height="100%" class="capi4"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 4:  Estreno 26 de abril
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo5">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca5">
+                <iframe src="" width="100%" height="100%" class="capi5"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 5:  Estreno 3 de mayo
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo6">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca6">
+                <iframe width="100%" height="100%" frameborder="0" 
+                src="" class="capi6" allowfullscreen=""></iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 6:  Estreno 10 de mayo
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo7">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca7">
+                <iframe width="100%" height="100%" frameborder="0" 
+                src="" allowfullscreen class="capi7" ></iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 7:  Estreno 17 de mayo
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo8">   
+              <div class="contenedor1__reproductor-episodes">
+                <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca8">
+                <iframe src="" width="100%" height="100%" class="capi8"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 8:  Estreno 23 de mayo
+                  </div>
+                </div>
+              </div> 
+        </section>      
+
+        <section class="contenedor1__reproductor" id="capitulo9">  
+              <div class="contenedor1__reproductor-episodes" >
+                <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca9">
+                <iframe width="100%" height="100%" frameborder="0"  class="capi9"
+                src=""
+                 allowfullscreen ></iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 9:  Estreno 30 de mayo
+                  </div>
+                </div>
+              </div>  
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo10">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca10">
+                <iframe src="" width="100%" height="100%" class="capi10"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 10:  Estreno 7 de junio
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo11">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca11">
+                <iframe width="100%" height="100%" frameborder="0"  class="capi11"
+                src=""
+                 allowfullscreen ></iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 11:  Estreno 14 de junio
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo12">  
+          <div class="contenedor1__reproductor-episodes">
+            <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca12">
+            <iframe width="100%" height="100%" frameborder="0"  class="capi12"
+            src=""
+             allowfullscreen ></iframe>
+          </div>
+
+          <div class="contenedor1__reproductor-redesociales">
+            <div class="contenedor1__reproductor-fechas">
+              <div class="contenedor1__reproductor-fechas-completo">
+                Episodio 12:  Estreno 21 de junio
+              </div>
+            </div>
+          </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo13">  
+            <div class="contenedor1__reproductor-episodes">
+              <img src="../../../assets/redes/proximo.png" alt="cartelera" class="cartelera ca13">
+              <iframe width="100%" height="100%" frameborder="0"  class="capi13"
+              src=""
+               allowfullscreen ></iframe>
+            </div>
+  
+            <div class="contenedor1__reproductor-redesociales">
+              <div class="contenedor1__reproductor-fechas">
+                <div class="contenedor1__reproductor-fechas-completo">
+                  Episodio 13:  Estreno 28 de junio
+                </div>
+              </div>
+            </div> 
+          </section>
+         
+
+        </main>
+        
+
+        <footer id="footers" class="footer">
+          <div class="footer__creditos">
+            GTPananime, Inc. © 2024. Todos los derechos reservados.
+          </div>
+        </footer>
+
+
+    </body>
+</html>

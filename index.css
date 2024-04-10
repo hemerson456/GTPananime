@@ -309,7 +309,7 @@ a img.logo-anime {
     background-repeat: no-repeat;
 }
 .img6{
-    background-image: url('pages/zonanime/kingdom/assets.anime/background.jpg'); 
+    background-image: url('pages/zonanime/tensei-slime-datta3/assets.anime/back.png'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -858,6 +858,9 @@ a img.logo-anime {
 }
 .anime-li a div.second26 {
     background-image: url('pages/zonanime/wind-breaker/assets.anime/back.jpeg');
+}
+.anime-li a div.second27 {
+    background-image: url('pages/zonanime/tensei-slime-datta3/assets.anime/back.png');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
