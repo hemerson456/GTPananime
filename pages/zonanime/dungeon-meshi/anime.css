@@ -73,6 +73,9 @@
 .ca14{
     display: none!important;
 }
+.ca15{
+    display: none!important;
+}
 /*imagenes de fondo de proximamente*/
 
 
@@ -117,6 +120,9 @@
     display: flex!important; 
 }
 .capi14{
+    display: flex!important; 
+}
+.capi15{
     display: flex!important; 
 }
 /*video de iframe puqe ya esta subido darle al capitulo flex*/
