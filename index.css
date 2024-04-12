@@ -314,7 +314,7 @@ a img.logo-anime {
     background-repeat: no-repeat;
 }
 .img7{
-    background-image: url('pages/zonanime/boku-no-kokoro/assets.anime/background.jpg'); 
+    background-image: url('pages/zonanime/kaijuu-8-gou/assets.anime/poster.avif'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -861,6 +861,9 @@ a img.logo-anime {
 }
 .anime-li a div.second27 {
     background-image: url('pages/zonanime/tensei-slime-datta3/assets.anime/back.png');
+}
+.anime-li a div.second28 {
+    background-image: url('pages/zonanime/kaijuu-8-gou/assets.anime/poster.avif');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
