@@ -78,6 +78,9 @@
 .ca14{
     display: none;
 }
+.ca15{
+    display: none;
+}
 
 
 
@@ -121,5 +124,8 @@
     display: flex!important;
 }
 .capi14{
+    display: flex!important;
+}
+.capi15{
     display: flex!important;
 }
