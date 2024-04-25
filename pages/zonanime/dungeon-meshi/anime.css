@@ -79,6 +79,9 @@
 .ca16{
     display: none!important;
 }
+.ca17{
+    display: none!important;
+}
 /*imagenes de fondo de proximamente*/
 
 
@@ -129,6 +132,9 @@
     display: flex!important; 
 }
 .capi16{
+    display: flex!important; 
+}
+.capi17{
     display: flex!important; 
 }
 /*video de iframe puqe ya esta subido darle al capitulo flex*/
