@@ -329,7 +329,7 @@ a img.logo-anime {
     background-repeat: no-repeat;
 }
 .img10{
-    background-image: url('pages/zonanime/akuyaku-reijou-level99/assets.anime/index-background.webp'); 
+    background-image: url('pages/zonanime/mushoku-tensei2/assets.anime/back-main.webp'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -867,6 +867,9 @@ a img.logo-anime {
 }
 .anime-li a div.second29 {
     background-image: url('pages/zonanime/san-wakagaeru/assets.anime/back3.jpg');
+}
+.anime-li a div.second30 {
+    background-image: url('pages/zonanime/mushoku-tensei2/assets.anime/back-main.webp');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
