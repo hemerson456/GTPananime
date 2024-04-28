@@ -324,7 +324,7 @@ a img.logo-anime {
     background-repeat: no-repeat;
 }
 .img9{
-    background-image: url('pages/zonanime/shaman-king-flowers/assets.anime/index-back.webp'); 
+    background-image: url('pages/zonanime/san-wakagaeru/assets.anime/back3.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -864,6 +864,9 @@ a img.logo-anime {
 }
 .anime-li a div.second28 {
     background-image: url('pages/zonanime/kaijuu-8-gou/assets.anime/poster.avif');
+}
+.anime-li a div.second29 {
+    background-image: url('pages/zonanime/san-wakagaeru/assets.anime/back3.jpg');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
