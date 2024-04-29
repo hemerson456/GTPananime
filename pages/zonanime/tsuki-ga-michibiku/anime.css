@@ -84,6 +84,9 @@
 .ca16{
     display: none;
 }
+.ca17{
+    display: none;
+}
 
 
 
@@ -133,5 +136,8 @@
     display: flex!important;
 }
 .capi16{
+    display: flex!important;
+}
+.capi17{
     display: flex!important;
 }
