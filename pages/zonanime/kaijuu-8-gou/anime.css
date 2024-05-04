@@ -51,6 +51,9 @@
 .ca3{
     display:none;
 }
+.ca4{
+    display:none;
+}
  
 
 
@@ -61,5 +64,8 @@
     display: flex!important;
 }
 .capi3{
+    display: flex!important;
+}
+.capi4{
     display: flex!important;
 }
