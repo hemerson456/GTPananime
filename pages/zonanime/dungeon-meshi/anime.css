@@ -85,6 +85,9 @@
 .ca18{
     display: none!important;
 }
+.ca19{
+    display: none!important;
+}
 /*imagenes de fondo de proximamente*/
 
 
@@ -141,6 +144,9 @@
     display: flex!important; 
 }
 .capi18{
+    display: flex!important; 
+}
+.capi19{
     display: flex!important; 
 }
 /*video de iframe puqe ya esta subido darle al capitulo flex*/
