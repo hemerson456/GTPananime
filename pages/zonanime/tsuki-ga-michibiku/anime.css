@@ -90,7 +90,9 @@
 .ca18{
     display: none;
 }
-
+.ca19{
+    display: none;
+}
 
 
 .capi1{
@@ -145,5 +147,8 @@
     display: flex!important;
 }
 .capi18{
+    display: flex!important;
+}
+.capi19{
     display: flex!important;
 }
