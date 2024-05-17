@@ -59,7 +59,10 @@
 .ca6{
     display:none;
 }
-  
+.ca7{
+    display:none;
+}
+ 
 
 
 .capi1{
@@ -78,5 +81,8 @@
     display: flex!important;
 }
 .capi6{
+    display: flex!important;
+}
+.capi7{
     display: flex!important;
 }
