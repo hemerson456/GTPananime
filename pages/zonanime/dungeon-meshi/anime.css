@@ -94,6 +94,9 @@
 .ca21{
     display: none!important;
 }
+.ca22{
+    display: none!important;
+}
 /*imagenes de fondo de proximamente*/
 
 
@@ -159,6 +162,9 @@
     display: flex!important; 
 }
 .capi21{
+    display: flex!important; 
+}
+.capi22{
     display: flex!important; 
 }
 /*video de iframe puqe ya esta subido darle al capitulo flex*/
