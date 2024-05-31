@@ -21,6 +21,14 @@ body{
     min-height: 100vh;
 }
 
+body, p, h1, span{
+    cursor: url('assets/cursor-web.png'), auto !important;
+}
+
+a, button, li, .music, #miCheckbox, #miCheckbox2{
+    cursor: url('assets/pointer.png'), pointer !important;
+}
+
 .active_background{
     overflow-y: scroll;
     overflow-x: hidden;

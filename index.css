@@ -14,7 +14,7 @@ background-color: #050005ff;/*remove*/
 width: 100vw;
 background-size: cover;/*remove*/
 background-attachment: fixed; /*remove*/
-transition: all 1.5s;;
+transition: all 1.5s;
 }
 
 
@@ -25,6 +25,14 @@ width: 0; /* Ancho de la barra de desplazamiento */
 body::-webkit-scrollbar-thumb {
 background-color: transparent; /* Fondo transparente para la barra de desplazamiento */
 border: none; /* Sin borde */
+}
+
+body, .Titulo, .img-title{
+    cursor: url('assets/cursor-web.png'), default !important
+}
+
+a, button, .anime-li-h21, #tendencia{
+    cursor: url('assets/pointer.png'), pointer !important;
 }
 @font-face {
     font-family: 'title-p';
