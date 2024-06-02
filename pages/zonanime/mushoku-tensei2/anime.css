@@ -62,6 +62,9 @@
 .ca7{
     display:none;
 }
+.ca8{
+    display:none;
+}
 
    
  
@@ -85,5 +88,8 @@
     display: flex!important;
 }
 .capi7{
+    display: flex!important;
+}
+.capi8{
     display: flex!important;
 }
