@@ -99,6 +99,10 @@
 .ca21{
     display: none;
 }
+.ca22{
+    display: none;
+}
+
 
 
 .capi1{
@@ -162,5 +166,8 @@
     display: flex!important;
 }
 .capi21{
+    display: flex!important;
+}
+.capi22{
     display: flex!important;
 }
