@@ -102,6 +102,9 @@
 .ca22{
     display: none;
 }
+.ca23{
+    display: none;
+}
 
 
 
@@ -169,5 +172,8 @@
     display: flex!important;
 }
 .capi22{
+    display: flex!important;
+}
+.capi23{
     display: flex!important;
 }
