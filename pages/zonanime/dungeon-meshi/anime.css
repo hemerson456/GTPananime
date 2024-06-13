@@ -100,6 +100,9 @@
 .ca23{
     display: none!important;
 }
+.ca24{
+    display: none!important;
+}
 /*imagenes de fondo de proximamente*/
 
 
@@ -171,6 +174,9 @@
     display: flex!important; 
 }
 .capi23{
+    display: flex!important; 
+}
+.capi24{
     display: flex!important; 
 }
 /*video de iframe puqe ya esta subido darle al capitulo flex*/
