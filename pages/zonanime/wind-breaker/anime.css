@@ -77,7 +77,10 @@
 .ca12{
     display:none;
 }
-  
+.ca13{
+    display:none;
+}
+    
 
 
 .capi1{
@@ -114,5 +117,8 @@
     display: flex!important;
 }
 .capi12{
+    display: flex!important;
+}
+.capi13{
     display: flex!important;
 }
