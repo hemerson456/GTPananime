@@ -80,6 +80,10 @@
 .ca13{
     display:none;
 } 
+.ca14{
+    display:none;
+} 
+
 
 
 
@@ -121,5 +125,8 @@
     display: flex!important;
 }
 .capi13{
+    display: flex!important;
+}
+.capi14{
     display: flex!important;
 }
