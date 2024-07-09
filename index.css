@@ -296,8 +296,8 @@ a img.logo-anime {
 }
 
 .img2{
-    background-image: url('assets/image-rotation/Dungeon-Meshi.webp'); 
-    background-position: center;
+    background-image: url('pages/zonanime/oshi-no-ko2/assets.anime/oshi-poster.jpeg'); 
+    background-position: center start;
     background-repeat: no-repeat;
 }
 
@@ -881,6 +881,9 @@ a img.logo-anime {
 }
 .anime-li a div.second31 {
     background-image: url('pages/zonanime/roshidere/assets.anime/portada_tokidoki-9.jpg');
+}
+.anime-li a div.second32 {
+    background-image: url('pages/zonanime/oshi-no-ko2/assets.anime/oshi-poster.jpeg');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
