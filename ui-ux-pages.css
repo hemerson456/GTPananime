@@ -323,6 +323,7 @@ h1{
 }
 .modi_title-anime{
     color: #fff;
+    text-shadow: 2px 2px 2px #000;
 }
 
 #miCheckbox{ /*borrar es el input del boton*/
@@ -911,7 +912,7 @@ h1{
         width: 40%;
     }
     .contenedor1__episodes{
-        width: 90vw;
+        width: 80vw;
     }
     .contenedor2{
         width: 90%;

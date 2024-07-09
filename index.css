@@ -290,7 +290,7 @@ a img.logo-anime {
 
 /*imagenes de la ruleta*/
 .img1{
-    background-image: url('pages/zonanime/Re-Monster/assets.anime/back.webp'); 
+    background-image: url('pages/zonanime/roshidere/assets.anime/portada_tokidoki-9.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -878,6 +878,9 @@ a img.logo-anime {
 }
 .anime-li a div.second30 {
     background-image: url('pages/zonanime/mushoku-tensei2/assets.anime/back-main.webp');
+}
+.anime-li a div.second31 {
+    background-image: url('pages/zonanime/roshidere/assets.anime/portada_tokidoki-9.jpg');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
@@ -1623,3 +1626,9 @@ a img.logo-anime {
     transform: scale(0.9) !important;
 }
 */
+
+
+/*extras*/
+.invisibility{
+    display: none;
+}
