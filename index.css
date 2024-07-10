@@ -302,7 +302,7 @@ a img.logo-anime {
 }
 
 .img3{
-    background-image: url('pages/zonanime/Date-a-Live-5/assets.anime/back.jpeg'); 
+    background-image: url('pages/zonanime/shikanoko/assets.anime/shikanoko-banner.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -884,6 +884,10 @@ a img.logo-anime {
 }
 .anime-li a div.second32 {
     background-image: url('pages/zonanime/oshi-no-ko2/assets.anime/oshi-poster.jpeg');
+}
+.anime-li a div.second33 {
+    background-image: url('pages/zonanime/shikanoko/assets.anime/shikanoko-banner.jpg');
+    background-position: center;
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
