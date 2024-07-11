@@ -312,7 +312,7 @@ a img.logo-anime {
     background-repeat: no-repeat;
 }
 .img5{
-    background-image: url('pages/zonanime/wind-breaker/assets.anime/back.jpeg'); 
+    background-image: url('pages/zonanime/senpai-wa-otokonoko/assets.anime/banner.webp'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -891,6 +891,9 @@ a img.logo-anime {
 }
 .anime-li a div.second34 {
     background-image: url('pages/zonanime/suicide-squad/assets.anime/back.jpg');
+}
+.anime-li a div.second35 {
+    background-image: url('pages/zonanime/senpai-wa-otokonoko/assets.anime/banner.webp');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
