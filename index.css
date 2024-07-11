@@ -322,7 +322,7 @@ a img.logo-anime {
     background-repeat: no-repeat;
 }
 .img7{
-    background-image: url('pages/zonanime/kaijuu-8-gou/assets.anime/poster.avif'); 
+    background-image: url('pages/zonanime/hazurewaku/assets.anime/back.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -894,6 +894,9 @@ a img.logo-anime {
 }
 .anime-li a div.second35 {
     background-image: url('pages/zonanime/senpai-wa-otokonoko/assets.anime/banner.webp');
+}
+.anime-li a div.second36 {
+    background-image: url('pages/zonanime/hazurewaku/assets.anime/back.jpg');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
