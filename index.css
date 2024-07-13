@@ -327,7 +327,7 @@ a img.logo-anime {
     background-repeat: no-repeat;
 }
 .img8{
-    background-image: url('pages/zonanime/tsuki-ga-michibiku/assets.anime/base-tuski.jpg'); 
+    background-image: url('pages/zonanime/jigen-no-ririsa/assets.anime/poster.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -897,6 +897,9 @@ a img.logo-anime {
 }
 .anime-li a div.second36 {
     background-image: url('pages/zonanime/hazurewaku/assets.anime/back.jpg');
+}
+.anime-li a div.second37 {
+    background-image: url('pages/zonanime/jigen-no-ririsa/assets.anime/poster.jpg');
 }
 /*terminado imagenes fondos de las noticias presentacion*/
 /*terminado titulo y fecha de las nuevas publicaciones*/
