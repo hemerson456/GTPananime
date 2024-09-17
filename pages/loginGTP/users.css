@@ -1,19 +1,31 @@
+
 *{
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: #000;/*remove*/
-    background-image: url('assets.users/fondoprincipal-min.gif'); /*remove*/
-    width: 100vw;
-    background-size: cover;/*remove*/
-    transition: all 1.2s;
-    background-attachment: fixed; /*remove*/
+@font-face {
+    font-family: 'titles';
+    src: url('fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'title-p';
+    src: url('fonts/japanese/Japonesa.ttf');
+}
+
+body.ia-login-body{
     display: flex;
-    background-position: center center; 
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets.users/backgron\ \(1\).gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -25,141 +37,395 @@ body::-webkit-scrollbar-thumb {
     border: none; /* Sin borde */
 }
 
-form{
-    width: 400px;
-    margin: auto;
-    border: 2px solid #ccc;
-    padding:  10px 20px;
-    border-radius: 10px;
-    background: linear-gradient(to left, transparent,  #333, #111); 
-}
 
-
-
-input[type=text], input[type=password],input[type=email]{
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-    padding: 10px;
+.global{
     width: 100%;
-
-}
-
-input[type=text]:focus,input[type=password]:focus,input[type=email]:focus{
-    background-color: #aaa;
-}
-
-input[type=submit]{
-    border: none;
-    outline: none;
-    background-color: #a0a;
-    font-size: 18px;
-    color: #fff;
-    padding: 10px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 0.3em;
-}
-
-input[type=submit]:hover {
-    background-color: #f0f;
-}
-
-.section{
-    margin-bottom: 18px;
-}
-
-h2{
+    height: 100%;
+    background: linear-gradient(0deg, #001 0%, rgba(10, 10, 10, 0.0) 100%)!important;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    color: #c0c;
-    font-size: 32px;
-    font-weight: 800;
-    font-family: monospace;
 }
 
-h2:hover{
-    color: #f0f;
+.ia-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 20;
 }
 
-.title{
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #bbf;
 
-}
-.botones{
+/*tamaño de los bloques*/
+.bloq-forms{
+    width: 520px;
+    height: auto;
     display: flex;
     flex-direction: column;
+    gap: 1.3em;
+    justify-content: center;
     align-items: center;
-    
+    background-color: rgba(10,10, 10, 0.5);/*rgba(9, 1, 135, 0.3)*/
+    border-radius: 20px;
+    padding: 0.5em 0;
+    color: #fff;
 }
-.button a{
-    display: flex;
-    text-decoration: none;
-    margin-top: 15px;
-    color: #bbf;
-    font-size: 16px;
 
+.bloq-form{
+    width: 500px;
+    height: 3.5em;
+}  
 
+.bloq-correo{
+    height: auto;
+    width: 500px;
 }
-.button a:hover{
-    color: #faf;
+
+.bloq-form-max{
+    height: 3.5em;
+    color: #fff;
+    transition: all 400ms;
 }
-.h2-img{
-    height: 1.3em;
+
+/*cuerpo del logo*/
+.bloq-logo{
+    height: 5em;
     width: auto;
-    margin-right: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
 }
 
-.h2 a{
+.bloq-logo-a{
     text-decoration: none;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
 }
-@media only screen and (max-width:550px){
-    form{
-        width: 320px;
-        margin: auto;
-        border: 2px solid #ccc;
-        padding:  5px 10px;
-        border-radius: 8px;
-        background: linear-gradient(to left, transparent,  #333, #111); 
-    }
-    .section{
-        margin-bottom: 10px;
-    }
-    .button a{
-        display: flex;
-        text-decoration: none;
-        margin-top: 10px;
-        color: #bbf;
-        font-size: 13px;
+
+.bloq-logo-a span{
+    font-size: 3em;
+}
+
+.logo-title{
+    color:#aaf;
+    animation: kanojo 4s linear infinite;
+    font-family: 'title-p';
+}
+
+@keyframes  kanojo {
+    0%{
+        filter: hue-rotate(0deg);
+     }
+     100%{
+        filter: hue-rotate(360deg);
+     }
+}
+
+.ia-logo{
+    height: 100%;
+    width: auto;
+}
+
+/*texto debajo del log*/
+.bloq-title{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    font-size: 1.3em!important;
+    height: 2em;
+    font-family: 'titles';
+    color:#eee;
     
-    
-    }
-    input[type=text], input[type=password],input[type=email]{
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 13px;
-        outline: none;
+    text-shadow: 1px 1px 1px #666;
+}
+
+/*botones como los de registrate con google y otros botones*/
+.bloq-buton{
+    border-radius: 20px;
+    border: none;
+    outline: 2px solid #aaa;
+    background-color:transparent ;
+    /*backdrop-filter: blur(3px);*/
+    color: #fff;
+    text-shadow: 1px 1px 1px #666;
+    transition: all 400ms;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bloq-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+
+
+.bloq-buton:hover{
+    background-color: rgba(50,50, 50, 0.5);
+    outline: 1px solid rgba(50,50, 50, 0.5);
+}
+
+.bloq-buton svg{
+    width: 2em;
+    height: 2em;
+}
+
+
+
+/*este simbolo  ----0----   */
+.bloq-space{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--pdl-spacing-x-sm) 0;
+    height: 0.5em;
+}
+.bloq-space-line{
+    height: 1px;
+    border: none;
+    background-color: var(--pdl-bg-subtle);
+    flex: 1 1;
+}
+
+.bloq-space-center{
+    color: #fff;
+}
+
+
+/*input de correo style*/
+.bloq-correo-form{
+    gap: 1.2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloq-correo-form-email{
+    border-radius: 8px;
+    height: 3em;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: rgba(50,50, 50, 0.15);
+    border: none;
+    outline: 1px solid #666;
+    padding: 0 5px;
+    transition: all 400ms;
+}
+
+.bloq-correo-form-email:focus{
+    color: #fff;
+    background-color: rgba(50,50, 50, 0.5);
+    padding: 0 5px;
+    transition: all 400ms;
+}
+
+.bloq-correo-form-password{
+    border-radius: 8px;
+    height: 3em;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: rgba(50,50, 50, 0.15);
+    border: none;
+    outline: 1px solid #666;
+    padding: 0 5px;
+    transition: all 400ms;
+}
+
+.bloq-correo-form-password:focus{
+    color: #fff;
+    background-color: rgba(50,50, 50, 0.5);
+    padding: 0 5px;
+    transition: all 400ms;
+}
+
+.bloq-submit{
+    color:#ddd;
+    background:#09112e;
+    outline-color: #09112e;
+    padding: 0 5px;
+
+}
+.bloq-submit:hover{
+    color:#ddd;
+    background:#09112e;
+    outline-color: #09112e;
+}
+
+
+
+
+::placeholder{
+    color: #fff;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+
+/*boton ir */
+.color-blue{
+    background-color: #29439e;
+    cursor: pointer;
+    color: #fff;
+    outline-color: #29439e;
+}
+
+.color-blue:hover{
+    background-color: #29439e;
+    cursor: pointer;
+    color: #fff;
+    outline-color: #29439e;
+}
+
+/*bton phone*/
+.bloq-buton-fone{
+    cursor: pointer;
+}
+
+
+/*texto de las potiliticas*/
+.bloq-text-politicians{
+    text-align: center;
+    margin-top: 1em;
+    cursor: default;
+}
+
+
+.politicians-color{
+    text-decoration: none;
+    color: #4f90c4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.button-register{
+    margin-top: -0.3em;
+}
+
+.button-register a{
+    text-decoration: none;
+    color: #4f90c4;
+    font-size: 1.1em;
+    opacity: 0.7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: opacity 200ms ease-in-out;
+}
+
+.button-register a:hover{
+    opacity: 1;
+    transition: opacity 200ms ease-in-out;
+}
+
+/*botones noche*/
+.boton-dia-noche{
+    position: absolute;
+    display: flex;
+    align-items: start;
+    height: 100vh;
+    justify-content: end;
+    width: 100vw;
+    z-index: 10;
+}
+
+.bloq-botones{
+    display: flex;
+    padding: 10px;
+}
+
+.bton-class{
+    height: 2.5em;
+    width: auto;
+}
+
+.boton-dia{
+    display: none;
+}
+
+
+/*clases activable noche y dia*/
+.active1{
+    display: block!important;
+}
+
+.active2{
+    display: none!important;
+}
+
+
+
+/*moonnight*/
+.bodys2{
+    background-image: url('assets.users/fondoprincipal-min.gif')!important;
+}
+
+.globales_{
+    background: transparent!important;
+}
+
+.box_night{
+    width: 520px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(10,10, 10, 0.5);
+    padding: 0.5em 0;
+    border-radius: 30px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+   /* box-shadow: 2px 2px 2px #313131, -2px -2px 2px #000;*/
+    backdrop-filter: blur(3px);
+}
+
+.error{
+    color:#f66; 
+    display:none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+.error2{
+    font-size: 12px;
+}
+
+@media only screen and (min-width:0px ) and (max-width:550px){
+    .bloq-forms{
+        width: 100%!important;
         padding: 10px;
-        width: 100%;
+    }
     
+    .bloq-form{
+        width: 99%!important;
     }
-    h2{
-        font-size: 28px;
+
+    body.ia-login-body{
+        width: 100%;
+        height: 100%;
     }
-    input[type=submit]{
-        border: none;
-        outline: none;
-        background-color: #a0a;
-        font-size: 15px;
-        color: #fff;
-        padding: 10px 25px;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 0.3em;
+
+    body{
+        padding: 15px 0;
+    }
+
+    .bloq-title{
+        height: 3.5em;
+    }
+
+    .ia-login{
+        padding: 0;
+    }
+
+    .movil{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:474px){
+    .bloq-forms{
+        width: 100%!important;
+        border-radius: 0;
+        padding: 15px;
     }
 }

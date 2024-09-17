@@ -10,33 +10,59 @@
         <meta name="keywords" content="login,register, gtpanime, kudasia, facebook, reddit, twitter,jkananime,anime">
         <meta name="robots" content="index, follow">
         <link rel="icon" href="../../assets/logohead3.png" type="image/x-icon">
-        <script src="app.js"></script>
+        <script src="app2.js"></script>
     </head>
-    <body onclick="PlayAudio()">
+    <body onclick="PlayAudio()" class="ia-login-body" id="style2">
         
         
-        <form action="/register" method="POST">
-            <h2>Registro<a href="../../index.html"><img src="assets.users/logo_copy_V2.0.png" class="h2-img"> </a></h2>
-            <section class="section">
-                <div class="title">Username</div>
-                <div class="field block"><input type="text" required="" id="username" name="username" ></div>
-            </section>
+        <div class="global" id="globals">
+            <main class="ia-login">
+                <section class="bloq-forms" id="mod-night">
+                    <div class="bloq-logo">
+                        <a href="#" class="bloq-logo-a">
+                            <img src="../../assets/logo_copy_V2.0.png" class="ia-logo">
+                        </a>
+                    </div>
 
-            <section class="section">
-                <div class="title">Correo</div>
-                <div class="field block"><input type="email" id="correo" name="correo" ></div>
-            </section>
+                    <div class="bloq-correo">
+                        <form novalidate="" class="bloq-correo-form" onkeydown="verificarEnter(event)">
+                            <input class="bloq-correo-form-email bloq-form" type="email" required="" autocomplete="email" autofocus placeholder="Dirección de correo electrónico" oninput="habilitarBoton()">
+                            <input class="bloq-correo-form-password bloq-form" type="password" required="" autocomplete="password" autofocus id="password" placeholder="Contraseña" name="password" oninput="habilitarBoton()">
+                            <input class="bloq-correo-form-password bloq-form" type="password" required="" autocomplete="password" autofocus id="password2" placeholder="Repetir Contraseña" name="password" oninput="habilitarBoton()" onblur="validarContraseña()">
+                            <p id="password-error" class="error">Las contraseñas no coinciden</p> <!-- Advertencia de contraseña -->
+                        </form>
+                    </div>
+                    
+                    <button disabled="" class="bloq-form bloq-submit bloq-buton bloq-buton-color bloq-form-max"  onclick="redirigir()">Ir</button>
+                    
+                    <div class=" bloq-text-politicians">
+                        <p id="checkbox-error" class="error">Debes aceptar los términos y condiciones</p> <!-- Advertencia de checkbox -->
+                        <input type="checkbox" name="aceptar" value="aceptar" required="" id="checkbox" onclick="habilitarBoton()"> Al continuar, estás aceptando<br>
+                        las <a target="_blank" href="#" rel="noreferrer" class="politicians-color">Condiciones de servicio</a>
+                        y la <a target="_blank" href="#" rel="noreferrer" class="politicians-color">Política de privacidad</a> 
+                        de <br>GTPananime.
+                        
+                    </div>
 
-            <section class="section">
-                <div class="title">Password</div>
-                <div class="field"><input type="password" id="password" name="password"></div>
-            </section>
+    
+    
+                </section>
+            </main>
+    
+            <section class="boton-dia-noche">
+                <section class="bloq-botones" onclick="activaDay(); activaNigth(); bodys(); globa2(); box_color(); ">
+                    <div class="boton-noche" id="bton-noche">
+                        <img src="assets.users/NOCHE-.png" alt="noche" class="img-noche  bton-class">
+                    </div>
+    
+                    <div class="boton-dia" id="bton-dia">
+                        <img src="assets.users/dia-.png" alt="dia" class="img-dia bton-class">
+                    </div>
+                </section>
+    
+            </section> 
+        </div>
 
-            <section class="section botones">
-                <div class="button"><input type="submit" value="Registrar"></div>
-                <div class="button"><a href="users.html">Login</a></div>
-            </section>
-        </form>
 
         <audio id="musica1" loop >
             <source src="assets.users/fondousers.mp3" type="audio/mpeg">

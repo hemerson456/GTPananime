@@ -14,33 +14,83 @@
         <link rel="icon" href="../../assets/logohead3.png" type="image/x-icon">
         <script src="app.js"></script>
     </head>
-    <body onclick="PlayAudio()"> 
+    <body onclick="PlayAudio()" class="ia-login-body" id="style2">
+        
+        
+        <div class="global" id="globals">
+            <main class="ia-login">
+                <section class="bloq-forms" id="mod-night">
+                    <div class="bloq-logo">
+                        <a href="#" class="bloq-logo-a">
+                            <img src="../../assets/logo_copy_V2.0.png" class="ia-logo">
+                        </a>
+                    </div>
+    
+                    <button class="bloq-form bloq-buton  bloq-register" id="bloq-buton-night">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd">
+                            <path d="M20.16 12.193c0-.603-.054-1.182-.155-1.739H12v3.288h4.575a3.91 3.91 0 0 1-1.696 2.565v2.133h2.747c1.607-1.48 2.535-3.659 2.535-6.248z" fill="#4285f4"></path>
+                            <path d="M12 20.5c2.295 0 4.219-.761 5.625-2.059l-2.747-2.133c-.761.51-1.735.811-2.878.811-2.214 0-4.088-1.495-4.756-3.504h-2.84v2.202A8.497 8.497 0 0 0 12 20.5z" fill="#34a853"></path>
+                            <path d="M7.244 13.615A5.11 5.11 0 0 1 6.977 12a5.11 5.11 0 0 1 .267-1.615V8.183h-2.84C3.828 9.33 3.5 10.628 3.5 12s.328 2.67.904 3.817l2.84-2.202z" fill="#fbbc05"></path>
+                            <path d="M12 6.881c1.248 0 2.368.429 3.249 1.271l2.438-2.438C16.215 4.342 14.291 3.5 12 3.5a8.497 8.497 0 0 0-7.596 4.683l2.84 2.202C7.912 8.376 9.786 6.881 12 6.881z" fill="#ea4335"></path>
+                        </svg>Continuar con Google
+                    </button>
+    
+    
+                    <!--<button class="bloq-form bloq-buton bloq-register">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.16 6.501c.664 0 1.494-.448 1.989-1.045.448-.541.775-1.297.775-2.053 0-.103-.01-.206-.028-.29-.738.028-1.624.495-2.156 1.12-.42.476-.803 1.223-.803 1.988 0 .112.019.224.028.262.046.01.121.018.196.018ZM9.828 17.795c.906 0 1.307-.607 2.437-.607 1.148 0 1.4.588 2.408.588.989 0 1.652-.914 2.277-1.81.7-1.027.99-2.035 1.008-2.082-.065-.018-1.96-.793-1.96-2.968 0-1.885 1.493-2.734 1.577-2.8-.989-1.419-2.492-1.456-2.902-1.456-1.111 0-2.016.672-2.586.672-.616 0-1.428-.635-2.39-.635-1.829 0-3.686 1.513-3.686 4.369 0 1.773.69 3.65 1.54 4.862.728 1.027 1.363 1.867 2.277 1.867Z" fill="#000"></path>
+                            </svg>Continuar con Apple
+                    </button>-->  
+    
+                    <div class="bloq-form bloq-space">
+                        <hr class="bloq-space-line">
+                        <div class="bloq-space-center">o</div>
+                        <hr class="bloq-space-line">
+                    </div>
+                    <div class="bloq-correo">
+                        <form novalidate="" class="bloq-correo-form" onkeydown="verificarEnter(event)">
+                            <input class="bloq-correo-form-email bloq-form" type="email" required="" autocomplete="email" autofocus placeholder="Dirección de correo electrónico" oninput="habilitarBoton()">
+                            <input class="bloq-correo-form-password bloq-form" type="password" required="" autocomplete="password" autofocus id="password" placeholder="Contraseña" name="password" oninput="habilitarBoton()">
+                        </form>
+                    </div>
+                    
+                    <button disabled="" class="bloq-form bloq-submit bloq-buton bloq-buton-color bloq-form-max" onclick="verificarCheckbox(),redirigir()" >Ir</button>
+                    
+                    <button class="bloq-form bloq-buton-fone bloq-buton bloq-form-max" id="bloq-buton-nights">Usar teléfono</button>
+                    
+                    <div class="bloq-form bloq-text-politicians">
+                        <p id="checkbox-error" class="error">Debes aceptar los términos y condiciones</p> <!-- Mensaje de error -->
+                        <input type="checkbox" name="aceptar" value="aceptar" required="" id="checkbox" onclick="habilitarBoton()"> Al continuar, estás aceptando<br>
+                        las <a target="_blank" href="#" rel="noreferrer" class="politicians-color">Condiciones de servicio</a>
+                        y la <a target="_blank" href="#" rel="noreferrer" class="politicians-color">Política de privacidad</a> 
+                        de <br>GTPananime.
+                    </div>
 
-
-        <form action="/authenticate" method="POST">
-            <h2>Login<a href="../../index.html"><img src="assets.users/logo_copy_V2.0.png" class="h2-img"> </a></h2>
-            <section class="section">
-                <div class="title">Username</div>
-                <div class="field block"><input type="text" id="username" name="username" ></div>
-            </section>
-
-            <section class="section">
-                <div class="title">Password</div>
-                <div class="field"><input type="password" id="password" name="password"></div>
-            </section>
-
-            <section class="section botones">
-                <div class="button" ><input type="submit" value="Login"></div>
-                <div class="button"><a href="register.html">Registrarse</a></div>
-            </section>
-        </form>
+                    <div class="button-register"><a href="register.html">Registrate</a></div>
+    
+    
+                </section>
+            </main>
+    
+            <section class="boton-dia-noche">
+                <section class="bloq-botones" onclick="activaDay(); activaNigth(); bodys(); globa2(); box_color(); ">
+                    <div class="boton-noche" id="bton-noche">
+                        <img src="assets.users/NOCHE-.png" alt="noche" class="img-noche  bton-class">
+                    </div>
+    
+                    <div class="boton-dia" id="bton-dia">
+                        <img src="assets.users/dia-.png" alt="dia" class="img-dia bton-class">
+                    </div>
+                </section>
+    
+            </section> 
+        </div>
 
         <audio id="musica1" loop >
             <source src="assets.users/fondousers.mp3" type="audio/mpeg">
             Tu navegador no soporta la reproducción de audio.
         </audio>
         
-        
-        
+
     </body>
 </html>
